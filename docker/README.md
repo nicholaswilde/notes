@@ -19,5 +19,5 @@ $ docker system prune --all
 ```
 [ssh certs](https://curl.se/docs/caextract.html)
 ```
- curl --remote-name --time-cond cacert.pem https://curl.se/ca/cacert.pem
+$ curl --remote-name --time-cond cacert.pem https://curl.se/ca/cacert.pem
 ```
