@@ -1,5 +1,5 @@
 ```yaml
- - name: Dump github context
+      - name: Dump github context
         run:   echo "$GITHUB_CONTEXT"
         shell: bash
         env:
