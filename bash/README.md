@@ -1,6 +1,6 @@
 # Bash
 
-```
+```bash
 #/bin/bash
 
 set -e
@@ -9,7 +9,7 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 ```
 
-# Checks
+## Checks
 ```bash
 # Check if chart dir exists
 if [ -d "${CHART_PATH}" ]; then
@@ -25,10 +25,20 @@ fi
 
 ```
 
-# String manipulation
+Check empty variable
+
+```bash
+if [ -z "${REPOSITORY}" ]; then
+  echo "Could not get the repository"
+  exit 1
+fi
+```
+
+## String manipulation
 
 Get variable from a command
-```bas
+
+```bash
 VAR=$(basename "/tmp/file.txt")
 ```
 
@@ -44,11 +54,11 @@ Remove last character
 VAR="${VAR::-1}"
 ```
 
-# Checksums
+## Checksums
 
 Get checksum of remote file
 
-```
+```bash
 wget -qO- https://github.com/nicholaswilde/helm-template/archive/main.zip | sha256sum
 ```
 
@@ -56,11 +66,11 @@ wget -qO- https://github.com/nicholaswilde/helm-template/archive/main.zip | sha2
 echo "62df608caba8f2591755f99efac0097c3d7acf313e237e328aa2c046d500efd1  main.zip" | sha256sum -c
 ```
 
-# Miscellaneous
+## Miscellaneous
 
 Download and extract file in one line. Works with tar & zip files.
 
-```
+```bash
 wget -qO- https://github.com/nicholaswilde/helm-template/archive/main.zip | bsdtar -xvf-
 ```
 
@@ -71,7 +81,8 @@ eval VAR="value"
 ```
 
 Compare semver
-```
+
+```bash
 # https://stackoverflow.com/a/4025065/1061279
 function vercomp () {
   if [[ $1 == $2 ]]; then
@@ -112,12 +123,4 @@ function testvercomp () {
 }
 
 testvercomp ${GIT_VER} ${MIN_VER} '>'
-```
-
-Check empty variable
-```
-if [ -z "${REPOSITORY}" ]; then
-  echo "Could not get the repository"
-  exit 1
-fi
 ```
