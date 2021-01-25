@@ -24,7 +24,14 @@ if ! command -v git &> /dev/null; then
 fi
 
 ```
+
 # String manipulation
+
+Get variable from a command
+```bas
+VAR=$(basename "/tmp/file.txt")
+```
+
 Get last character
 
 ```bash
@@ -37,7 +44,25 @@ Remove last character
 VAR="${VAR::-1}"
 ```
 
+# Checksums
+
+Get checksum of remote file
+
+```
+wget -qO- https://github.com/nicholaswilde/helm-template/archive/main.zip | sha256sum
+```
+
+```bash
+echo "62df608caba8f2591755f99efac0097c3d7acf313e237e328aa2c046d500efd1  main.zip" | sha256sum -c
+```
+
 # Miscellaneous
+
+Download and extract file in one line. Works with tar & zip files.
+
+```
+wget -qO- https://github.com/nicholaswilde/helm-template/archive/main.zip | bsdtar -xvf-
+```
 
 Make variable global from inside function
 
