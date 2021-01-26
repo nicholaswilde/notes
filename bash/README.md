@@ -68,6 +68,11 @@ echo "62df608caba8f2591755f99efac0097c3d7acf313e237e328aa2c046d500efd1  main.zip
 
 ## Miscellaneous
 
+Insert first line of file
+```bash
+sed  -i '1i text' filename
+```
+
 Delete a tmp dir on exit
 ```bash
 # https://stackoverflow.com/a/687052/1061279
