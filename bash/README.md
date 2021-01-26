@@ -68,6 +68,12 @@ echo "62df608caba8f2591755f99efac0097c3d7acf313e237e328aa2c046d500efd1  main.zip
 
 ## Miscellaneous
 
+Delete a tmp dir on exit
+```bash
+# https://stackoverflow.com/a/687052/1061279
+trap 'rm -rf -- "$TMP_DIR"' EXIT
+```
+
 Download and extract file in one line. Works with tar & zip files.
 
 ```bash
