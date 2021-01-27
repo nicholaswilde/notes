@@ -9,6 +9,13 @@ set -e
 readonly DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 readonly SCRIPT_NAME=$(basename "${0}")
 ```
+## Files
+
+Delete all files matching a pattern in sub folders
+
+```bash
+find . -name "*.lock" -type f -delete
+```
 
 ## Checks
 ```bash
