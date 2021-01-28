@@ -42,6 +42,17 @@ if [ -z "${REPOSITORY}" ]; then
 fi
 ```
 
+Single line variable
+
+```bash
+function is_null {
+  [ -z "$1" ]
+}
+
+is_null "$left" && echo "is null"
+
+```
+
 ## String manipulation
 
 Get variable from a command
@@ -74,7 +85,42 @@ wget -qO- https://github.com/nicholaswilde/helm-template/archive/main.zip | sha2
 echo "62df608caba8f2591755f99efac0097c3d7acf313e237e328aa2c046d500efd1  main.zip" | sha256sum -c
 ```
 
+## Scripts
+
+Get single options, -v, -h, etc.
+
+```bash
+# https://www.jamescoyle.net/how-to/1774-bash-getops-example
+# https://opensource.com/article/19/12/help-bash-program
+# Get the options
+while getopts ":hv" o; do
+  case "${o}" in
+    h) # display Help
+      help
+      exit 0;;
+    v)
+      printf "${SCRIPT_NAME} version ${APP_VERSION}\n"
+      exit 0;;
+    \?) # incorrect option
+      usageerror;;
+  esac
+done
+
+# https://unix.stackexchange.com/a/214151/93726
+shift "$((OPTIND-1))"
+```
+
 ## Miscellaneous
+
+printf
+
+```bash
+printf "%s is the value" "${var}"
+
+# Expand the tab, \t or new line \n
+var="value\t"
+printf "%b is the value" "${var}"
+```
 
 Insert first line of file
 ```bash
