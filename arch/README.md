@@ -81,9 +81,9 @@ $ export PATH=$PATH:/opt/vc/bin/
 $ sudo rpi-update
 ```
 
-### SSH
-
 ## As pi
+
+### SSH
 
 ```shell
 $ mkdir ~/.ssh
