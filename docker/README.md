@@ -24,6 +24,7 @@ aarch64
 $ mkdir ~/.docker/cli-plugins
 $ wget https://github.com/docker/buildx/releases/download/v0.5.1/buildx-v0.5.1.linux-amd64 -O ~/.docker/cli-plugins/docker-buildx
 $ chmod a+x ~/.docker/cli-plugins/docker-buildx
+$ docker buildx install
 ```
 
 ## Prune all
