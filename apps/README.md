@@ -17,3 +17,10 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 ```shell
 $ brew install gh
 ```
+
+## [Snyk](https://snyk.io/)
+
+```shell
+$ sudo npm install -g snyk
+$ snyk auth
+```
