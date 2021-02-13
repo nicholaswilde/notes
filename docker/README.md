@@ -26,14 +26,13 @@ $ wget https://github.com/docker/buildx/releases/download/v0.5.1/buildx-v0.5.1.l
 $ chmod a+x ~/.docker/cli-plugins/docker-buildx
 ```
 
-
 ## Prune all
 
 ```shell
 $ docker system prune --all
 ```
 
-[ssh certs](https://curl.se/docs/caextract.html)
+## [ssh certs](https://curl.se/docs/caextract.html)
 ```shell
 $ curl --remote-name --time-cond cacert.pem https://curl.se/ca/cacert.pem
 ```
