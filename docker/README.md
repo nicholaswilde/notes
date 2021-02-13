@@ -24,7 +24,14 @@ aarch64
 $ mkdir ~/.docker/cli-plugins
 $ wget https://github.com/docker/buildx/releases/download/v0.5.1/buildx-v0.5.1.linux-amd64 -O ~/.docker/cli-plugins/docker-buildx
 $ chmod a+x ~/.docker/cli-plugins/docker-buildx
+# Set buildx as default
 $ docker buildx install
+# Create builder
+$ docker buildx create --name mybuilder
+# Switch to the new builder
+$ docker buildx use mybuilder
+# Inspect it
+$ docker buildx inspect --bootstrap
 ```
 
 ## Prune all
