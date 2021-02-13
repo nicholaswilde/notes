@@ -70,7 +70,7 @@ $ docker container rm $(docker container ls -aq)
 
 ## Copy Multiple Files
 
-```docker
+```dockerfile
 COPY ["__BUILD_NUMBER", "README.md", "gulpfile", "another_file", "./"]
 ```
 
