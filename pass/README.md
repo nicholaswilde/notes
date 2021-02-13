@@ -3,10 +3,7 @@
 ## Reconnecting Existing Repo
 
 ```shell
-$ pass init ncwilde43@gmail.com
-$ pass git init
-$ pass git remote add origin git@github.com:nicholaswilde/pass.git
-$ pass git pull origin main
+$ git clone git@github.com:nicholaswilde/pass.git ~/.password-store
 ```
 
 ## References
