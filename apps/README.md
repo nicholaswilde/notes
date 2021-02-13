@@ -6,13 +6,13 @@
 $ sudo apt-get install unzip build-essential
 ```
 
-## homebrew
+## [brew](https://brew.sh/)
 
 ```shell
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## gh
+## [gh](https://github.com/cli/cli)
 
 ```shell
 $ brew install gh
