@@ -18,6 +18,14 @@ $ docker run --rm -t arm64v8/ubuntu uname -m
 aarch64
 ```
 
+## [buildx](https://github.com/docker/buildx#binary-release)
+
+```shell
+$ mkdir ~/.docker/cli-plugins
+$ wget https://github.com/docker/buildx/releases/download/v0.5.1/buildx-v0.5.1.linux-amd64 -O ~/.docker/cli-plugins/docker-buildx
+```
+
+
 ## Prune all
 
 ```shell
