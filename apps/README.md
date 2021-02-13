@@ -41,7 +41,7 @@ $ export PATH=$PATH:/usr/local/go/bin
 $ export GOROOT=/usr/local/go/
 ```
 
-## Chromebook
+## [Chromebook](https://chromium.googlesource.com/apps/libapps/+/hterm-1.80/nassh/doc/FAQ.md#How-do-I-copy-text-from-the-terminal)
 
 ```shell
 $ curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/hterm-notify.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/notify && sudo chmod +x /usr/bin/notify
