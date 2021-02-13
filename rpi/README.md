@@ -1,11 +1,5 @@
 # RPi
 
-## [nanorc](https://github.com/scopatz/nanorc)
-
-```shell
-$ wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
-```
-
 ## Raspberry Pi 4 boot from usb
 
 ```shell
