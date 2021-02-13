@@ -68,6 +68,12 @@ $ docker container stop $(docker container ls -aq)
 $ docker container rm $(docker container ls -aq)
 ```
 
+## Copy Multiple Files
+
+```shell
+$ COPY ["__BUILD_NUMBER", "README.md", "gulpfile", "another_file", "./"]
+```
+
 ## References
 
 * [docker-template wiki](https://github.com/nicholaswilde/docker-template/wiki/)
