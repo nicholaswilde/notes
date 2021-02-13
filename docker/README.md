@@ -3,7 +3,7 @@
 ## Installation
 
 ```shell
-wget -O - https://get.docker.com | sudo bash && sudo usermod -aG docker pi
+$ wget -O - https://get.docker.com | sudo bash && sudo usermod -aG docker pi
 ```
 
 ## [qemu-user-static](https://github.com/multiarch/qemu-user-static)
