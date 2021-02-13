@@ -30,3 +30,13 @@ $ snyk auth
 ```shell
 $ wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
 ```
+
+## [golang](https://golang.org/doc/install)
+
+```shell
+$ wget "https://dl.google.com/go/$(curl https://golang.org/VERSION?m=text).linux-amd64.tar.gz"
+$ sudo tar -C /usr/local -xzf "go$(curl https://golang.org/VERSION?m=text).linux-amd64.tar.gz"
+# ~/.bash_exports
+$ export PATH=$PATH:/usr/local/go/bin
+$ export GOROOT=/usr/local/go/
+```
