@@ -29,3 +29,8 @@ $ sudo snap install kubectl --classic
 ```shell
 $ kubectl krew install ns
 ```
+
+## [knsk](https://github.com/thyarles/knsk)
+```shell
+$ wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | bash 
+```
