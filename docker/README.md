@@ -46,7 +46,7 @@ $ docker run -it --rm alpine:3.13.1 <container name> /bin/ash
 $ docker container stop $(docker container ls -aq)
 ```
 
-# Remove all stopped containers
+## Remove all stopped containers
 
 ```shell
 $ docker container rm $(docker container ls -aq)
