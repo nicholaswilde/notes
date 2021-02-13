@@ -74,6 +74,13 @@ $ docker container rm $(docker container ls -aq)
 COPY ["__BUILD_NUMBER", "README.md", "gulpfile", "another_file", "./"]
 ```
 
+## docker-compose
+
+```script
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+```
+
 ## References
 
 * [docker-template wiki](https://github.com/nicholaswilde/docker-template/wiki/)
