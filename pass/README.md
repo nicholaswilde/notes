@@ -11,6 +11,7 @@ $ git clone git@github.com:nicholaswilde/pass.git ~/.password-store
 ```shell
 $ sudo apt install pass-git-helper
 $ git config --global credential.helper /usr/bin/pass-git-helper
+$ git config --global credential.useHttpPath true
 ```
 
 ## References
