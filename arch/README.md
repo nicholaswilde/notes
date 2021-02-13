@@ -103,27 +103,3 @@ RSAAuthentication yes
 PubkeyAuthentication yes
 ...
 ```
-
-## NAS
-```shell
-$ mkdir ~/nas
-```
-
-```shell
-# /etc/fstab
-UUID=1FDD-27B1  /boot   vfat    defaults        0       0
-UUID=b264f4c6-8797-4ed5-99db-e85ceebc1db4  /   ext4    defaults        0       0
-192.168.1.192:/home/pi/nas /home/pi/nas nfs rw,async,hard,intr 0 0
-```
-
-```shell
-$ echo "192.168.1.192:/home/pi/nas /home/pi/nas nfs rw,async,hard,intr 0 0" | sudo tee -a /etc/fstab
-```
-
-## Chromebook
-
-```shell
-$ curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/hterm-notify.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/notify && sudo chmod +x /usr/bin/notify
-$ curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/hterm-show-file.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/show-file && sudo chmod +x /usr/bin/show-file
-$ curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/copy && sudo chmod +x /usr/bin/copy
-```
