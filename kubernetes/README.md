@@ -31,6 +31,12 @@ $ sudo snap install kubectl --classic
 $ kubectl krew install ns
 ```
 
+### Short Names List
+
+```shell
+$ kubectl api-resources
+```
+
 ## [knsk](https://github.com/thyarles/knsk)
 
 ```shell
