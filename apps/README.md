@@ -48,3 +48,10 @@ $ curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/hterm-
 $ curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/hterm-show-file.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/show-file && sudo chmod +x /usr/bin/show-file
 $ curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/copy && sudo chmod +x /usr/bin/copy
 ```
+
+## [semver](https://github.com/fsaintjacques/semver-tool)
+
+```shell
+$ sudo wget -O /usr/bin/semver https://github.com/fsaintjacques/semver-tool/raw/master/src/semver
+$ sudo chmod +x /usr/bin/semver
+```
