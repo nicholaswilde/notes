@@ -81,6 +81,12 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docke
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+## [hadolint](https://github.com/hadolint/hadolint)
+
+```shell
+$ brew install hadolint
+```
+
 ## References
 
 * [docker-template wiki](https://github.com/nicholaswilde/docker-template/wiki/)
