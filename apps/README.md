@@ -55,3 +55,9 @@ $ curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.
 $ sudo wget -O /usr/bin/semver https://github.com/fsaintjacques/semver-tool/raw/master/src/semver
 $ sudo chmod +x /usr/bin/semver
 ```
+
+## [pre-commit](https://pre-commit.com/#install)
+
+```shell
+$ pip install pre-commit
+```
