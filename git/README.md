@@ -12,6 +12,7 @@ $ git config --global user.name "Nicholas Wilde"
 $ git config credential.helper store
 $ git config --global init.defaultBranch main
 $ git config --global user.signingkey <gpg key fingerprint>
+$ git config --global commit.gpgsign true
 ```
 
 ## Switching Remote URLs
