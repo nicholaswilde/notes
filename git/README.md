@@ -30,7 +30,7 @@ $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 * Release: https://github.com/$(IMAGE_NAME)/$(IMAGE_NAME)/releases/download/v${VERSION}/Leantime-v${VERSION}.tar.gz
 * Release Source: https://github.com/nicholaswilde/helm-charts/archive/wikijs-0.1.6.tar.gz
 
-## gh
+## [gh](https://github.com/cli/cli)
 
 ```shell
 $ brew install gh
