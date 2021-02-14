@@ -37,12 +37,6 @@ $ kubectl krew install ns
 $ wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | bash 
 ```
 
-## [helm-docs](https://github.com/norwoodj/helm-docs#installation)
-
-```shell
-$ brew install norwoodj/tap/helm-docs
-```
-
 ## Config
 
 ```shell
