@@ -42,3 +42,10 @@ $ wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | 
 ```shell
 $ brew install norwoodj/tap/helm-docs
 ```
+
+## Config
+
+```shell
+WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /home/nicholas/.kube/config-turing-pi
+$ chmod 600 /home/nicholas/.kube/config-turing-pi
+```
