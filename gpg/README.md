@@ -34,6 +34,15 @@ Your decision? 5
 gpg> save
 ```
 
+## List
+
+```shell
+# Secret keys
+$ gpg --list-secret-keys --keyid-format LONG
+# All keys
+$ gpg --list-keys --keyid-format LONG
+```
+
 ## Submit to Keyserver
 
 ```shell
