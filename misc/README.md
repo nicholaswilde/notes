@@ -27,3 +27,15 @@ $ sudo apt-get install sudo apt install imagemagick-6.q16hdri
 # Convert image from ico to png
 $ convert "favicon.ico" -thumbnail 16x16 -alpha on -background none -flatten "favicon.png"
 ```
+
+## Shred
+
+Overwrite the data of file1.txt, file2.jpg, and file3.doc using the default shredding methods.
+
+```shell
+$ shred -u file1.txt file2.jpg file3.doc
+```
+
+## References
+
+* https://www.computerhope.com/unix/shred.htm#examples
