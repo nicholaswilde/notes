@@ -15,13 +15,21 @@ $ git config --global user.signingkey <gpg key fingerprint>
 $ git config --global commit.gpgsign true
 ```
 
-## Switching Remote URLs
+## Usage
+
+### Switching Remote URLs
 
 ```shell
 $ git remote -v
 origin  git@github.com:USERNAME/REPOSITORY.git (fetch)
 origin  git@github.com:USERNAME/REPOSITORY.git (push)
 $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+```
+
+### [Different Path](https://git-scm.com/docs/git#Documentation/git.txt--Cltpathgt)
+
+```shell
+$ git -C <path>
 ```
 
 ## URLs
