@@ -15,6 +15,11 @@ $ sudo apt-get install pass
 $ pass insert -fm gpg/revoke < file.txt
 ```
 
+```shell
+# Push your local pass history
+$ pass git push -u --all
+```
+
 ## Reconnecting Existing Repo
 
 ```shell
