@@ -14,7 +14,7 @@ readonly SCRIPT_NAME=$(basename "${0}")
 Delete all files matching a pattern in sub folders
 
 ```bash
-find . -name "*.lock" -type f -delete
+$ find . -name "*.lock" -type f -delete
 ```
 
 ## Checks
@@ -200,4 +200,12 @@ function testvercomp () {
 }
 
 testvercomp ${GIT_VER} ${MIN_VER} '>'
+```
+
+## Clear File
+
+Clear an already existing file
+
+```shell
+$ >|file.txt
 ```
