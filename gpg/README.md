@@ -53,7 +53,7 @@ uid              [ ultimate ] John Doe
 $ gpg --keyserver pgp.mit.edu --send-keys ABCDEF0123456789
 ```
 
-## Revoke
+## Revokation Certificate
 
 ```
 $ gpg --output revoke.asc --gen-revoke you@example.com
