@@ -1,5 +1,20 @@
 # [pass](https://www.passwordstore.org/)
 
+## Installation
+
+```shell
+# Ubuntu
+$ sudo apt-get install pass
+```
+
+## Usage
+
+### [Import File](https://lists.zx2c4.com/pipermail/password-store/2014-August/001105.html)
+
+```shell
+$ pass insert -fm gpg/revoke < file.txt
+```
+
 ## Reconnecting Existing Repo
 
 ```shell
