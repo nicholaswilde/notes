@@ -17,6 +17,18 @@ Delete all files matching a pattern in sub folders
 $ find . -name "*.lock" -type f -delete
 ```
 
+Clear an already existing file
+
+```shell
+$ >|file.txt
+```
+
+Create a new blank file
+
+```shell
+$ touch file.txt
+```
+
 ## Checks
 ```bash
 # Check if chart dir exists
@@ -202,10 +214,3 @@ function testvercomp () {
 testvercomp ${GIT_VER} ${MIN_VER} '>'
 ```
 
-## Clear File
-
-Clear an already existing file
-
-```shell
-$ >|file.txt
-```
