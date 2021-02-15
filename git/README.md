@@ -32,7 +32,7 @@ $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 $ git -C <path>
 ```
 
-## [Empty Message](https://stackoverflow.com/a/17365487/1061279)
+### [Empty Message](https://stackoverflow.com/a/17365487/1061279)
 
 ```shell
 $ git commit --allow-empty-message -m ''
