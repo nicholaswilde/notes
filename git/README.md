@@ -32,6 +32,12 @@ $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 $ git -C <path>
 ```
 
+## [Empty Message](https://stackoverflow.com/a/17365487/1061279)
+
+```shell
+$ git commit --allow-empty-message -m ''
+```
+
 ## URLs
 
 * Commit: https://github.com/python/cpython/archive/31af650.tar.gz
