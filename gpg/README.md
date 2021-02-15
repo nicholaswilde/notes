@@ -43,3 +43,9 @@ pub   rsa4096/ABCDEF0123456789 2018-01-01 [SCEA] [expires: 2021-01-01]
 uid              [ ultimate ] John Doe
 $ gpg --keyserver pgp.mit.edu --send-keys ABCDEF0123456789
 ```
+
+## Revoke
+
+```
+$ gpg --output revoke.asc --gen-revoke you@example.com
+```
