@@ -23,6 +23,12 @@ Clear an already existing file
 $ >|file.txt
 ```
 
+Search root for the name
+
+```shell
+$ sudo find / -name file.txt
+```
+
 Create a new blank file
 
 ```shell
