@@ -51,3 +51,13 @@ $ chmod 600 /home/nicholas/.kube/config-turing-pi
 ```
 
 ## [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
+## Resources
+
+* [keel](https://keel.sh/)
+* [flux2](https://toolkit.fluxcd.io/)
+* [rook ceph](http://rook.io)
+* [k3s](https://k3s.io/)
+* [taskfile](https://taskfile.dev/#/)
+* [helm-docs](https://github.com/norwoodj/helm-docs)
+* [OpenEBS](https://openebs.io/)
