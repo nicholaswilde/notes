@@ -26,6 +26,16 @@ origin  git@github.com:USERNAME/REPOSITORY.git (push)
 $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 ```
 
+### [Syncing a Fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+
+```shell
+# Configuring a remote for a fork
+$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+$ git fetch upstream
+$ git checkout main
+$ git merge upstream/main
+```
+
 ### [Different Path](https://git-scm.com/docs/git#Documentation/git.txt--Cltpathgt)
 
 ```shell
