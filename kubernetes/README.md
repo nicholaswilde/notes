@@ -25,6 +25,11 @@ $ sudo snap install kubectl --classic
 )
 ```
 
+```shell
+# Update
+$ kubectl krew version
+```
+
 ### [ns](https://github.com/ahmetb/kubectx)
 
 ```shell
