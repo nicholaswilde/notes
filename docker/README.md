@@ -86,6 +86,11 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 ```shell
 $ brew install hadolint
 ```
+## Pull by Digest
+
+```shell
+$ docker run -it --rm python:3.7.10-slim-buster@sha256:482d4cc1ae3c95d0f4dd25005e22a17f22f693ca7fb07bb7870ff9354844f738 /bin/bash
+```
 
 ## References
 
