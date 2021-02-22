@@ -51,6 +51,15 @@ fi
 
 ```
 
+[Check if substring is in string](https://stackoverflow.com/a/229606/1061279)
+
+```bash
+string='My long string'
+if [[ $string == *"My long"* ]]; then
+  echo "It's there!"
+fi
+```
+
 Check empty variable
 
 ```bash
