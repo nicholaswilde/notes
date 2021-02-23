@@ -73,3 +73,7 @@ $ git log
 $ brew install gh
 $ gh auth login
 ```
+
+## References
+
+* [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
