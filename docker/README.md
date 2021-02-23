@@ -92,6 +92,12 @@ $ brew install hadolint
 $ docker run -it --rm python:3.7.10-slim-buster@sha256:482d4cc1ae3c95d0f4dd25005e22a17f22f693ca7fb07bb7870ff9354844f738 /bin/bash
 ```
 
+## Run on Current Directory
+
+```shell
+$ docker run --rm -it -v $(pwd):/charts --entrypoint "/bin/bash" -w /charts k8s-at-home/charts-unit-test -l -c "bundle exec m -r ./test/charts"
+```
+
 ## References
 
 * [docker-template wiki](https://github.com/nicholaswilde/docker-template/wiki/)
