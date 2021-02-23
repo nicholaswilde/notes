@@ -48,6 +48,18 @@ $ git -C <path>
 $ git commit --allow-empty-message -m ''
 ```
 
+### Change a Commit Message
+
+```shell
+$ git commit --amend
+```
+
+### List Commits
+
+```shell
+$ git log
+```
+
 ## URLs
 
 * Commit: https://github.com/python/cpython/archive/31af650.tar.gz
