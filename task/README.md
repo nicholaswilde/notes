@@ -20,5 +20,7 @@ sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/b
       - test -n "{{ .CHART }}" || (echo "Please define CHART parameter"; exit 1)
       # Check if directory exists
       - test -d {{.GIT_ROOT}}/charts/{{.CHART}} || (echo "Chart {{ .CHART }} doesn't exist"; exit 1) 
+      # Check if a file exists
+      - test -f {{.GIT_ROOT}}/charts/{{.CHART}} || (echo "Chart {{ .CHART }} doesn't exist"; exit 1) 
     silent: true
 ```
