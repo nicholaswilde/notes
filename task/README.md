@@ -10,3 +10,15 @@ sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d
 # May require sudo sh
 sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
 ```
+
+## Checks
+
+```yaml
+  _check-chart:
+    cmds:
+      # Check if variable exists
+      - test -n "{{ .CHART }}" || (echo "Please define CHART parameter"; exit 1)
+      # Check if directory exists
+      - test -d {{.GIT_ROOT}}/charts/{{.CHART}} || (echo "Chart {{ .CHART }} doesn't exist"; exit 1) 
+    silent: true
+```
