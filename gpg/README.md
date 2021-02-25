@@ -12,7 +12,7 @@ $ gpg --full-generate-key
 $ gpg --import secret.asc
 ```
 
-## Trust
+## Trust Own Key
 
 ```shell
 # https://unix.stackexchange.com/a/407070/93726
@@ -32,6 +32,14 @@ Please decide how far you trust this user to correctly verify other users' keys
 
 Your decision? 5
 gpg> save
+```
+
+## Sign Others' Keys
+
+```shell
+$ wget http://example.com/pgp-public-key -O- | gpg --import
+$ gpg --list-keys
+$ gpg --sign-key theirs@email.com
 ```
 
 ## List
@@ -55,6 +63,12 @@ $ gpg --keyserver pgp.mit.edu --send-keys ABCDEF0123456789
 
 ## Revokation Certificate
 
-```
+```shell
 $ gpg --output revoke.asc --gen-revoke you@example.com
+```
+
+## Export
+
+```shell
+$ gpg --export-secret-keys --armor my@email.com > /path/to/secret-key-backup.asc
 ```
