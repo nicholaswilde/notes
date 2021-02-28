@@ -229,3 +229,7 @@ function testvercomp () {
 testvercomp ${GIT_VER} ${MIN_VER} '>'
 ```
 
+### Generate Random String
+```shell
+$ cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1
+```

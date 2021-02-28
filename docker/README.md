@@ -40,6 +40,7 @@ $ docker buildx inspect --bootstrap
 $ docker system prune --all
 ```
 
+
 ## [ssh certs](https://curl.se/docs/caextract.html)
 ```shell
 $ curl --remote-name --time-cond cacert.pem https://curl.se/ca/cacert.pem
