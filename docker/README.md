@@ -99,6 +99,14 @@ $ docker run -it --rm python:3.7.10-slim-buster@sha256:482d4cc1ae3c95d0f4dd25005
 $ docker run --rm -it -v $(pwd):/charts --entrypoint "/bin/bash" -w /charts k8s-at-home/charts-unit-test -l -c "bundle exec m -r ./test/charts"
 ```
 
+## {Check if Image Exists](https://stackoverflow.com/a/33061675/1061279)
+
+```shell
+$ docker inspect --type=image treeder/hello.rb:nada
+Error: No such image: treeder/hello.rb:nada
+[]
+```
+
 ## References
 
 * [docker-template wiki](https://github.com/nicholaswilde/docker-template/wiki/)
