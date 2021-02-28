@@ -77,3 +77,4 @@ $ gh auth login
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
+* [GitHub Flavored Markdown](https://github.github.com/gfm/)
