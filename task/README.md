@@ -24,3 +24,5 @@ sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/b
       - test -f {{.GIT_ROOT}}/charts/{{.CHART}} || (echo "Chart {{ .CHART }} doesn't exist"; exit 1) 
     silent: true
 ```
+
+> NOTE: If you want to call a task declared in the root Taskfile from within an included Taskfile, add a leading `:` like this: `task: :task-name`.
