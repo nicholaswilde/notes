@@ -74,6 +74,12 @@ $ brew install gh
 $ gh auth login
 ```
 
+## No Message
+
+```shell
+$ git commit --allow-empty-message -a -m ""
+```
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
