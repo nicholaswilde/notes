@@ -269,3 +269,15 @@ sudo -u "${TARGET_USER}" bash <<"EOF9"
   command
 EOF9
 ```
+
+## Return Value from Function
+
+```shell
+function myfunc(){
+    local  myresult='some value'
+    echo "$myresult"
+}
+
+result=$(myfunc)   # or result=`myfunc`
+echo $result
+```
