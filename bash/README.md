@@ -260,3 +260,11 @@ echo -e "*** Orignal quote: \n${var1}"
 # Use command substitution inside echo
 echo -e "*** Lowercase version: \n$(to_lower ${var1})"
 ```
+
+## Run As Different User
+
+```shell
+sudo -u "${TARGET_USER}" bash <<"EOF9"
+  command
+EOF9
+```
