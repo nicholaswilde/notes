@@ -36,6 +36,12 @@ Overwrite the data of file1.txt, file2.jpg, and file3.doc using the default shre
 $ shred -u file1.txt file2.jpg file3.doc
 ```
 
+## [Combine PDFs](https://stackoverflow.com/a/53754681/1061279)
+
+```shell
+$ qpdf --empty --pages *.pdf -- out.pdf
+```
+
 ## References
 
 * https://www.computerhope.com/unix/shred.htm#examples
