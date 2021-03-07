@@ -1,6 +1,6 @@
 # Ansible
 
-## Installation
+## [Installation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-with-pip)
 
 ```shell
 $ python -m pip install --user ansible
