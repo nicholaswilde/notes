@@ -286,4 +286,6 @@ echo $result
 
 ```shell
 $ name=$(echo "$filename" | cut -f 1 -d '.')
+# or
+# echo "${filename%%.*}"
 ```
