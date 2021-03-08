@@ -281,3 +281,9 @@ function myfunc(){
 result=$(myfunc)   # or result=`myfunc`
 echo $result
 ```
+
+## [Remove File Extension](https://stackoverflow.com/a/12152669/1061279)
+
+```shell
+$ name=$(echo "$filename" | cut -f 1 -d '.')
+```
