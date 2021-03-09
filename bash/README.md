@@ -293,3 +293,4 @@ $ echo "${filename%%.*}"
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
+* [pure bash bible](https://github.com/dylanaraps/pure-bash-bible)
