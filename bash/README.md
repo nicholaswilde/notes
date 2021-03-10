@@ -290,6 +290,12 @@ $ name=$(echo "$filename" | cut -f 1 -d '.')
 $ echo "${filename%%.*}"
 ```
 
+## [Full File Path](https://stackoverflow.com/a/5265775/1061279)
+
+```shell
+$ readlink -f file.txt
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
