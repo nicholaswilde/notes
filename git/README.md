@@ -80,6 +80,12 @@ $ gh auth login
 $ git commit --allow-empty-message -a -m ""
 ```
 
+## Synchronizing a local Git repository with a remote one](https://stackoverflow.com/a/15124916/1061279)
+
+```shell
+$ git fetch --prune
+```
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
