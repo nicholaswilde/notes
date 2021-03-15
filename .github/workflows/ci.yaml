@@ -4,6 +4,10 @@ on: # yamllint disable-line rule:truthy
   push:
     branches:
       - main
+
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -14,5 +18,3 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
