@@ -1,0 +1,57 @@
+---
+site_name: Notes
+site_description: My notes on various things
+site_author: Nicholas Wilde
+site_url: https://nicholaswilde.github.io/notes
+dev_addr: '0.0.0.0:8000'
+
+# Repository
+repo_name: nicholaswilde/notes
+repo_url: https://github.com/nicholaswilde/notes
+edit_uri: ""
+
+# Page tree
+nav:
+  - Home: index.md
+  - Ansible: ansible.md
+  - Apps: apps.md
+  - Arch: arch.md
+  - Bash: bash.md
+  - Docker: docker.md
+  - Git: git.md
+  - Github Actions: github-actions.md
+  - Go: go.md
+  - GPG: gpg.md
+  - Helm: helm.md
+  - Kubernetes: kubernetes.md
+  - Make: make.md
+  - Misc: misc.md
+  - Multipass: multipass.md
+  - NFS: nfs.md
+  - NPM: npm.md
+  - pass: pass.md
+  - Python: python.md
+  - RPi: rpi.md
+  - Task: task.md
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
