@@ -5,9 +5,6 @@ on: # yamllint disable-line rule:truthy
     branches:
       - main
 
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
 jobs:
   deploy:
     runs-on: ubuntu-20.04
