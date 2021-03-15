@@ -29,11 +29,13 @@ $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 ### [Syncing a Fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 
 ```shell
-# Configuring a remote for a fork
+# Configuring a remote for a fork if it doesn't already exist
 $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 $ git fetch upstream
 $ git checkout main
 $ git merge upstream/main
+# Push the changes
+$ git push origin main
 ```
 
 ### [Different Path](https://git-scm.com/docs/git#Documentation/git.txt--Cltpathgt)
@@ -80,12 +82,25 @@ $ gh auth login
 $ git commit --allow-empty-message -a -m ""
 ```
 
-## [Synchronizing a local Git repository with a remote one](https://stackoverflow.com/a/15124916/1061279)
+### [Synchronizing a local Git repository with a remote one](https://stackoverflow.com/a/15124916/1061279)
 
 ```shell
 $ git fetch --prune
 # https://stackoverflow.com/a/17029936/1061279
 $ git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
+```
+
+### [Deleting Remote Branch](https://www.git-tower.com/learn/git/faq/delete-remote-branch/)
+
+```shell
+$ git branch -d <branch name>
+# git push origin --delete <branch name>
+```
+
+### Rename Branch
+
+```shell
+$ git branch -m <new branch name>
 ```
 
 ## References
