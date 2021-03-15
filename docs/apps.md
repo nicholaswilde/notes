@@ -1,4 +1,4 @@
-# apps
+# Apps
 
 ## Ubuntu
 
