@@ -1,0 +1,41 @@
+---
+version: '3'
+
+tasks:
+  build:
+    desc: Build documentation using Docker and mkdocs-material
+    cmds:
+      - >-
+        docker run --rm -it -v ${PWD}:/docs --platform linux/amd64
+        squidfunk/mkdocs-material build -f ./mkdocs.yaml
+
+  serve:
+    desc: >-
+      Start development server on http://0.0.0.0:{{ .PORT }} using
+      Docker and mkdocs-material
+    cmds:
+      - >-
+        docker run --rm -it -p {{ .PORT }}:{{ .PORT}} -v ${PWD}:/docs
+        --platform linux/amd64 squidfunk/mkdocs-material serve
+        --dev-addr 0.0.0.0:{{ .PORT }} -f ./mkdocs.yaml
+    deps:
+      - build
+    vars:
+      PORT: 8000
+
+  lint:
+    desc: Lint the project
+    deps:
+      - yamllint
+
+  yamllint:
+    desc: Run yamllint
+    cmds:
+      - >-
+        docker run --rm -it -v ${PWD}:${PWD} -w ${PWD}
+        programmerassistant/yamllint yamllint .
+
+  default:
+    cmds:
+      - task -l
+    silent: true
