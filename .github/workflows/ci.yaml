@@ -1,9 +1,8 @@
 ---
 name: ci
-'on':
+on: # yamllint disable-line rule:truthy
   push:
     branches:
-      - master
       - main
 jobs:
   deploy:
@@ -16,5 +15,5 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
-  env:
-    GH_TOKEN: ${{ secrets.GH_TOKEN }}
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
