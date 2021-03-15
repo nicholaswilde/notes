@@ -7,7 +7,6 @@ on: # yamllint disable-line rule:truthy
 jobs:
   deploy:
     runs-on: ubuntu-20.04
-    if: github.event.pull_request.head.repo.fork == false
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
