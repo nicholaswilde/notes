@@ -110,6 +110,6 @@ Error: No such image: treeder/hello.rb:nada
 ## References
 
 * [docker-template wiki](https://github.com/nicholaswilde/docker-template/wiki/)
-* https://docs.docker.com/docker-for-mac/multi-arch/
-* https://github.com/docker/buildx#binary-release
-* https://docs.docker.com/buildx/working-with-buildx/
+* [https://docs.docker.com/docker-for-mac/multi-arch/](https://docs.docker.com/docker-for-mac/multi-arch/)
+* [https://github.com/docker/buildx#binary-release](https://github.com/docker/buildx#binary-release)
+* [https://docs.docker.com/buildx/working-with-buildx/](https://docs.docker.com/buildx/working-with-buildx/)
