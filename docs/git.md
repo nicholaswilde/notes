@@ -103,6 +103,13 @@ $ git branch -d <branch name>
 $ git branch -m <new branch name>
 ```
 
+### [Restore a File From Remote](https://stackoverflow.com/a/58019011/1061279)
+
+```shell
+$ git fetch
+$ git restore -s origin/master -- path/to/file
+```
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
