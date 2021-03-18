@@ -25,6 +25,7 @@ nav:
   - Helm: helm.md
   - Kubernetes: kubernetes.md
   - Make: make.md
+  - Markdown: markdown.md
   - Misc: misc.md
   - Multipass: multipass.md
   - NFS: nfs.md
