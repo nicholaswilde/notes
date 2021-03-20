@@ -296,6 +296,18 @@ $ echo "${filename%%.*}"
 $ readlink -f file.txt
 ```
 
+## [Sort Semver Using Sort](https://stackoverflow.com/a/63027058/1061279)
+
+```shell
+$ printf "1.0\n2.0\n2.12\n2.10\n1.2\n1.10" | sort -t "." -k1,1n -k2,2n -k3,3n
+1.0
+1.2
+1.10
+2.0
+2.10
+2.12
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
