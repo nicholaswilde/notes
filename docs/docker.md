@@ -16,7 +16,7 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 sudo apt -y install docker-ce docker-ce-cli containerd.io
-sudo usermod -aG docker pi
+sudo usermod -aG docker $(whoami)
 ```
 
 ## [qemu-user-static](https://github.com/multiarch/qemu-user-static)
