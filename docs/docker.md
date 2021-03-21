@@ -17,7 +17,7 @@
 ## [qemu-user-static](https://github.com/multiarch/qemu-user-static)
 
 ```shell
-$ uname -m
+uname -m
 # x86_64
 docker run --rm -t arm64v8/ubuntu uname -m
 # standard_init_linux.go:211: exec user process caused "exec format error"
