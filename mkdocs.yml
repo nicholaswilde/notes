@@ -34,6 +34,7 @@ nav:
   - Python: python.md
   - RPi: rpi.md
   - Task: task.md
+  - Ubuntu: ubuntu.md
 
 theme:
   name: material
