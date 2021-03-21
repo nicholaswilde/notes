@@ -22,6 +22,10 @@ $ rbenv install 2.3.1
 $ rbenv global 2.3.1
 ```
 
+## Server Images 64bit
+
+- [https://downloads.raspberrypi.org/raspios_arm64/images/](https://downloads.raspberrypi.org/raspios_arm64/images/)
+
 ## Convert to server
 ```bash
 (
