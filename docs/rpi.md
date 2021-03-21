@@ -29,9 +29,9 @@ $ rbenv global 2.3.1
 ## Convert to server
 ```bash
 (
-  sudo apt --purge remove "x11-*"
-  sudo apt --purge autoremove
+  sudo apt --purge remove -y "x11-*"
+  sudo apt --purge -y autoremove
   sudo apt update
-  sudo apt upgrade
+  sudo apt upgrade -y
 )
 ```
