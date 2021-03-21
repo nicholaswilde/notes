@@ -33,6 +33,7 @@ nav:
   - pass: pass.md
   - Python: python.md
   - RPi: rpi.md
+  - SSH: ssh.md
   - Task: task.md
   - Ubuntu: ubuntu.md
 
