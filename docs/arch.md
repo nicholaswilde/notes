@@ -5,20 +5,20 @@
 ### pacman
 
 ```shell
-$ su
-$ pacman-key --init && ls -R / && ls -R / && ls -R /
-$ pacman-key --populate archlinuxarm
+su
+pacman-key --init && ls -R / && ls -R / && ls -R /
+pacman-key --populate archlinuxarm
 
-$ pacman -Su
-$ pacman -Syu
-$ pacman -S --needed archlinux-keyring sudo util-linux systemd-swap ntp raspberrypi-firmware base-devel nfs-utils wget python git go go-tools python-pip rpcbind docker screen github-cli lastpass-cli python-pygments ca-certificates ansible pkgfile
+pacman -Su
+pacman -Syu
+pacman -S --needed archlinux-keyring sudo util-linux systemd-swap ntp raspberrypi-firmware base-devel nfs-utils wget python git go go-tools python-pip rpcbind docker screen github-cli lastpass-cli python-pygments ca-certificates ansible pkgfile
 ```
 
 ### Timezone
 
 ```shell
-$ rm /etc/localtime
-$ ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+rm /etc/localtime
+ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 ```
 
 ### Sudo
@@ -39,14 +39,14 @@ root ALL=(ALL) ALL
 
 ### Hostname
 ```shell
-$ echo "arch" | tee /etc/hostname
+echo "arch" | tee /etc/hostname
 # /etc/hosts
 127.0.0.1 localhost.localdomain localhost arch
 ```
 
 ### Swap
 ```shell
-$ echo "swapfc_enabled=1" | tee /etc/systemd/swap.conf
+echo "swapfc_enabled=1" | tee /etc/systemd/swap.conf
 ```
 
 ### Locale
@@ -60,19 +60,19 @@ en_US.UTF-8 UTF-8
 ..
 ```
 ```shell
-$ sudo locale-gen
+sudo locale-gen
 ```
 
 ```shell
-$ useradd -m -G wheel -s /bin/bash pi
-$ passwd pi
+useradd -m -G wheel -s /bin/bash pi
+passwd pi
 ```
 
 ### rpi-update
 ```shell
-$ sudo wget https://raw.github.com/Hexxeh/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
-$ export PATH=$PATH:/opt/vc/bin/
-$ sudo rpi-update
+sudo wget https://raw.github.com/Hexxeh/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
+export PATH=$PATH:/opt/vc/bin/
+sudo rpi-update
 ```
 
 ## As pi
@@ -80,12 +80,13 @@ $ sudo rpi-update
 ### SSH
 
 ```shell
-$ mkdir ~/.ssh
-$ curl https://github.com/nicholaswilde.keys -o ~/.ssh/id_rsa.pub
-$ chmod 644 ~/.ssh/id_rsa.pub
-$ chmod 600 ~/.ssh/id_rsa
-$ cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
-$ chmod 0700 ~/.ssh
+mkdir ~/.ssh
+curl https://github.com/nicholaswilde.keys -o ~/.ssh/id_rsa.pub
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/id_rsa
+cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+chmod 0700 ~/.ssh
+ssh-import-id-gh nicholaswilde
 ```
 
 ## SSH Authentication
