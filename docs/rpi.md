@@ -21,3 +21,13 @@ $ rbenv install --list
 $ rbenv install 2.3.1
 $ rbenv global 2.3.1
 ```
+
+## Convert to server
+```bash
+(
+  sudo apt --purge remove "x11-*"
+  sudo apt --purge autoremove
+  sudo apt update
+  sudo apt upgrade
+)
+```
