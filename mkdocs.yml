@@ -18,6 +18,7 @@ nav:
   - Arch: arch.md
   - Bash: bash.md
   - Docker: docker.md
+  - Flux: flux.md
   - Git: git.md
   - Github Actions: github-actions.md
   - Go: go.md
