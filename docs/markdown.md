@@ -24,3 +24,4 @@ jobs:
 
 ## Reference
 - [GFM](https://github.github.com/gfm/)
+- [Emojipedia](https://emojipedia.org/)
