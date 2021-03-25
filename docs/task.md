@@ -25,4 +25,5 @@ sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/b
     silent: true
 ```
 
-> NOTE: If you want to call a task declared in the root Taskfile from within an included Taskfile, add a leading `:` like this: `task: :task-name`.
+!!! NOTE:
+    If you want to call a task declared in the root Taskfile from within an included Taskfile, add a leading `:` like this: `task: :task-name`.
