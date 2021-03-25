@@ -25,6 +25,7 @@ nav:
   - Go: go.md
   - GPG: gpg.md
   - Helm: helm.md
+  - Images: images.md
   - Kubernetes: kubernetes.md
   - Make: make.md
   - Markdown: markdown.md
