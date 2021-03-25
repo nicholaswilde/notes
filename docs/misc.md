@@ -42,6 +42,14 @@ $ shred -u file1.txt file2.jpg file3.doc
 $ qpdf --empty --pages *.pdf -- out.pdf
 ```
 
+## [List if a Package is Installed][1]
+
+```shell
+apt -qq list <package name>
+```
+
 ## References
 
 * https://www.computerhope.com/unix/shred.htm#examples
+
+[1]: https://askubuntu.com/a/823630/344358
