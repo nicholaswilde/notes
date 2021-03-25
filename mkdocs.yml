@@ -3,6 +3,7 @@ site_name: Notes
 site_description: My notes on various things
 site_author: Nicholas Wilde
 site_url: https://nicholaswilde.github.io/notes
+copyright: Copyright &copy; 2021 Nicholas Wilde
 dev_addr: '0.0.0.0:8000'
 
 # Repository
@@ -37,6 +38,17 @@ nav:
   - SSH: ssh.md
   - Task: task.md
   - Ubuntu: ubuntu.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nicholaswilde
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/nicholaswilde
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/wildewoodworking/
+    - icon: fontawesome/solid/key
+      link: https://github.com/nicholaswilde.gpg
 
 theme:
   name: material
