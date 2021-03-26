@@ -9,7 +9,7 @@
   DIST=$(lsb_release -is | tr '[:upper:]' '[:lower:]') &&
   ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')" &&
   curl -fsSL "https://download.docker.com/linux/${DIST}/gpg" | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg &&
-  echo "deb [arch=${ARCH} signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/${DIST} $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null &&
+  echo "deb [arch=${ARCH} signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/${DIST} $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   sudo apt update &&
   sudo apt install -y docker-ce docker-ce-cli containerd.io &&
   sudo usermod -aG docker $(whoami)
