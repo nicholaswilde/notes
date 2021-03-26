@@ -262,7 +262,7 @@ echo -e "*** Orignal quote: \n${var1}"
 echo -e "*** Lowercase version: \n$(to_lower ${var1})"
 ```
 
-## Run As Different User
+### Run As Different User
 
 ```shell
 sudo -u "${TARGET_USER}" bash <<"EOF9"
@@ -270,7 +270,7 @@ sudo -u "${TARGET_USER}" bash <<"EOF9"
 EOF9
 ```
 
-## Return Value from Function
+### Return Value from Function
 
 ```shell
 function myfunc(){
@@ -282,7 +282,7 @@ result=$(myfunc)   # or result=`myfunc`
 echo $result
 ```
 
-## [Remove File Extension](https://stackoverflow.com/a/12152669/1061279)
+### [Remove File Extension](https://stackoverflow.com/a/12152669/1061279)
 
 ```shell
 $ name=$(echo "$filename" | cut -f 1 -d '.')
@@ -290,13 +290,13 @@ $ name=$(echo "$filename" | cut -f 1 -d '.')
 $ echo "${filename%%.*}"
 ```
 
-## [Full File Path](https://stackoverflow.com/a/5265775/1061279)
+### [Full File Path](https://stackoverflow.com/a/5265775/1061279)
 
 ```shell
 $ readlink -f file.txt
 ```
 
-## [Sort Semver Using Sort](https://stackoverflow.com/a/63027058/1061279)
+### [Sort Semver Using Sort](https://stackoverflow.com/a/63027058/1061279)
 
 ```shell
 $ printf "1.0\n2.0\n2.12\n2.10\n1.2\n1.10" | sort -t "." -k1,1n -k2,2n -k3,3n
@@ -306,6 +306,21 @@ $ printf "1.0\n2.0\n2.12\n2.10\n1.2\n1.10" | sort -t "." -k1,1n -k2,2n -k3,3n
 2.0
 2.10
 2.12
+```
+
+### ID (Debian, Ubuntu)
+
+```shell
+echo $(. /etc/os-release && echo $ID)
+```
+
+### Arch
+
+Subs `aarch64` with `arm64`, `x86_64` with `amd64`, and `armv7l` and `armv6l` with `arm`
+
+```shell
+ARCH=$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')
+echo $ARCH
 ```
 
 ## References
