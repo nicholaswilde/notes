@@ -122,10 +122,16 @@ git reset --hard HEAD^
 git reset --hard HEAD~2
 ```
 
-## Delete Github Tag
+### Delete Github Tag
 
 ```shell
 git push --delete origin <tag name>
+```
+
+### Unstage file that has been added but not commited
+
+```shell
+git restore --staged <file name>
 ```
 
 ## References
