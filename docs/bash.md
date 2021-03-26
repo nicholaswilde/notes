@@ -346,6 +346,13 @@ ARCH=$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/
 echo $ARCH
 ```
 
+Subs `aarch64` with `arm64`, `x86_64` with `amd64`, and `armv7l` and `armv6l` with `armhf`
+
+```shell
+ARCH=$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2hf/' -e 's/aarch64$/arm64/')
+echo $ARCH
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
