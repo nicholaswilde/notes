@@ -62,21 +62,21 @@ git commit --amend
 git log
 ```
 
-## URLs
+### URLs
 
 * Commit: https://github.com/python/cpython/archive/31af650.tar.gz
 * Latest: https://github.com/USER/PROJECT/releases/latest/download/package.zip
 * Release: https://github.com/$(IMAGE_NAME)/$(IMAGE_NAME)/releases/download/v${VERSION}/Leantime-v${VERSION}.tar.gz
 * Release Source: https://github.com/nicholaswilde/helm-charts/archive/wikijs-0.1.6.tar.gz
 
-## [gh](https://github.com/cli/cli)
+### [gh](https://github.com/cli/cli)
 
 ```shell
 brew install gh
 gh auth login
 ```
 
-## No Message
+### No Message
 
 ```shell
 git commit --allow-empty-message -a -m ""
