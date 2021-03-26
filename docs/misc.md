@@ -48,6 +48,12 @@ $ qpdf --empty --pages *.pdf -- out.pdf
 apt -qq list <package name>
 ```
 
+## Disk Free Space
+
+```shell
+df -h
+```
+
 ## References
 
 * https://www.computerhope.com/unix/shred.htm#examples
