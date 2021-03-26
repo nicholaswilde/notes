@@ -122,6 +122,12 @@ git reset --hard HEAD^
 git reset --hard HEAD~2
 ```
 
+## Delete Github Tag
+
+```shell
+git push --delete origin <tag name>
+```
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
