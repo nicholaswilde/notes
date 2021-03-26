@@ -7,7 +7,7 @@ tasks:
     cmds:
       - >-
         docker run --rm -it -v ${PWD}:/docs --platform linux/amd64
-        squidfunk/mkdocs-material build -f ./mkdocs.yaml
+        squidfunk/mkdocs-material build -f ./mkdocs.yml
 
   serve:
     desc: >-
@@ -17,7 +17,7 @@ tasks:
       - >-
         docker run --rm -it -p {{ .PORT }}:{{ .PORT}} -v ${PWD}:/docs
         --platform linux/amd64 squidfunk/mkdocs-material serve
-        --dev-addr 0.0.0.0:{{ .PORT }} -f ./mkdocs.yaml
+        --dev-addr 0.0.0.0:{{ .PORT }} -f ./mkdocs.yml
     deps:
       - build
     vars:
