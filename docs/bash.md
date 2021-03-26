@@ -113,6 +113,15 @@ Remove last character
 VAR="${VAR::-1}"
 ```
 
+Get domain without the `.com`
+
+`http://user:pw@example.com:80/some/path/url?data&and#hash` -> `example`
+
+```shell
+# https://unix.stackexchange.com/a/428990/93726
+echo "http://user:pw@example.com:80/some/path/url?data&and#hash" | sed -e "s/[^/]*\/\/\([^@]*@\)\?\([^:/]*\).*/\2/" | sed "s/^www\.//" | cut -f 1 -d '.'
+```
+
 ## Checksums
 
 Get checksum of remote file
