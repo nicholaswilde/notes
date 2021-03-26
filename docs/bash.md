@@ -33,7 +33,35 @@ $ sudo find / -name file.txt
 Create a new blank file
 
 ```shell
-$ touch file.txt
+touch file.txt
+```
+
+Get file size in bytes
+
+```shell
+wc -c file.txt
+```
+
+Get the size in bytes of a compressed file
+
+```shell
+gzip -c file.txt | wc -c
+bzip2 -c file.txt | wc -c
+tar -cf - file.txt | wc -c
+```
+
+### [Remove File Extension](https://stackoverflow.com/a/12152669/1061279)
+
+```shell
+$ name=$(echo "$filename" | cut -f 1 -d '.')
+# or
+$ echo "${filename%%.*}"
+```
+
+### [Full File Path](https://stackoverflow.com/a/5265775/1061279)
+
+```shell
+$ readlink -f file.txt
 ```
 
 ## Checks
@@ -289,20 +317,6 @@ function myfunc(){
 
 result=$(myfunc)   # or result=`myfunc`
 echo $result
-```
-
-### [Remove File Extension](https://stackoverflow.com/a/12152669/1061279)
-
-```shell
-$ name=$(echo "$filename" | cut -f 1 -d '.')
-# or
-$ echo "${filename%%.*}"
-```
-
-### [Full File Path](https://stackoverflow.com/a/5265775/1061279)
-
-```shell
-$ readlink -f file.txt
 ```
 
 ### [Sort Semver Using Sort](https://stackoverflow.com/a/63027058/1061279)
