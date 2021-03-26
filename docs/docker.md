@@ -1,31 +1,25 @@
 # Docker
 
-## Installation Ubuntu arm64
+## Installation
 
 ```shell
 (
-  sudo apt-get update
-  sudo apt install -y apt-transport-https ca-certificates curl gnupg lsb-release
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-  echo "deb [arch=arm64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-  sudo apt update
-  sudo apt install -y docker-ce docker-ce-cli containerd.io
+  set -x; sudo apt-get update &&
+  sudo apt install -y apt-transport-https ca-certificates curl gnupg lsb-release &&
+  DIST=$(lsb_release -is | tr '[:upper:]' '[:lower:]') &&
+  ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')" &&
+  curl -fsSL "https://download.docker.com/linux/${DIST}/gpg" | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg &&
+  echo "deb [arch=${ARCH} signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/${DIST} $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null &&
+  sudo apt update &&
+  sudo apt install -y docker-ce docker-ce-cli containerd.io &&
   sudo usermod -aG docker $(whoami)
 )
 ```
 
-## Installation RPiOS/Debian arm64
+## Test that sudo is not needed
 
 ```shell
-(
-  sudo apt-get update
-  sudo apt install -y apt-transport-https ca-certificates curl gnupg lsb-release
-  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-  echo "deb [arch=arm64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-  sudo apt update
-  sudo apt install -y docker-ce docker-ce-cli containerd.io
-  sudo usermod -aG docker $(whoami)
-)
+docker run --rm hello-world
 ```
 
 ## [qemu-user-static](https://github.com/multiarch/qemu-user-static)
