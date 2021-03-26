@@ -54,6 +54,12 @@ apt -qq list <package name>
 df -h
 ```
 
+## List Hardware
+
+```shell
+sudo lshw -short
+```
+
 ## References
 
 * https://www.computerhope.com/unix/shred.htm#examples
