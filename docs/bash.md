@@ -15,19 +15,19 @@ readonly SCRIPT_NAME=$(basename "${0}")
 Delete all files matching a pattern in sub folders
 
 ```bash
-$ find . -name "*.lock" -type f -delete
+find . -name "*.lock" -type f -delete
 ```
 
 Clear an already existing file
 
 ```shell
-$ >|file.txt
+>|file.txt
 ```
 
 Search root for the name
 
 ```shell
-$ sudo find / -name file.txt
+sudo find / -name file.txt
 ```
 
 Create a new blank file
@@ -53,15 +53,15 @@ tar -cf - file.txt | wc -c
 ### [Remove File Extension](https://stackoverflow.com/a/12152669/1061279)
 
 ```shell
-$ name=$(echo "$filename" | cut -f 1 -d '.')
+name=$(echo "$filename" | cut -f 1 -d '.')
 # or
-$ echo "${filename%%.*}"
+echo "${filename%%.*}"
 ```
 
 ### [Full File Path](https://stackoverflow.com/a/5265775/1061279)
 
 ```shell
-$ readlink -f file.txt
+readlink -f file.txt
 ```
 
 ## Checks
@@ -269,7 +269,7 @@ testvercomp ${GIT_VER} ${MIN_VER} '>'
 
 ### Generate Random String
 ```shell
-$ cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1
+cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1
 ```
 
 ### [Function Library](https://bash.cyberciti.biz/guide/Shell_functions_library)
@@ -322,7 +322,7 @@ echo $result
 ### [Sort Semver Using Sort](https://stackoverflow.com/a/63027058/1061279)
 
 ```shell
-$ printf "1.0\n2.0\n2.12\n2.10\n1.2\n1.10" | sort -t "." -k1,1n -k2,2n -k3,3n
+printf "1.0\n2.0\n2.12\n2.10\n1.2\n1.10" | sort -t "." -k1,1n -k2,2n -k3,3n
 1.0
 1.2
 1.10
@@ -353,8 +353,43 @@ ARCH=$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2hf/' -e '
 echo $ARCH
 ```
 
+### [Check if system needs to be restarted][2]
+
+```shell
+sudo needrestart
+```
+
+We use the systemctl command as follows to restart services one-by-one:
+
+```bash
+sudo systemctl restart nginx
+sudo systemctl restart firewalld
+```
+
+We can use bash for loop as follows:
+
+```bash
+for s in systemd-udevd  firewalld  polkit  sshd nginx; do
+  sudo systemctl restart "$s"
+done
+```
+
+How to restart systemd with PID # 1 without rebooting Linux box
+
+```shell
+sudo systemctl daemon-reexec
+```
+
+And verify it again:
+
+```shell
+sudo lsof | grep 'DEL.*lib' | cut -f 1 -d ' ' | sort -u
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
 * [pure bash bible](https://github.com/dylanaraps/pure-bash-bible)
 * [bash-utility](https://github.com/labbots/bash-utility)
+
+[2]: https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/
