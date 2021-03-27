@@ -5,6 +5,8 @@
 
 My notes on various things
 
+The majority of my notes are for Debian based distros.
+
 ## :book:&nbsp; Documentation
 
 Documentation can be found [here](https://nicholaswilde.github.io/notes/).
