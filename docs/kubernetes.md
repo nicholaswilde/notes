@@ -45,7 +45,7 @@ $ kubectl api-resources
 ## [knsk](https://github.com/thyarles/knsk)
 
 ```shell
-$ wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | bash 
+$ wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | bash
 ```
 
 ## Config
@@ -53,6 +53,20 @@ $ wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | 
 ```shell
 WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /home/nicholas/.kube/config-turing-pi
 $ chmod 600 /home/nicholas/.kube/config-turing-pi
+```
+
+## [Change the Reclaim Policy of a PersistentVolume][pv]
+
+List the PersistentVolumes in your cluster:
+
+```shell
+kubectl get pv
+```
+
+Choose one of your PersistentVolumes and change its reclaim policy:
+
+```shell
+kubectl patch pv <your-pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
 ```
 
 ## [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
@@ -66,3 +80,5 @@ $ chmod 600 /home/nicholas/.kube/config-turing-pi
 * [taskfile](https://taskfile.dev/#/)
 * [helm-docs](https://github.com/norwoodj/helm-docs)
 * [OpenEBS](https://openebs.io/)
+
+[pv]: https://kubernetes.io/docs/tasks/administer-cluster/change-pv-reclaim-policy/
