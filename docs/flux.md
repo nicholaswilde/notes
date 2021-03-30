@@ -48,22 +48,26 @@ storageClass:
   name: managed-nfs-storage
 ```
 
+### Source
+
 ```shell
-flux create source helm managed-nfs-storage \
+flux create source helm repo-name-charts \
     --url https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/ \
-    --export | tee managed-nfs-storage.yaml
+    --export | tee repo-name-charts.yaml
 ```
+
+### HelmRelease
 
 ```shell
 flux create helmrelease \
-    managed-nfs-storage \
-    --source HelmRepository/managed-nfs-storage \
+    chart-name \
+    --source HelmRepository/repo-name-charts \
     --values values.yaml \
-    --chart nfs-subdir-external-provisioner \
-    --target-namespace managed-nfs-storage \
-    --interval 30s \
+    --chart chart-name \
+    --chart-version chart-version \
+    --target-namespace namespace-name \
     --export \
-    | tee -a managed-nfs-storage.yaml
+    | tee helm-release.yaml
 ```
 
 ## References
