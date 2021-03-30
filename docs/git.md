@@ -107,7 +107,7 @@ git branch -m <new branch name>
 
 ```shell
 git fetch
-git restore -s origin/master -- path/to/file
+git restore -s origin/main -- path/to/file
 ```
 
 ### Reset last commit
