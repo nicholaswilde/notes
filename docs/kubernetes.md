@@ -69,6 +69,20 @@ Choose one of your PersistentVolumes and change its reclaim policy:
 kubectl patch pv <your-pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
 ```
 
+Apply ROLE label to worker nodes [(#379)].
+
+```shell
+kubectl label node worker-02 node-role.kubernetes.io/worker=worker
+NAME          STATUS   ROLES    AGE    VERSION
+turing-main   Ready    master   106m   v1.19.9+k3s1
+worker-07     Ready    worker   105m   v1.19.9+k3s1
+worker-06     Ready    worker   105m   v1.19.9+k3s1
+worker-05     Ready    worker   105m   v1.19.9+k3s1
+worker-04     Ready    worker   105m   v1.19.9+k3s1
+worker-03     Ready    worker   105m   v1.19.9+k3s1
+worker-02     Ready    worker   105m   v1.19.9+k3s1
+```
+
 ## [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 ## Resources
@@ -82,3 +96,4 @@ kubectl patch pv <your-pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Re
 * [OpenEBS](https://openebs.io/)
 
 [pv]: https://kubernetes.io/docs/tasks/administer-cluster/change-pv-reclaim-policy/
+[(#379)]: https://github.com/k3s-io/k3s/issues/379
