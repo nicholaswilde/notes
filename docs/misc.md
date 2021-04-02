@@ -60,6 +60,18 @@ df -h
 sudo lshw -short
 ```
 
+## UID
+
+```shell
+id -u $(whoami)
+```
+
+## GID
+
+```shell
+id -g $(whoami)
+```
+
 ## References
 
 * https://www.computerhope.com/unix/shred.htm#examples
