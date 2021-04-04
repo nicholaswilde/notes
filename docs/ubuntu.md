@@ -5,3 +5,9 @@
 ```shell
 sudo hostnamectl set-hostname <hostname>
 ```
+
+## Perform a Distrubution Upgrade
+
+```shell
+sudo do-release-upgrade -d
+```
