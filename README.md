@@ -9,7 +9,7 @@ The majority of my notes are for Debian based distros.
 
 ## :book:&nbsp; Documentation
 
-Documentation can be found [here](https://nicholaswilde.github.io/notes/).
+Documentation can be found [here](https://nicholaswilde.io/notes/).
 
 Also, take a look at my [dotfiles repo](https://github.com/nicholaswilde/dotfiles).
 
