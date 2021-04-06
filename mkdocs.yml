@@ -2,7 +2,7 @@
 site_name: Notes
 site_description: My notes on various things
 site_author: Nicholas Wilde
-site_url: https://nicholaswilde.github.io/notes
+site_url: https://nicholaswilde.io/notes
 copyright: Copyright &copy; 2021 Nicholas Wilde
 dev_addr: '0.0.0.0:8000'
 
