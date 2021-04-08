@@ -27,6 +27,7 @@ $ rbenv global 2.3.1
 - [https://downloads.raspberrypi.org/raspios_arm64/images/](https://downloads.raspberrypi.org/raspios_arm64/images/)
 
 ## Convert to server
+
 ```bash
 (
   sudo apt --purge remove -y "x11-*"
@@ -35,3 +36,32 @@ $ rbenv global 2.3.1
   sudo apt upgrade -y
 )
 ```
+
+## [Swap](https://nebl.io/neblio-university/enabling-increasing-raspberry-pi-swap/)
+
+Temporarily Stop Swap
+
+```shell
+sudo dphys-swapfile swapoff
+```
+
+Modify the size of the swap
+
+```shell
+sudo nano /etc/dphys-swapfile
+CONF_SWAPSIZE=1024
+```
+
+Initialize Swap File
+
+```shell
+sudo dphys-swapfile setup
+```
+
+Start Swap
+
+```shell
+sudo dphys-swapfile swapon
+```
+
+## References
