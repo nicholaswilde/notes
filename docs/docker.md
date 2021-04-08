@@ -123,6 +123,24 @@ Error: No such image: treeder/hello.rb:nada
 []
 ```
 
+## Insecure Registries
+
+```shell
+sudo nano /etc/docker/daemon.json
+```
+
+```json
+{
+  "insecure-registries" : ["registry.192.168.1.201.nip.io"]
+  "insecure-registries" : ["registry.192.168.1.202.nip.io"]
+  "insecure-registries" : ["registry.192.168.1.203.nip.io"]
+  "insecure-registries" : ["registry.192.168.1.204.nip.io"]
+  "insecure-registries" : ["registry.192.168.1.205.nip.io"]
+  "insecure-registries" : ["registry.192.168.1.206.nip.io"]
+  "insecure-registries" : ["registry.192.168.1.207.nip.io"]
+}
+```
+
 ## References
 
 * [docker-template wiki](https://github.com/nicholaswilde/docker-template/wiki/)
