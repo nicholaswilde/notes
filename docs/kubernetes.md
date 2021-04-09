@@ -85,6 +85,12 @@ worker-02     Ready    worker   105m   v1.19.9+k3s1
 
 ## [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
+## [Config Permissions](https://github.com/helm/helm/issues/9115)
+
+```shell
+chmod go-r ~/.kube/config
+```
+
 ## Resources
 
 * [keel](https://keel.sh/)
