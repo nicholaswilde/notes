@@ -54,6 +54,8 @@ extra:
 theme:
   name: material
   language: en
+  features:
+    - navigation.top
   palette:
     - scheme: default
       primary: indigo
