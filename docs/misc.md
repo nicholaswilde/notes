@@ -72,6 +72,8 @@ id -u $(whoami)
 id -g $(whoami)
 ```
 
+## [keepachangelog](https://keepachangelog.com/en/1.0.0/)
+
 ## References
 
 * https://www.computerhope.com/unix/shred.htm#examples
