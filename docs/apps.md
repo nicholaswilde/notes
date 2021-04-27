@@ -54,5 +54,5 @@ sudo chmod +x /usr/bin/semver
 ## [pre-commit](https://pre-commit.com/#install)
 
 ```shell
-pip install pre-commit
+brew install pre-commit
 ```
