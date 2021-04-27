@@ -25,3 +25,4 @@ jobs:
 ## Reference
 - [GFM](https://github.github.com/gfm/)
 - [Emojipedia](https://emojipedia.org/)
+- [Languages](https://github.com/github/linguist/blob/master/vendor/README.md)
