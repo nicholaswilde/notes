@@ -3,6 +3,10 @@
 ## Installation
 
 ```shell
+brew install go-task/tap/go-task
+```
+
+```shell
 # For Default Installion to ./bin with debug logging
 sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d
 
