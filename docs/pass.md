@@ -4,7 +4,14 @@
 
 ```shell
 # Ubuntu
-sudo apt-get install pass
+brew install pass
+```
+
+Remove gpg-agent error
+
+```shell
+sudo apt remove gpg-agent
+gpgconf --kill gpg-agent
 ```
 
 ## Usage
@@ -26,14 +33,6 @@ pass git push -u --all
 
 ```shell
 git clone git@github.com:nicholaswilde/pass.git ~/.password-store
-```
-
-## [pass-git-helper](https://github.com/languitar/pass-git-helper)
-
-```shell
-sudo apt install pass-git-helper
-git config --global credential.helper /usr/bin/pass-git-helper
-git config --global credential.useHttpPath true
 ```
 
 ## [pass-import](https://github.com/roddhjav/pass-import)
