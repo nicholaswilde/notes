@@ -31,16 +31,6 @@ snyk auth
 wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
 ```
 
-## [golang](https://golang.org/doc/install)
-
-```shell
-wget "https://dl.google.com/go/$(curl https://golang.org/VERSION?m=text).linux-amd64.tar.gz"
-sudo tar -C /usr/local -xzf "go$(curl https://golang.org/VERSION?m=text).linux-amd64.tar.gz"
-# ~/.bash_exports
-export PATH=$PATH:/usr/local/go/bin
-export GOROOT=/usr/local/go/
-```
-
 ## [Chromebook](https://chromium.googlesource.com/apps/libapps/+/hterm-1.80/nassh/doc/FAQ.md#How-do-I-copy-text-from-the-terminal)
 
 ```shell
