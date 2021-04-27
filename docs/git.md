@@ -134,6 +134,27 @@ git push --delete origin <tag name>
 git restore --staged <file name>
 ```
 
+## Get Latest Version
+
+Strips `v` and `release` prefixes
+
+```shell
+curl -sX GET "https://api.github.com/repos/Jackett/Jackett/releases/latest" | jq --raw-output '.tag_name'
+version="${version#*v}"
+version="${version#*release-}"
+```
+
+## Get Latest Commit
+
+Get's the first 7 characters of commit.
+
+```shell
+curl -sX GET https://api.github.com/repos/seejohnrun/haste-server/commits/master | jq --raw-output '. | .sha'
+version="${version#*v}"
+version="${version#*release-}"
+version="${version:0:7}"
+```
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
