@@ -31,6 +31,11 @@ snyk auth
 wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
 ```
 
+```shell
+echo "set tabsize 2" >> ~/.nanorc
+echo "set tabstospaces" >> ~/.nanorc
+```
+
 ## [Chromebook](https://chromium.googlesource.com/apps/libapps/+/hterm-1.80/nassh/doc/FAQ.md#How-do-I-copy-text-from-the-terminal)
 
 ```shell
