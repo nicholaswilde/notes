@@ -18,6 +18,7 @@ nav:
   - Apps: apps.md
   - Arch: arch.md
   - Bash: bash.md
+  - Bitwarden: bitwarden.md
   - Chezmoi: chezmoi.md
   - Deprecation: deprecation.md
   - Docker: docker.md
