@@ -48,11 +48,22 @@ $ kubectl api-resources
 $ wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | bash
 ```
 
-## Config
+## Usage
+
+### Switch Contexts (Multiple Clusters)
 
 ```shell
+kubectl config use-context CONTEXT_NAME
+```
+
+## Config
+
+```
 WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /home/nicholas/.kube/config-turing-pi
-$ chmod 600 /home/nicholas/.kube/config-turing-pi
+```
+
+```shell
+chmod 600 /home/nicholas/.kube/config-turing-pi
 ```
 
 ## [Change the Reclaim Policy of a PersistentVolume][pv]
