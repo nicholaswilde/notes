@@ -85,6 +85,20 @@ docker container stop $(docker container ls -aq)
 docker container rm $(docker container ls -aq)
 ```
 
+## To delete all containers including its volumes
+
+```shell
+docker rm -vf $(docker ps -a -q)
+```
+
+## To delete all the images,
+
+```shell
+docker rmi -f $(docker images -a -q)
+```
+
+Remember, you should remove all the containers before removing all the images from which those containers were created.
+
 ## Copy Multiple Files
 
 ```dockerfile
