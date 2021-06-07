@@ -94,6 +94,12 @@ worker-03     Ready    worker   105m   v1.19.9+k3s1
 worker-02     Ready    worker   105m   v1.19.9+k3s1
 ```
 
+## Get a shell to the running container
+
+```shell
+kubectl exec --stdin --tty pod/name -- /bin/bash
+```
+
 ## [Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 ## [Config Permissions](https://github.com/helm/helm/issues/9115)
