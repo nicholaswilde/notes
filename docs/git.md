@@ -8,7 +8,7 @@
 
 ```shell
 git config --global user.email "ncwilde43@gmail.com"
-git config --global user.name "Nicholas Wilde"
+git config --global user.name "nιcнolaѕ wιlde"
 git config credential.helper store
 git config --global init.defaultBranch main
 git config --global user.signingkey <gpg key fingerprint>
