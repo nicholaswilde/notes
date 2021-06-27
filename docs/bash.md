@@ -50,6 +50,13 @@ bzip2 -c file.txt | wc -c
 tar -cf - file.txt | wc -c
 ```
 
+### Validate JSON
+
+```shell
+cat foo.json | jq empty
+parse error: Expected separator between values at line 154, column 30
+```
+
 ### [Remove File Extension](https://stackoverflow.com/a/12152669/1061279)
 
 ```shell
