@@ -72,6 +72,14 @@ id -u $(whoami)
 id -g $(whoami)
 ```
 
+## [Screen][2]
+
+Detached the previous screen and allowed me to reattach.
+
+```shell
+screen -d -r
+```
+
 ## [keepachangelog](https://keepachangelog.com/en/1.0.0/)
 
 ## References
@@ -79,3 +87,4 @@ id -g $(whoami)
 * https://www.computerhope.com/unix/shred.htm#examples
 
 [1]: https://askubuntu.com/a/823630/344358
+[2]: https://askubuntu.com/a/855919
