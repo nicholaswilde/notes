@@ -79,6 +79,11 @@ Detached the previous screen and allowed me to reattach.
 ```shell
 screen -d -r
 ```
+## [Replace Entire Line in File][3]
+
+```shell
+sed -i "s|^type     =.*$|type     = mysql|g" config.ini
+```
 
 ## [keepachangelog](https://keepachangelog.com/en/1.0.0/)
 
@@ -88,3 +93,4 @@ screen -d -r
 
 [1]: https://askubuntu.com/a/823630/344358
 [2]: https://askubuntu.com/a/855919
+[3]: https://stackoverflow.com/a/11660023/1061279
