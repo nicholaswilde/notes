@@ -6,7 +6,7 @@
 sudo hostnamectl set-hostname <hostname>
 ```
 
-## Perform a Distrubution Upgrade
+## [Perform a Distrubution Upgrade](https://help.ubuntu.com/community/HirsuteUpgrades)
 
 ```shell
 sudo do-release-upgrade -d
