@@ -155,6 +155,15 @@ version="${version#*release-}"
 version="${version:0:7}"
 ```
 
+## [Ignore Modified Files](https://stackoverflow.com/a/761116)
+
+```shell
+# dir
+git update-index --assume-unchanged dir-im-removing/
+# or a specific file
+git update-index --assume-unchanged config/database.yml
+```
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
