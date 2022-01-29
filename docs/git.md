@@ -162,6 +162,10 @@ version="${version:0:7}"
 git update-index --assume-unchanged dir-im-removing/
 # or a specific file
 git update-index --assume-unchanged config/database.yml
+# To get undo/show dir's/files that are set to assume-unchanged run this:
+git update-index --no-assume-unchanged <file>
+# To get a list of dir's/files that are assume-unchanged run this:
+git ls-files -v|grep '^h'
 ```
 
 ## References
