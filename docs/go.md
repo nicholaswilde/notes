@@ -27,5 +27,5 @@ $ go clean -cache -modcache -i -r
 Get go version
 
 ```shell
-$ GO_VERSION=$(curl -sSL "https://golang.org/VERSION?m=text")
+$ GO_VERSION=$(curl -sSL "https://go.dev/VERSION?m=text")
 ```
