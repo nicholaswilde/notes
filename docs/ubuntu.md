@@ -11,3 +11,13 @@ sudo hostnamectl set-hostname <hostname>
 ```shell
 sudo do-release-upgrade -d
 ```
+
+## [Screen on WSL](https://superuser.com/a/1284329/352242)
+
+```shell
+mkdir ~/.screen && chmod 700 ~/.screen
+```
+
+```shell title="~/.bashrc"
+export SCREENDIR=$HOME/.screen
+```
