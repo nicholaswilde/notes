@@ -43,6 +43,7 @@ nav:
   - SSH: ssh.md
   - Task: task.md
   - Ubuntu: ubuntu.md
+  - Windows 11: w11.md
 
 extra:
   social:
