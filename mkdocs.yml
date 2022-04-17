@@ -66,6 +66,8 @@ extra:
 theme:
   name: material
   language: en
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.top
   palette:
