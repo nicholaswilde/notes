@@ -8,9 +8,8 @@
 
 ### Installation
 
-```
-# Ubuntu
-$ sudo snap install kubectl --classic
+```shell title="Ubuntu"
+brew install kubectl
 ```
 
 ### [krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/)
@@ -25,27 +24,26 @@ $ sudo snap install kubectl --classic
 )
 ```
 
-```shell
-# Update
-$ kubectl krew version
+```shell title="Update"
+kubectl krew version
 ```
 
 ### [ns](https://github.com/ahmetb/kubectx)
 
 ```shell
-$ kubectl krew install ns
+kubectl krew install ns
 ```
 
 ### Short Names List
 
 ```shell
-$ kubectl api-resources
+kubectl api-resources
 ```
 
 ## [knsk](https://github.com/thyarles/knsk)
 
 ```shell
-$ wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | bash
+wget -q https://raw.githubusercontent.com/thyarles/knsk/master/knsk.sh -O - | bash
 ```
 
 ## Usage
