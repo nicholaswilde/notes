@@ -75,3 +75,20 @@ sudo apt-get install -y powershell
 # Start PowerShell
 pwsh
 ```
+
+## mkdocs
+
+```
+(
+  wget https://bootstrap.pypa.io/get-pip.py
+  python get-pip.py
+  pip install mkdocs
+)
+```
+
+## mkdocs-material
+
+```
+pip install mkdocs-material
+pip install mkdocs-minify-plugin
+```
