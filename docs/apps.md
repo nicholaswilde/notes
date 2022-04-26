@@ -59,7 +59,7 @@ brew install pre-commit
 
 ## [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.2#installation-via-package-repository)
 
-```
+```shell
 # Update the list of packages
 sudo apt-get update
 # Install pre-requisite packages.
@@ -78,7 +78,7 @@ pwsh
 
 ## mkdocs
 
-```
+```shell
 (
   wget https://bootstrap.pypa.io/get-pip.py
   python get-pip.py
@@ -88,7 +88,6 @@ pwsh
 
 ## mkdocs-material
 
-```
-pip install mkdocs-material
-pip install mkdocs-minify-plugin
+```shell
+pip install mkdocs-material mkdocs-minify-plugin
 ```
