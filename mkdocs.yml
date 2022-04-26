@@ -3,13 +3,13 @@ site_name: Notes
 site_description: My notes on various things
 site_author: Nicholas Wilde
 site_url: https://nicholaswilde.io/notes
-copyright: Copyright &copy; 2021 Nicholas Wilde
+copyright: Copyright &copy; 2022 Nicholas Wilde
 dev_addr: '0.0.0.0:8000'
 
 # Repository
 repo_name: nicholaswilde/notes
 repo_url: https://github.com/nicholaswilde/notes
-edit_uri: ""
+edit_uri: "edit/main/docs/"
 
 # Page tree
 nav:
