@@ -57,7 +57,7 @@ sudo chmod +x /usr/bin/semver
 brew install pre-commit
 ```
 
-## [PowerShell][https://docs.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.2#installation-via-package-repository]
+## [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.2#installation-via-package-repository)
 
 ```
 # Update the list of packages
