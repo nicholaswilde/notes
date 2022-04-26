@@ -15,7 +15,7 @@ Also, take a look at my [dotfiles repo](https://github.com/nicholaswilde/dotfile
 
 ---
 
-## ​:balance_scales: License
+## ​:scales: License
 
 ​[​Apache License 2.0](../LICENSE)
 
