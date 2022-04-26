@@ -13,13 +13,9 @@ Also, take a look at my [dotfiles repo](https://github.com/nicholaswilde/dotfile
 
 - [hossainemruz's notes](https://hossainemruz.gitbook.io/notes/)
 
----
-
 ## ​:scales: License
 
 ​[​Apache License 2.0](../LICENSE)
-
----
 
 ## ​:pencil:​Author
 
