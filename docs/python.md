@@ -9,6 +9,13 @@ pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n
 ## Remap `python` to `python3`
 
 ```shell
+
 # https://askubuntu.com/a/1234598/344358
 sudo apt install python-is-python3
+```
+
+## Pip
+
+```bash
+sudo apt install python3-pip
 ```
