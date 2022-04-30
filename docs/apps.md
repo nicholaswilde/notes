@@ -12,6 +12,12 @@ sudo apt-get install unzip build-essential
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+```bash
+# should add this to dotfiles
+brew leaves > my_brew.txt
+xargs brew install < my_brew.txt
+```
+
 ## [gh](https://github.com/cli/cli)
 
 ```shell
