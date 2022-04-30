@@ -33,6 +33,7 @@ nav:
   - Kubernetes: kubernetes.md
   - Make: make.md
   - Markdown: markdown.md
+  - Micro: micro.md
   - Misc: misc.md
   - Multipass: multipass.md
   - NFS: nfs.md
