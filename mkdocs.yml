@@ -31,6 +31,7 @@ nav:
   - Images: images.md
   - Kind: kind.md
   - Kubernetes: kubernetes.md
+  - LastPass: lastpass.md
   - Make: make.md
   - Markdown: markdown.md
   - Micro: micro.md
