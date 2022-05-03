@@ -1,9 +1,11 @@
 # SSH
 
 ```shell
+sudo apt install ssh-import-id
 mkdir ~/.ssh
 curl https://github.com/nicholaswilde.keys -o ~/.ssh/id_rsa.pub
 chmod 644 ~/.ssh/id_rsa.pub
+lpass show ssh --attach=att-4322045537695550419-20689 -q > ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
 cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
 chmod 0700 ~/.ssh
