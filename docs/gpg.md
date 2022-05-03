@@ -79,3 +79,10 @@ gpg --export-secret-keys --armor my@email.com > /path/to/secret-key-backup.asc
 gpg --list-secret-keys --with-keygrip
 gpg --list-keys --with-keygrip
 ```
+
+## Get Key ID
+
+```shell
+key=$(gpg --list-keys | sed -n '/^\s/s/\s*//p') && echo "0x"${key:(-8)}
+# 0x08B7D7A3
+```
