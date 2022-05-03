@@ -24,6 +24,12 @@ xargs brew install < my_brew.txt
 brew install gh
 ```
 
+## [mc](https://github.com/minio/mc)
+
+```shell
+brew install minio/stable/mc
+```
+
 ## [Snyk](https://snyk.io/)
 
 ```shell
