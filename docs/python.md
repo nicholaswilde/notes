@@ -20,9 +20,12 @@ sudo apt install python-is-python3
 sudo apt install python3-pip
 ```
 
-## Install GitHub Tarball
+## [Install GitHub Tarball][1]
 
 ```
 pip install --upgrade https://github.com/<username>/<repo>/<tarball>/<branch>
 pip install --upgrade https://github.com/nicholaswilde/parse-ingredients/tarball/nlp-proof-of-concept
+pip install git+https://github.com/jkbr/httpie.git#egg=httpie
 ```
+
+[1]: https://stackoverflow.com/a/15268990/1061279
