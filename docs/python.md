@@ -28,4 +28,10 @@ pip install --upgrade https://github.com/nicholaswilde/parse-ingredients/tarball
 pip install git+https://github.com/jkbr/httpie.git#egg=httpie
 ```
 
+## Create Tarball of package in `./dist` folder
+
+```shell
+python setup.py sdist
+```
+
 [1]: https://stackoverflow.com/a/15268990/1061279
