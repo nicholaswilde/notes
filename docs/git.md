@@ -157,7 +157,7 @@ version="${version#*release-}"
 version="${version:0:7}"
 ```
 
-## [Ignore Modified Files](https://stackoverflow.com/a/761116)
+## [Ignore Modified Files][2]
 
 ```shell
 # dir
@@ -170,8 +170,19 @@ git update-index --no-assume-unchanged <file>
 git ls-files -v|grep '^h'
 ```
 
+## [Push Tags][1]
+
+```shell
+git tag
+git tag v0.4.0
+git push origin v0.4.0
+```
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
 * [GitHub Flavored Markdown](https://github.github.com/gfm/)
 - [On undoing, fixing, or removing commits in git](https://sethrobertson.github.io/GitFixUm/fixup.html)
+
+[1]: https://stackoverflow.com/a/5195913
+[2]: https://stackoverflow.com/a/761116
