@@ -40,6 +40,32 @@ git merge upstream/main
 git push origin main
 ```
 
+### [Edit Remote Branch](https://stackoverflow.com/a/1783426/1061279)
+
+In both cases, start by fetching from the remote repository to make sure you have all the latest changes downloaded.
+
+```shell
+git fetch origin branch-name
+```
+
+This will fetch all of the remote branches for you. You can see the branches available for checkout with:
+
+```shell
+git branch -v -a
+...
+remotes/origin/test
+```
+
+The branches that start with remotes/* can be thought of as read only copies of the remote branches. To work on a
+branch you need to create a local branch from it. This is done with the Git command switch (since Git 2.23) by
+giving it the name of the remote branch (minus the remote name):
+
+```shell
+git switch test
+```
+
+In this case Git is guessing (can be disabled with --no-guess) that you are trying to checkout and track the remote branch with the same name.
+
 ### [Different Path](https://git-scm.com/docs/git#Documentation/git.txt--Cltpathgt)
 
 ```shell
