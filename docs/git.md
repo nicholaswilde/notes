@@ -183,6 +183,8 @@ git push origin v0.4.0
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
 * [GitHub Flavored Markdown](https://github.github.com/gfm/)
 - [On undoing, fixing, or removing commits in git](https://sethrobertson.github.io/GitFixUm/fixup.html)
+- [Convential Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Amending a Commit Guide](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md)
 
 [1]: https://stackoverflow.com/a/5195913
 [2]: https://stackoverflow.com/a/761116
