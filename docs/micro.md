@@ -15,4 +15,8 @@ touch ~/.wakatime.cfg
 wakatime.apikey
 ```
 
+## References
+- https://github.com/zyedidia/micro/blob/master/runtime/help/options.md
+- https://github.com/zyedidia/micro/blob/master/runtime/help/commands.md
+
 [1]: https://github.com/wakatime/micro-wakatime
