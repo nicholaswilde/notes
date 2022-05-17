@@ -90,3 +90,6 @@ gpg --list-keys --with-keygrip
 key=$(gpg --list-keys | sed -n '/^\s/s/\s*//p') && echo "0x"${key:(-8)}
 # 0x08B7D7A3
 ```
+
+## References
+- <https://ruimarinho.gitbooks.io/yubikey-handbook/content/openpgp/troubleshooting/gpg-failed-to-sign-the-data.html>
