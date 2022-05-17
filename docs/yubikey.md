@@ -3,7 +3,7 @@
 ## [Installation][1]
 
 ```shell title="Ubuntu"
-sudo apt install pcscd
+sudo apt install pcscd scdaemon
 brew install ykman
 ```
 
