@@ -46,6 +46,7 @@ nav:
   - Task: task.md
   - Ubuntu: ubuntu.md
   - Windows 11: w11.md
+  - Yubikey: yubikey.md
 
 extra:
   social:
