@@ -15,6 +15,19 @@ Add Yubico Manager program location to `PATH`.
 
 `C:\Program Files\Yubico\YubiKey Manager`
 
+## Card Status
+
+```
+gpg --card-status
+```
+
+## Metadata
+
+```
+gpg --card-edit
+gpg/card> name
+```
+
 ## References
 
 - <https://ruimarinho.gitbooks.io/yubikey-handbook/content/>
