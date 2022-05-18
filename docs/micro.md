@@ -15,8 +15,24 @@ touch ~/.wakatime.cfg
 wakatime.apikey
 ```
 
+## [Set Filetype][2]
+
+```
+Ctrl + e
+set filetype yaml
+```
+
+```json title="~/.config/micro/settings.json"
+{
+    "/etc/default/grub": {
+        "filetype": "bash"
+    }
+}
+```
+
 ## References
-- https://github.com/zyedidia/micro/blob/master/runtime/help/options.md
-- https://github.com/zyedidia/micro/blob/master/runtime/help/commands.md
+- <https://github.com/zyedidia/micro/blob/master/runtime/help/options.md>
+- <https://github.com/zyedidia/micro/blob/master/runtime/help/commands.md>
 
 [1]: https://github.com/wakatime/micro-wakatime
+[2]: https://github.com/zyedidia/micro/issues/2080
