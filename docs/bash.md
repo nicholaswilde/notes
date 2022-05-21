@@ -393,6 +393,18 @@ And verify it again:
 sudo lsof | grep 'DEL.*lib' | cut -f 1 -d ' ' | sort -u
 ```
 
+## [Check Array for Value][3]
+
+```shell
+if [[ " ${array[*]} " =~ " ${value} " ]]; then
+    # whatever you want to do when array contains value
+fi
+
+if [[ ! " ${array[*]} " =~ " ${value} " ]]; then
+    # whatever you want to do when array doesn't contain value
+fi
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -400,3 +412,4 @@ sudo lsof | grep 'DEL.*lib' | cut -f 1 -d ' ' | sort -u
 * [bash-utility](https://github.com/labbots/bash-utility)
 
 [2]: https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/
+[3]: https://stackoverflow.com/a/15394738/1061279
