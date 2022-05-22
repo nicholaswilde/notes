@@ -18,8 +18,6 @@ nav:
   - Apps: apps.md
   - Arch: arch.md
   - Bash: bash.md
-  - Bitwarden: bitwarden.md
-  - Chezmoi: chezmoi.md
   - Deprecation: deprecation.md
   - Docker: docker.md
   - Flux: flux.md
@@ -39,7 +37,6 @@ nav:
   - Multipass: multipass.md
   - NFS: nfs.md
   - NPM: npm.md
-  - pass: pass.md
   - Python: python.md
   - RPi: rpi.md
   - SSH: ssh.md
@@ -47,6 +44,10 @@ nav:
   - Ubuntu: ubuntu.md
   - Windows 11: w11.md
   - Yubikey: yubikey.md
+  - Archive:
+      - Bitwarden: bitwarden.md
+      - Chezmoi: chezmoi.md
+      - pass: pass.md
 
 extra:
   social:
