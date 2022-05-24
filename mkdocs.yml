@@ -39,6 +39,7 @@ nav:
   - NPM: npm.md
   - Python: python.md
   - RPi: rpi.md
+  - Signal: signal.md
   - SSH: ssh.md
   - Task: task.md
   - Ubuntu: ubuntu.md
