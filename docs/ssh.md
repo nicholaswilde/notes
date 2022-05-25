@@ -21,3 +21,18 @@ RSAAuthentication yes
 PubkeyAuthentication yes
 ...
 ```
+
+## [Verify that Keys Match][1]
+
+Use the following command, to test both files. The output of the command will show the 'signature' of both files. When
+the 'signature' matches, they show the public key and private key are both valid and match.
+
+```shell
+# ssh-keygen -l -f ~/.ssh/id_rsa
+2048 SHA256:REDACTED cptest@domain.tld (RSA)
+
+# ssh-keygen -l -f ~/.ssh/id_rsa.pub
+2048 SHA256:REDACTED cptest@domain.tld (RSA)
+```
+
+[1]: https://support.cpanel.net/hc/en-us/articles/360056952833-How-to-verify-if-a-public-and-private-RSA-SSH-key-match-
