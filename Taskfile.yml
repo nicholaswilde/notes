@@ -23,10 +23,27 @@ tasks:
     vars:
       PORT: 8000
 
+  linkcheck:
+    desc: Run markdown-link-check
+    cmds:
+      - ./scripts/linkcheck.sh
+    ignore_error: true
+
   lint:
     desc: Lint the project
     deps:
       - yamllint
+      - markdownlint
+      - linkcheck
+    ignore_error: true
+
+  markdownlint:
+    desc: Run markdownlint-cli
+    cmds:
+      - >-
+        docker run --rm -it -v ${PWD}:/markdown:ro
+        06kellyjac/markdownlint-cli .
+    ignore_error: true
 
   yamllint:
     desc: Run yamllint
@@ -34,6 +51,7 @@ tasks:
       - >-
         docker run --rm -it -v ${PWD}:${PWD} -w ${PWD}
         programmerassistant/yamllint yamllint .
+    ignore_error: true
 
   default:
     cmds:
