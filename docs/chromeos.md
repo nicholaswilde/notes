@@ -2,7 +2,7 @@
 
 ## [Pin Secure Shell Profile][1]
 
-When running a profile and directly pinning the window to the taskbar, the Secure Shell opitions window will show instead of the profile window.
+When running a profile and directly pinning the window to the taskbar, the Secure Shell options window will show instead of the profile window.
 
 To pin the actual profile window:
 
