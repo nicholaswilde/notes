@@ -9,7 +9,7 @@ The majority of my notes are for Debian based distros.
 
 Also, take a look at my [dotfiles repo][5].
 
-## :framed_picture: Background
+## :frame_with_picture: Background
 
 When setting up a project or system, such as a git repoistory or GNU/Linux or Windows computer, I need to reference solutions to problems that I
 have solved in the past and so this repository is my notes to myself. All I need to do is go to this site and search for something that I have
