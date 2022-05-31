@@ -91,5 +91,13 @@ key=$(gpg --list-keys | sed -n '/^\s/s/\s*//p') && echo "0x"${key:(-8)}
 # 0x08B7D7A3
 ```
 
+## [Restart Agent on Windows][1]
+
+```PowerShell
+gpg-connect-agent reloadagent /bye
+```
+
 ## References
 - <https://ruimarinho.gitbooks.io/yubikey-handbook/content/openpgp/troubleshooting/gpg-failed-to-sign-the-data.html>
+
+[1]: https://superuser.com/a/1663941/352242
