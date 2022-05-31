@@ -101,6 +101,6 @@ PubkeyAuthentication yes
 
 ## Reference
 
-* [https://archlinuxarm.org/platforms/armv6/raspberry-pi](https://archlinuxarm.org/platforms/armv6/raspberry-pi)
-* [http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html](http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html)
-* [https://wiki.archlinux.org/index.php/Fstab](https://wiki.archlinux.org/index.php/Fstab)
+- <https://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2>
+- <http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html>
+- <https://wiki.archlinux.org/index.php/Fstab>
