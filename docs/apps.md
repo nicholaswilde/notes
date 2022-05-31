@@ -3,7 +3,7 @@
 ## Ubuntu
 
 ```shell
-sudo apt-get install unzip build-essential
+sudo apt install unzip build-essential
 ```
 
 ## [brew](https://brew.sh/)
