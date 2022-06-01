@@ -1,4 +1,4 @@
-# markdown
+# Markdown
 
 ## Highlighting Diff Blockcode
 
@@ -22,7 +22,8 @@ jobs:
         run: sleep 30
 ```
 
-## Reference
+## References
+
 - [GFM](https://github.github.com/gfm/)
 - [Emojipedia](https://emojipedia.org/)
 - [Languages](https://github.com/github/linguist/blob/master/vendor/README.md)
