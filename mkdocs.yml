@@ -41,6 +41,7 @@ nav:
   - Python: python.md
   - RPi: rpi.md
   - Signal: signal.md
+  - Specifications: specifications.md
   - SSH: ssh.md
   - Task: task.md
   - Ubuntu: ubuntu.md
