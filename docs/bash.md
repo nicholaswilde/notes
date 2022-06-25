@@ -405,6 +405,18 @@ if [[ ! " ${array[*]} " =~ " ${value} " ]]; then
 fi
 ```
 
+## [Search for string in files][4]
+
+```bash
+grep -R <stringToSearch> <dirName>
+```
+
+If you want to get number of occurrences use wc -l as pipe
+
+```bash
+grep -R "text" . | wc -l
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -413,3 +425,4 @@ fi
 
 [2]: https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/
 [3]: https://stackoverflow.com/a/15394738/1061279
+[4]: https://stackoverflow.com/a/45802423/1061279
