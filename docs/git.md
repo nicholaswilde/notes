@@ -204,6 +204,20 @@ git tag v0.4.0
 git push origin v0.4.0
 ```
 
+## [Compare Two Branches][3]
+
+```shell
+git diff branch1..branch2
+```
+
+![double-dot](https://devconnected.com/wp-content/uploads/2019/11/git-diff-double-dot.png)
+
+```shell
+git diff branch1...branch2
+```
+
+![triple-dot](https://devconnected.com/wp-content/uploads/2019/11/triple-dot.png)
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
@@ -214,3 +228,4 @@ git push origin v0.4.0
 
 [1]: https://stackoverflow.com/a/5195913
 [2]: https://stackoverflow.com/a/761116
+[3]: https://devconnected.com/how-to-compare-two-git-branches/
