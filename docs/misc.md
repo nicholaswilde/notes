@@ -87,6 +87,16 @@ sed -i "s|^type     =.*$|type     = mysql|g" config.ini
 
 ## [keepachangelog](https://keepachangelog.com/en/1.0.0/)
 
+## Quit Screen Sessions
+
+```shell title="List screen ids"
+screen -list
+```
+
+```shell title="Quit the session"
+screen -XS <session-id> quit
+```
+
 ## References
 
 * https://www.computerhope.com/unix/shred.htm#examples
