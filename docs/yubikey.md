@@ -17,13 +17,13 @@ Add Yubico Manager program location to `PATH`.
 
 ## Card Status
 
-```
+```shell
 gpg --card-status
 ```
 
 ## Metadata
 
-```
+```shell
 gpg --card-edit
 gpg/card> name
 ```
