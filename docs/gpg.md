@@ -9,7 +9,7 @@ gpg --full-generate-key
 ## Import
 
 ```shell
-lpass show gpg --attach=att-8017296795546256342-47669 -q | gpg --import
+lpass show gpg --attach=8017296795546256342-55097 -q | gpg --import
 ```
 
 ```shell
