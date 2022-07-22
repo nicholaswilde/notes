@@ -10,3 +10,4 @@ References to various specifications used on projects.
 - [Developer Certificate of Origin](https://developercertificate.org/)
 - [Gofmt Principles](https://go.dev/src/cmd/gofmt/doc.go)
 - [Boy-scout Rule](https://www.stepsize.com/blog/how-to-be-an-effective-boy-girl-scout-engineer)
+- [asciinema](https://asciinema.org/)
