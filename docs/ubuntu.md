@@ -32,4 +32,33 @@ export SCREENDIR=$HOME/.screen
 )
 ```
 
+## [An upgrade from 'hirsute' to 'jammy' is not supported with this tool][2]
+
+```shell
+Reading cache
+
+Checking package manager
+
+Can not upgrade 
+
+An upgrade from 'hirsute' to 'jammy' is not supported with this tool.
+```
+
+```bash title=script.sh
+#!/bin/bash
+echo "Updating"
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+echo "Bypass check"
+sudo sed -i 's/continue/pass/g' /usr/lib/python3/dist-packages/UpdateManager/Core/MetaRelease.py
+echo "Upgrade distro"
+sudo do-release-upgrade
+```
+
+```shell
+chmod +x script.sh && ./script.sh
+```
+
 [1]: https://fedingo.com/how-to-remove-snap-in-ubuntu/
+[2]: https://stackoverflow.com/questions/73034540
