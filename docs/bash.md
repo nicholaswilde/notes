@@ -417,6 +417,19 @@ If you want to get number of occurrences use wc -l as pipe
 grep -R "text" . | wc -l
 ```
 
+## [Print Colors & Bold][6]
+```bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+blue=$(tput setaf 4)
+```
+
+```bash
+echo "this is ${bold}bold${normal} but this isn't"
+```
+
+See [here][5] for colors.
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -426,3 +439,5 @@ grep -R "text" . | wc -l
 [2]: https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/
 [3]: https://stackoverflow.com/a/15394738/1061279
 [4]: https://stackoverflow.com/a/45802423/1061279
+[5]: https://linuxcommand.org/lc3_adv_tput.php
+[6]: https://stackoverflow.com/a/2924755/1061279
