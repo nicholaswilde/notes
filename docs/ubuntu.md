@@ -60,5 +60,25 @@ sudo do-release-upgrade
 chmod +x script.sh && ./script.sh
 ```
 
+## [Ubuntu – apt-get update fails “The repository no longer has a Release file”][3]
+
+```shell
+sudo apt update
+Err:6 http://archive.ubuntu.com/ubuntu eoan Release
+404 Not Found [IP: 91.189.88.142 80]
+```
+
+```shell
+# backup your sources file
+cp /etc/apt/sources.list /etc/apt/sources.list.bak 
+
+# replace the links with the archive address
+sudo sed -i -re 's/([a-z]{2}.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+
+# run update again
+sudo apt-get update && sudo apt-get dist-upgrade
+```
+
 [1]: https://fedingo.com/how-to-remove-snap-in-ubuntu/
 [2]: https://stackoverflow.com/questions/73034540
+[3]: https://veducate.co.uk/ubuntu-apt-update-fails/
