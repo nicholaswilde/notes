@@ -455,6 +455,7 @@ popd
 * [bash-utility](https://github.com/labbots/bash-utility)
 * [Cheat Sheet](https://cheat.sh/)
 * [commandlinefu](https://www.commandlinefu.com/)
+* [Password Special Characters](https://owasp.org/www-community/password-special-characters)
 
 [2]: https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/
 [3]: https://stackoverflow.com/a/15394738/1061279
