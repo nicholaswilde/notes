@@ -430,6 +430,24 @@ echo "this is ${bold}bold${normal} but this isn't"
 
 See [here][5] for colors.
 
+## [Bypass Alias][7]
+
+A simple directive which disables all aliases and functions for the command immediately following it. Shortcut for the bash built-in 'command' - "command linefoo".
+
+```shell
+\foo
+```
+
+## [Push your present working directory to a stack that you can pop later][8]
+
+```shell title="Add directories to stack"
+pushd /tmp
+```
+
+```shell titl="Remove directory from stack"
+popd
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -443,3 +461,5 @@ See [here][5] for colors.
 [4]: https://stackoverflow.com/a/45802423/1061279
 [5]: https://linuxcommand.org/lc3_adv_tput.php
 [6]: https://stackoverflow.com/a/2924755/1061279
+[7]: https://www.commandlinefu.com/commands/matching/bypass-alias/YnlwYXNzIGFsaWFz/
+[8]: https://www.commandlinefu.com/commands/view/799/push-your-present-working-directory-to-a-stack-that-you-can-pop-later
