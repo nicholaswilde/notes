@@ -435,6 +435,8 @@ See [here][5] for colors.
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
 * [pure bash bible](https://github.com/dylanaraps/pure-bash-bible)
 * [bash-utility](https://github.com/labbots/bash-utility)
+* [Cheat Sheet](https://cheat.sh/)
+* [commandlinefu](https://www.commandlinefu.com/)
 
 [2]: https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/
 [3]: https://stackoverflow.com/a/15394738/1061279
