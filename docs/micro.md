@@ -11,6 +11,8 @@ brew install micro
 ```shell
 micro -plugin install wakatime
 touch ~/.wakatime.cfg
+# copy api_key to clipboard
+lpass show 1247588986144505823 --password | copy
 # from inside micro press ctrl+e
 wakatime.apikey
 ```
