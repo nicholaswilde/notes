@@ -448,6 +448,21 @@ pushd /tmp
 popd
 ```
 
+## Run script in subshell
+
+```shell
+sudo -u "${TARGET_USER}" bash <<"EOF"
+    cd "$HOME"
+    mkdir -p "${HOME}/git/nicholaswilde/"
+    git clone https://github.com/nicholaswilde/dotfiles.git "${HOME}/git/nicholaswilde/dotfiles"
+    cd "${HOME}/git/nicholaswilde/dotfiles"
+    # set the correct origin
+    git remote set-url origin git@github.com:nicholaswilde/dotfiles.git
+    # installs all the things
+    make
+EOF
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
