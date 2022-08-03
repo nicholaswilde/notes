@@ -463,6 +463,12 @@ sudo -u "${TARGET_USER}" bash <<"EOF"
 EOF
 ```
 
+## [Get IPv4][9]
+
+```bash
+grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -479,3 +485,4 @@ EOF
 [6]: https://stackoverflow.com/a/2924755/1061279
 [7]: https://www.commandlinefu.com/commands/matching/bypass-alias/YnlwYXNzIGFsaWFz/
 [8]: https://www.commandlinefu.com/commands/view/799/push-your-present-working-directory-to-a-stack-that-you-can-pop-later
+[9]: https://stackoverflow.com/a/427989/1061279
