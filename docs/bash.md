@@ -469,6 +469,26 @@ EOF
 grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
 ```
 
+## Show Environmental Variables
+
+```shell
+printenv
+printenv | less
+printenv | more
+```
+
+## Show Shell Functions
+
+```shell
+declare -F
+```
+
+## Show Shell Aliases
+
+```shell
+alias
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
