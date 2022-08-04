@@ -480,7 +480,7 @@ printenv | more
 ## Show Shell Functions
 
 ```shell
-declare -F
+declare -F | awk '{print $3}' | grep -v '^_'
 ```
 
 ## Show Shell Aliases
