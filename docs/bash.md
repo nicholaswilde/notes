@@ -428,6 +428,10 @@ blue=$(tput setaf 4)
 echo "this is ${bold}bold${normal} but this isn't"
 ```
 
+```bash title="Print all colors"
+for c in {0..255}; do tput setaf $c; tput setaf $c | \cat -v; echo =$c; done | column
+```
+
 See [here][5] for colors.
 
 ## [Bypass Alias][7]
