@@ -493,6 +493,12 @@ declare -F | awk '{print $3}' | grep -v '^_'
 alias
 ```
 
+## [Replace Tabs with Spaces][]
+
+```shell
+sed -i 's/\t/     /g' tab-file.txt
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -502,11 +508,12 @@ alias
 * [commandlinefu](https://www.commandlinefu.com/)
 * [Password Special Characters](https://owasp.org/www-community/password-special-characters)
 
-[2]: https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/
-[3]: https://stackoverflow.com/a/15394738/1061279
-[4]: https://stackoverflow.com/a/45802423/1061279
-[5]: https://linuxcommand.org/lc3_adv_tput.php
-[6]: https://stackoverflow.com/a/2924755/1061279
-[7]: https://www.commandlinefu.com/commands/matching/bypass-alias/YnlwYXNzIGFsaWFz/
-[8]: https://www.commandlinefu.com/commands/view/799/push-your-present-working-directory-to-a-stack-that-you-can-pop-later
-[9]: https://stackoverflow.com/a/427989/1061279
+[2]: <https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/>
+[3]: <https://stackoverflow.com/a/15394738/1061279>
+[4]: <https://stackoverflow.com/a/45802423/1061279>
+[5]: <https://linuxcommand.org/lc3_adv_tput.php>
+[6]: <https://stackoverflow.com/a/2924755/1061279>
+[7]: <https://www.commandlinefu.com/commands/matching/bypass-alias/YnlwYXNzIGFsaWFz/>
+[8]: <https://www.commandlinefu.com/commands/view/799/push-your-present-working-directory-to-a-stack-that-you-can-pop-later>
+[9]: <https://stackoverflow.com/a/427989/1061279>
+[10]: <https://linuxconfig.org/replace-all-tab-characters-with-spaces>
