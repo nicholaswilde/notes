@@ -79,6 +79,13 @@ sudo sed -i -re 's/([a-z]{2}.)?archive.ubuntu.com|security.ubuntu.com/old-releas
 sudo apt update && sudo apt dist-upgrade
 ```
 
-[1]: https://fedingo.com/how-to-remove-snap-in-ubuntu/
-[2]: https://stackoverflow.com/questions/73034540
-[3]: https://veducate.co.uk/ubuntu-apt-update-fails/
+## [Auto Retart Daemons during Update][4]
+
+```shell
+sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf
+```
+
+[1]: <https://fedingo.com/how-to-remove-snap-in-ubuntu/>
+[2]: <https://stackoverflow.com/questions/73034540>
+[3]: <https://veducate.co.uk/ubuntu-apt-update-fails/>
+[4]: <https://askubuntu.com/a/1421221/344358>
