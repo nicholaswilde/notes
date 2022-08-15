@@ -9,8 +9,10 @@ set -o pipefail
 # https://stackoverflow.com/a/246128/1061279
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 SCRIPT_NAME=$(basename "${0}")
+ROOT_DIR="$(git rev-parse --show-toplevel)"
 readonly DIR
 readonly SCRIPT_NAME
+readonly ROOT_DIR
 ```
 ## Files
 
