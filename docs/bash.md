@@ -65,6 +65,24 @@ name=$(echo "$filename" | cut -f 1 -d '.')
 echo "${filename%%.*}"
 ```
 
+### [Extract filename and extension in Bash](https://stackoverflow.com/a/965069/1061279)
+
+```shell
+~% FILE="example.tar.gz"
+
+~% echo "${FILE%%.*}"
+example
+
+~% echo "${FILE%.*}"
+example.tar
+
+~% echo "${FILE#*.}"
+tar.gz
+
+~% echo "${FILE##*.}"
+gz
+```
+
 ### [Full File Path](https://stackoverflow.com/a/5265775/1061279)
 
 ```shell
