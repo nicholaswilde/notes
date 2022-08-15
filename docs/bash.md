@@ -1,14 +1,16 @@
 # Bash
 
 ```bash
-#/bin/bash
+#!/bin/bash
 
 set -e
 set -o pipefail
 
 # https://stackoverflow.com/a/246128/1061279
-readonly DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-readonly SCRIPT_NAME=$(basename "${0}")
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+SCRIPT_NAME=$(basename "${0}")
+readonly DIR
+readonly SCRIPT_NAME
 ```
 ## Files
 
