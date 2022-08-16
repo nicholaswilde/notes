@@ -1,14 +1,18 @@
 # Bash
 
 ```bash
-#/bin/bash
+#!/bin/bash
 
 set -e
 set -o pipefail
 
 # https://stackoverflow.com/a/246128/1061279
-readonly DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-readonly SCRIPT_NAME=$(basename "${0}")
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+SCRIPT_NAME=$(basename "${0}")
+ROOT_DIR="$(git rev-parse --show-toplevel)"
+readonly DIR
+readonly SCRIPT_NAME
+readonly ROOT_DIR
 ```
 ## Files
 
@@ -63,6 +67,24 @@ parse error: Expected separator between values at line 154, column 30
 name=$(echo "$filename" | cut -f 1 -d '.')
 # or
 echo "${filename%%.*}"
+```
+
+### [Extract filename and extension in Bash](https://stackoverflow.com/a/965069/1061279)
+
+```shell
+~% FILE="example.tar.gz"
+
+~% echo "${FILE%%.*}"
+example
+
+~% echo "${FILE%.*}"
+example.tar
+
+~% echo "${FILE#*.}"
+tar.gz
+
+~% echo "${FILE##*.}"
+gz
 ```
 
 ### [Full File Path](https://stackoverflow.com/a/5265775/1061279)
@@ -417,12 +439,103 @@ If you want to get number of occurrences use wc -l as pipe
 grep -R "text" . | wc -l
 ```
 
+## [Print Colors & Bold][6]
+```bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+blue=$(tput setaf 4)
+```
+
+```bash
+echo "this is ${bold}bold${normal} but this isn't"
+```
+
+```bash title="Print all colors"
+for c in {0..255}; do tput setaf $c; tput setaf $c | \cat -v; echo =$c; done | column
+```
+
+See [here][5] for colors.
+
+## [Bypass Alias][7]
+
+A simple directive which disables all aliases and functions for the command immediately following it. Shortcut for the bash built-in 'command' - "command linefoo".
+
+```shell
+\foo
+```
+
+## [Push your present working directory to a stack that you can pop later][8]
+
+```shell title="Add directories to stack"
+pushd /tmp
+```
+
+```shell titl="Remove directory from stack"
+popd
+```
+
+## Run script in subshell
+
+```shell
+sudo -u "${TARGET_USER}" bash <<"EOF"
+    cd "$HOME"
+    mkdir -p "${HOME}/git/nicholaswilde/"
+    git clone https://github.com/nicholaswilde/dotfiles.git "${HOME}/git/nicholaswilde/dotfiles"
+    cd "${HOME}/git/nicholaswilde/dotfiles"
+    # set the correct origin
+    git remote set-url origin git@github.com:nicholaswilde/dotfiles.git
+    # installs all the things
+    make
+EOF
+```
+
+## [Get IPv4][9]
+
+```bash
+grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
+```
+
+## Show Environmental Variables
+
+```shell
+printenv
+printenv | less
+printenv | more
+```
+
+## Show Shell Functions
+
+```shell
+declare -F | awk '{print $3}' | grep -v '^_'
+```
+
+## Show Shell Aliases
+
+```shell
+alias
+```
+
+## [Replace Tabs with Spaces][]
+
+```shell
+sed -i 's/\t/     /g' tab-file.txt
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
 * [pure bash bible](https://github.com/dylanaraps/pure-bash-bible)
 * [bash-utility](https://github.com/labbots/bash-utility)
+* [Cheat Sheet](https://cheat.sh/)
+* [commandlinefu](https://www.commandlinefu.com/)
+* [Password Special Characters](https://owasp.org/www-community/password-special-characters)
 
-[2]: https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/
-[3]: https://stackoverflow.com/a/15394738/1061279
-[4]: https://stackoverflow.com/a/45802423/1061279
+[2]: <https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/>
+[3]: <https://stackoverflow.com/a/15394738/1061279>
+[4]: <https://stackoverflow.com/a/45802423/1061279>
+[5]: <https://linuxcommand.org/lc3_adv_tput.php>
+[6]: <https://stackoverflow.com/a/2924755/1061279>
+[7]: <https://www.commandlinefu.com/commands/matching/bypass-alias/YnlwYXNzIGFsaWFz/>
+[8]: <https://www.commandlinefu.com/commands/view/799/push-your-present-working-directory-to-a-stack-that-you-can-pop-later>
+[9]: <https://stackoverflow.com/a/427989/1061279>
+[10]: <https://linuxconfig.org/replace-all-tab-characters-with-spaces>
