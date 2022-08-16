@@ -39,6 +39,7 @@ nav:
   - NFS: nfs.md
   - NPM: npm.md
   - Python: python.md
+  - Regex: regex.md
   - RPi: rpi.md
   - Signal: signal.md
   - Specifications: specifications.md
