@@ -74,11 +74,19 @@ id -g $(whoami)
 
 ## [Screen][2]
 
-Detached the previous screen and allowed me to reattach.
 
-```shell
+```shell title="Quit a session"
+screen -XS <session-id> quit
+```
+
+```shell title="Check current session"
+echo $STY
+```
+
+```shell title="Detached the previous screen and allowed me to reattach."
 screen -d -r
 ```
+
 ## [Replace Entire Line in File][3]
 
 ```shell
