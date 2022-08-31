@@ -521,6 +521,24 @@ alias
 sed -i 's/\t/     /g' tab-file.txt
 ```
 
+## POSTIX
+
+```shell title="Replace space with dash in var"
+s="${var// /-}"
+```
+
+```shell title="To lower"
+s="${var,,}"
+```
+
+```shell title="Get extension"
+s="${var#*.}"
+```
+
+```shell title="Remove extension"
+s="${var%%.*}"
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
