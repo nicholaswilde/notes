@@ -47,6 +47,7 @@ nav:
   - Task: task.md
   - Ubuntu: ubuntu.md
   - Windows 11: w11.md
+  - yq: yk.md
   - Yubikey: yubikey.md
   - Archive:
       - Bitwarden: bitwarden.md
