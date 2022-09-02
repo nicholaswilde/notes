@@ -14,6 +14,7 @@ readonly DIR
 readonly SCRIPT_NAME
 readonly ROOT_DIR
 ```
+
 ## Files
 
 Delete all files matching a pattern in sub folders
@@ -94,6 +95,7 @@ readlink -f file.txt
 ```
 
 ## Checks
+
 ```bash
 # Check if chart dir exists
 if [ -d "${CHART_PATH}" ]; then
@@ -229,11 +231,13 @@ printf "%b is the value" "${var}"
 ```
 
 Insert first line of file
+
 ```bash
 sed  -i '1i text' filename
 ```
 
 Delete a tmp dir on exit
+
 ```bash
 # https://stackoverflow.com/a/687052/1061279
 trap 'rm -rf -- "$TMP_DIR"' EXIT
@@ -297,6 +301,7 @@ testvercomp ${GIT_VER} ${MIN_VER} '>'
 ```
 
 ### Generate Random String
+
 ```shell
 cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1
 ```
@@ -440,6 +445,7 @@ grep -R "text" . | wc -l
 ```
 
 ## [Print Colors & Bold][6]
+
 ```bash
 bold=$(tput bold)
 normal=$(tput sgr0)
@@ -458,7 +464,8 @@ See [here][5] for colors.
 
 ## [Bypass Alias][7]
 
-A simple directive which disables all aliases and functions for the command immediately following it. Shortcut for the bash built-in 'command' - "command linefoo".
+A simple directive which disables all aliases and functions for the command immediately following it. Shortcut for the
+bash built-in 'command' - "command linefoo".
 
 ```shell
 \foo
@@ -539,6 +546,50 @@ s="${var#*.}"
 s="${var%%.*}"
 ```
 
+## [Git Status][11]
+
+```shell
+git diff --quiet; nochanges=$?
+if [ $nochanges -eq 0 ]; then
+    # there are no changes
+else
+    # there are changes
+fi
+```
+
+Alternatively, if you don't need to store the exit status in a variable, you can do:
+
+```shell
+if git diff --quiet; then
+    # there are no changes
+else
+    # there are changes
+fi
+```
+
+Since git diff is a porcelain Git command and you want to do things programmatically, you should probably use the
+plumbing Git command called git diff-index instead (which also has a --quiet flag, but which must be supplied a
+tree-ish argument):
+
+```shell
+if git diff-index --quiet HEAD; then
+    # there are no changes
+else
+    # there are changes
+fi
+```
+
+As pointed out in a comment below, the approach outlined above does not cover untracked files. To cover them as well,
+you can use the following instead:
+
+```shell
+if [ -z "$(git status --porcelain)" ]; then
+    # there are no changes
+else
+    # there are changes
+fi
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -557,3 +608,4 @@ s="${var%%.*}"
 [8]: <https://www.commandlinefu.com/commands/view/799/push-your-present-working-directory-to-a-stack-that-you-can-pop-later>
 [9]: <https://stackoverflow.com/a/427989/1061279>
 [10]: <https://linuxconfig.org/replace-all-tab-characters-with-spaces>
+[11]: <https://stackoverflow.com/a/28772375/1061279>

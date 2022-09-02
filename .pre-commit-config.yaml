@@ -7,14 +7,15 @@ repos:
         name: Run yamllint
         description: Lint yaml files
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.28.1
+    rev: v0.31.1
     hooks:
       - id: markdownlint
         name: Run markdownlint
         description: Lint markdown files
-  - repo: https://github.com/gruntwork-io/pre-commit
-    rev: v0.1.12
+  - repo: https://github.com/tcort/markdown-link-check
+    rev: v3.10.2
     hooks:
       - id: markdown-link-check
         name: Run markdown-link-check
         description: Check link in markdown files
+        args: [-a, "200,206,403,429"]
