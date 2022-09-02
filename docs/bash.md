@@ -590,6 +590,21 @@ else
 fi
 ```
 
+## [Relative Path][12]
+
+Using realpath from GNU coreutils 8.23 is the simplest, I think:
+
+```shell
+realpath --relative-to="$file1" "$file2"
+```
+
+For example:
+
+```shell
+realpath --relative-to=/usr/bin/nmap /tmp/testing
+../../../tmp/testing
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -609,3 +624,4 @@ fi
 [9]: <https://stackoverflow.com/a/427989/1061279>
 [10]: <https://linuxconfig.org/replace-all-tab-characters-with-spaces>
 [11]: <https://stackoverflow.com/a/28772375/1061279>
+[12]: <https://stackoverflow.com/a/28523143/1061279>
