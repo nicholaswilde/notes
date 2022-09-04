@@ -522,13 +522,17 @@ declare -F | awk '{print $3}' | grep -v '^_'
 alias
 ```
 
-## [Replace Tabs with Spaces][]
+## Replace Tabs with Spaces
 
 ```shell
 sed -i 's/\t/     /g' tab-file.txt
 ```
 
 ## POSTIX
+
+```shell title="Get first word only"
+s=${var%% *}
+```
 
 ```shell title="Replace space with dash in var"
 s="${var// /-}"
