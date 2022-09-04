@@ -152,23 +152,17 @@ is_null "$left" && echo "is null"
 
 ```
 
-## String manipulation
+## [String manipulation][13]
 
-Get variable from a command
-
-```bash
+```bash title="Get variable from a command"
 VAR=$(basename "/tmp/file.txt")
 ```
 
-Get last character
-
-```bash
+```bash title="Get last character"
 VAR="${VAR: -1}"
 ```
 
-Remove last character
-
-```bash
+```bash title="Remove last character"
 VAR="${VAR::-1}"
 ```
 
@@ -179,6 +173,26 @@ Get domain without the `.com`
 ```shell
 # https://unix.stackexchange.com/a/428990/93726
 echo "http://user:pw@example.com:80/some/path/url?data&and#hash" | sed -e "s/[^/]*\/\/\([^@]*@\)\?\([^:/]*\).*/\2/" | sed "s/^www\.//" | cut -f 1 -d '.'
+```
+
+```shell title="Get first word only"
+s=${var%% *}
+```
+
+```shell title="Replace space with dash in var"
+s="${var// /-}"
+```
+
+```shell title="To lower"
+s="${var,,}"
+```
+
+```shell title="Get extension"
+s="${var#*.}"
+```
+
+```shell title="Remove extension"
+s="${var%%.*}"
 ```
 
 ## Checksums
@@ -528,28 +542,6 @@ alias
 sed -i 's/\t/     /g' tab-file.txt
 ```
 
-## POSTIX
-
-```shell title="Get first word only"
-s=${var%% *}
-```
-
-```shell title="Replace space with dash in var"
-s="${var// /-}"
-```
-
-```shell title="To lower"
-s="${var,,}"
-```
-
-```shell title="Get extension"
-s="${var#*.}"
-```
-
-```shell title="Remove extension"
-s="${var%%.*}"
-```
-
 ## [Git Status][11]
 
 ```shell
@@ -629,3 +621,4 @@ realpath --relative-to=/usr/bin/nmap /tmp/testing
 [10]: <https://linuxconfig.org/replace-all-tab-characters-with-spaces>
 [11]: <https://stackoverflow.com/a/28772375/1061279>
 [12]: <https://stackoverflow.com/a/28523143/1061279>
+[13]: <https://tldp.org/LDP/abs/html/string-manipulation.html>
