@@ -601,6 +601,31 @@ realpath --relative-to=/usr/bin/nmap /tmp/testing
 ../../../tmp/testing
 ```
 
+## [Get Between Patterns][14]
+
+```shell
+aaa
+bbb
+pattern1
+aaa pattern2
+bbb
+ccc
+pattern2
+ddd
+eee
+pattern1
+fff
+ggg
+```
+
+```shell
+sed -n '/^pattern1/,/^pattern2/{p;/^pattern2/q}'
+```
+
+```shell
+sed -n '/^pattern1/,${p;/^pattern2/q}'
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -622,3 +647,4 @@ realpath --relative-to=/usr/bin/nmap /tmp/testing
 [11]: <https://stackoverflow.com/a/28772375/1061279>
 [12]: <https://stackoverflow.com/a/28523143/1061279>
 [13]: <https://tldp.org/LDP/abs/html/string-manipulation.html>
+[14]: <https://unix.stackexchange.com/a/264977/93726>
