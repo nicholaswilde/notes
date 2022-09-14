@@ -30,4 +30,26 @@ sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/b
 ```
 
 !!!NOTE
-    If you want to call a task declared in the root Taskfile from within an included Taskfile, add a leading `:` like this: `task: :task-name`.
+    If you want to call a task declared in the root Taskfile from within an included Taskfile, add a leading `:`
+    like this: `task: :task-name`.
+
+## [Escape Braces][1]
+
+```shell
+{{"{{"}}
+{{"}}"}}
+```
+
+produces
+
+```shell
+{{
+}}
+```
+
+```shell
+cmds:
+  - sed -i 's/{{"{{"}} LIB {{"}}"}}/{{ .EXAMPLE }}/g' ./examples/{{ .EXAMPLE }}.sh
+```
+
+[1]: <https://github.com/go-task/task/issues/179#issuecomment-466780873>
