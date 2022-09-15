@@ -199,6 +199,10 @@ s="${var##*.}"
 s="${var%%.*}"
 ```
 
+```shell title="get the file and all but last part of file extension"
+s="${var%.*}"
+```
+
 ## Checksums
 
 Get checksum of remote file
