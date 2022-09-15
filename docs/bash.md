@@ -191,6 +191,10 @@ s="${var,,}"
 s="${var#*.}"
 ```
 
+```shell title="Get last part of extension"
+s="${var##*.}"
+```
+
 ```shell title="Remove extension"
 s="${var%%.*}"
 ```
