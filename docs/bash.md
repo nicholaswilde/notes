@@ -634,6 +634,34 @@ sed -n '/^pattern1/,/^pattern2/{p;/^pattern2/q}'
 sed -n '/^pattern1/,${p;/^pattern2/q}'
 ```
 
+## [Test if option is set][15]
+
+If you do `set -f`, or otherwise disable globbing:, `$-` will contain `f`:
+
+```shell
+$ echo $-
+himBHs
+$ set -f
+$ echo $-
+fhimBHs
+$ bash -fc 'echo $-'
+fhBc
+```
+
+So:
+
+```shell
+[[ $- = *f* ]]
+```
+
+Or:
+
+```shell
+case $- in
+ *f*)  ... ;;
+esac
+```
+
 ## References
 
 * [set -e, -u, -o pipefail explanation](https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425)
@@ -656,3 +684,4 @@ sed -n '/^pattern1/,${p;/^pattern2/q}'
 [12]: <https://stackoverflow.com/a/28523143/1061279>
 [13]: <https://tldp.org/LDP/abs/html/string-manipulation.html>
 [14]: <https://unix.stackexchange.com/a/264977/93726>
+[15]: <https://unix.stackexchange.com/a/587071/93726>
