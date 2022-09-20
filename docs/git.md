@@ -204,6 +204,12 @@ git tag v0.4.0
 git push origin v0.4.0
 ```
 
+## [Push commit and tags at the same time][4]
+
+```shell
+git push --atomic origin main v0.4.0
+```
+
 ## [Compare Two Branches][3]
 
 ```shell
@@ -226,6 +232,7 @@ git diff branch1...branch2
 - [Convential Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [Amending a Commit Guide](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md)
 
-[1]: https://stackoverflow.com/a/5195913
-[2]: https://stackoverflow.com/a/761116
-[3]: https://devconnected.com/how-to-compare-two-git-branches/
+[1]: <https://stackoverflow.com/a/5195913>
+[2]: <https://stackoverflow.com/a/761116>
+[3]: <https://devconnected.com/how-to-compare-two-git-branches/>
+[4]: <https://stackoverflow.com/a/3745250/1061279>
