@@ -34,4 +34,12 @@ pip install git+https://github.com/jkbr/httpie.git#egg=httpie
 python setup.py sdist
 ```
 
-[1]: https://stackoverflow.com/a/15268990/1061279
+## [Upgrade pip package][2]
+
+```shell
+pip install <package_name> --upgrade
+pip install <package_name> -U
+```
+
+[1]: <https://stackoverflow.com/a/15268990/1061279>
+[2]: <https://stackoverflow.com/a/47071257/1061279>
