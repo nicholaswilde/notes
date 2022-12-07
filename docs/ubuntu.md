@@ -44,7 +44,7 @@ Can not upgrade
 An upgrade from 'hirsute' to 'jammy' is not supported with this tool.
 ```
 
-```bash title=script.sh
+```bash title="script.sh"
 #!/bin/bash
 echo "Updating"
 sudo apt-get update
