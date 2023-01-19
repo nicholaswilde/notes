@@ -224,6 +224,13 @@ git diff branch1...branch2
 
 ![triple-dot](https://devconnected.com/wp-content/uploads/2019/11/triple-dot.png)
 
+## [Add File After Commit][5]
+
+```
+git add the_left_out_file
+git commit --amend --no-edit
+```
+
 ## References
 
 * [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
@@ -236,3 +243,4 @@ git diff branch1...branch2
 [2]: <https://stackoverflow.com/a/761116>
 [3]: <https://devconnected.com/how-to-compare-two-git-branches/>
 [4]: <https://stackoverflow.com/a/3745250/1061279>
+[5]: <https://stackoverflow.com/a/40503483>
