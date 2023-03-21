@@ -18,14 +18,18 @@ export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go/
 ```
 
-Clear the build cache
+## Clear the build cache
 
 ```shell
 $ go clean -cache -modcache -i -r
 ```
 
-Get go version
+## Get go version
 
 ```shell
 $ GO_VERSION=$(curl -sSL "https://go.dev/VERSION?m=text")
 ```
+
+## Templates
+
+- <https://docs.gomplate.ca/>
