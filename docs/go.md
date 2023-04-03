@@ -30,6 +30,16 @@ $ go clean -cache -modcache -i -r
 $ GO_VERSION=$(curl -sSL "https://go.dev/VERSION?m=text")
 ```
 
+## [Init][1]
+
+```shell
+go mod init project-name
+go mod tidy
+go run ./...
+```
+
 ## Templates
 
 - <https://docs.gomplate.ca/>
+
+[1]: <https://stackoverflow.com/a/73966761>
