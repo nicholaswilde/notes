@@ -27,6 +27,7 @@ nav:
   - Go: go.md
   - GPG: gpg.md
   - Helm: helm.md
+  - Home Assistant: home-assistant.md
   - Images: images.md
   - Kind: kind.md
   - Kubernetes: kubernetes.md
