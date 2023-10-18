@@ -87,6 +87,10 @@ echo $STY
 screen -d -r
 ```
 
+```shell title="Scroll upward in the terminal"
+C-a [
+```
+
 ## [Replace Entire Line in File][3]
 
 ```shell
