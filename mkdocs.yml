@@ -83,7 +83,12 @@ theme:
     repo: fontawesome/brands/github
   features:
     - navigation.top
+    - navigation.tracking
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
