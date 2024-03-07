@@ -7,6 +7,7 @@ on:  # yamllint disable-line rule:truthy
       - 'mkdocs.**'
     branches:
       - main
+   workflow_dispatch:
 
 jobs:
   build:
