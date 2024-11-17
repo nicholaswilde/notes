@@ -1,0 +1,16 @@
+# Proxmox
+
+## [Proxmox VE Helper-Scripts][1]
+
+```shell
+(
+  bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/update-repo.sh)" &&
+  bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"
+)
+```
+
+```shell
+sudo apt install ca-certificates curl gnupg lsb-release ntp htop zip unzip gnupg apt-transport-https ca-certificates net-tools ncdu apache2-utils ssh-import-id git build-essential
+```
+
+[1]: <https://community-scripts.github.io/ProxmoxVE/>
