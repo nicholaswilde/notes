@@ -9,7 +9,7 @@ sudo systemctl start nfs-kernel-server.service
 
 ```shell
 # /etc/exports
-/srv     *(rw,sync,subtree_check)
+/srv/storage     *(rw,sync,subtree_check)
 ```
 
 ```shell
@@ -19,12 +19,26 @@ sudo exportfs -a
 ## Client
 
 ```shell
-show mount 192.168.192
+showmount -e 192.168.192
 ```
 
 ```shell
 mkdir ~/nas
 sudo apt install nfs-common
+```
+
+```shell
+df -h
+```
+
+```shell
+sudo apt install autofs
+# /etc/auto.master
+...
+/mnt /etc/auto.nfs --ghost --timeout=60
+
+# /etc/auto.nfs
+storage -fstype=nfs4,rw 192.168.1.192:/srv/storage
 ```
 
 ```shell
