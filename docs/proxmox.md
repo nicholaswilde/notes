@@ -15,9 +15,9 @@ sudo apt install ca-certificates curl gnupg lsb-release ntp htop zip unzip gnupg
 
 ```shell
 (
-adduser nicholas &&
-usermod -G adm,cdrom,lpadmin,sudo,sambashare,dip,plugdev user123 &&
-su nicholas
+  adduser nicholas &&
+  usermod -G adm,cdrom,lpadmin,sudo,sambashare,dip,plugdev user123 &&
+  su nicholas
 )
 ```
 
