@@ -19,6 +19,10 @@ sudo exportfs -a
 ## Client
 
 ```shell
+show mount 192.168.192
+```
+
+```shell
 mkdir ~/nas
 sudo apt install nfs-common
 ```
