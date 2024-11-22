@@ -85,7 +85,14 @@ sudo apt update && sudo apt dist-upgrade
 sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf
 ```
 
+## [User Groups][5]
+
+```shell
+usermod -a -G adm,cdrom,lpadmin,sudo,sambashare,dip,plugdev nicholas
+```
+
 [1]: <https://fedingo.com/how-to-remove-snap-in-ubuntu/>
 [2]: <https://stackoverflow.com/questions/73034540>
 [3]: <https://veducate.co.uk/ubuntu-apt-update-fails/>
 [4]: <https://askubuntu.com/a/1421221/344358>
+[5]: <https://askubuntu.com/a/1381087>
