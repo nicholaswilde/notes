@@ -12,4 +12,13 @@ To pin the actual profile window:
 4. Check `Open as new window` and click `OK`.
 5. Pin the newly created shortcut window.
 
-[1]: https://adamtheautomator.com/ssh-chrome-extension/#Connecting_to_a_Remote_Host_using_the_Search_Bar
+## [Brother HL-2270DW Printer][2]
+
+```
+Address: <IP>:9100
+Protocol: AppSocket(TCP/IP)
+Queue: ipp/print
+```
+
+[1]: <https://adamtheautomator.com/ssh-chrome-extension/#Connecting_to_a_Remote_Host_using_the_Search_Bar>
+[2]: <https://www.reddit.com/r/chromeos/comments/7n3jc1/setting_up_brother_hl2270dw_printer_on_chromebook/>
