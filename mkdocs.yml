@@ -85,6 +85,10 @@ theme:
   features:
     - navigation.top
     - navigation.tracking
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -103,6 +107,7 @@ theme:
 
 plugins:
   - search
+  - tags
   - minify:
       minify_html: true
 

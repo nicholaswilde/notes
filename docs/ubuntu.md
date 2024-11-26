@@ -1,4 +1,8 @@
-# Ubuntu
+---
+tags:
+  - linux
+---
+# :fontawesome-brands-ubuntu: Ubuntu
 
 ## [Change Hostname 20.04](https://linuxize.com/post/how-to-change-hostname-on-ubuntu-20-04/)
 
