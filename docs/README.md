@@ -1,7 +1,7 @@
 # Notes
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white&style=for-the-badge)](https://pre-commit.com/)
 [![task](https://img.shields.io/badge/Task-Enabled-brightgreen?style=for-the-badge&logo=task&logoColor=white)](https://taskfile.dev/#/)
-[![ci](https://img.shields.io/github/workflow/status/nicholaswilde/notes/ci?label=ci&logo=github&style=for-the-badge)](https://github.com/nicholaswilde/notes/actions/workflows/ci.yaml)
+[![ci](https://img.shields.io/github/actions/workflow/status/nicholaswilde/notes/ci.yaml?label=ci&style=for-the-badge&branch=main)](https://github.com/nicholaswilde/notes/actions/workflows/ci.yaml)
 
 My notes on various things
 
