@@ -1,5 +1,69 @@
 # Apps
 
+## [Chrony][1]
+
+### Server
+
+```shell
+sudo apt install chrony
+sudo service chrony restart
+```
+
+```apacheconf
+# /etc/chrony/chrony.conf
+confdir /etc/chrony/conf.d
+pool 2.debian.pool.ntp.org iburst
+sourcedir /run/chrony-dhcp
+sourcedir /etc/chrony/sources.d
+keyfile /etc/chrony/chrony.keys
+driftfile /var/lib/chrony/chrony.drift
+ntsdumpdir /var/lib/chrony
+logdir /var/log/chrony
+maxupdateskew 100.0
+rtcsync
+makestep 1 3
+leapsectz right/UTC
+allow 192.168.1.0/24
+authselectmode ignore
+manual
+```
+
+### Client
+
+```shell
+sudo apt install chrony
+sudo service chrony restart
+# Check that server is running
+sudo chronyc sources -v -a
+sudo chronyc clients
+sudo chronyc ntpdata <Server IP>
+# Check that port 123 is running
+nc -zvu <Server IP> 123
+chronyc activity
+chronyc tracking
+```
+
+```apacheconf
+# /etc/chrony/chrony.conf
+server 192.168.1.198 iburst trust
+authselectmode ignore
+confdir /etc/chrony/conf.d
+pool ntp.ubuntu.com        iburst maxsources 4
+pool 0.ubuntu.pool.ntp.org iburst maxsources 1
+pool 1.ubuntu.pool.ntp.org iburst maxsources 1
+pool 2.ubuntu.pool.ntp.org iburst maxsources 2
+sourcedir /run/chrony-dhcp
+sourcedir /etc/chrony/sources.d
+keyfile /etc/chrony/chrony.keys
+driftfile /var/lib/chrony/chrony.drift
+ntsdumpdir /var/lib/chrony
+logdir /var/log/chrony
+maxupdateskew 100.0
+rtcsync
+makestep 1 3
+leapsectz right/UTC
+```
+
 ## Ubuntu
 
 ```shell
@@ -103,3 +167,5 @@ pwsh
 ```shell
 pip install mkdocs-material mkdocs-minify-plugin
 ```
+
+[1]: <https://ubuntu.com/server/docs/how-to-serve-the-network-time-protocol-with-chrony>
