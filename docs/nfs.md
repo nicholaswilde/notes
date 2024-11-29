@@ -1,4 +1,4 @@
-# NFS
+# :fontawesome-solid-hard-drive: NFS
 
 ## [Server](https://ubuntu.com/server/docs/service-nfs)
 
