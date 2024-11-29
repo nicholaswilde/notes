@@ -7,7 +7,7 @@ tags:
 ## [Installation][1]
 
 ```shell
-$ pipx install --include-deps ansible
+$ sudo apt install -y pipx && pipx install --include-deps ansible
 ```
 
 ## [standard-version](https://github.com/conventional-changelog/standard-version)
