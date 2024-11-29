@@ -1,9 +1,13 @@
-# Ansible
+---
+tags:
+  - linux
+---
+# :simple-ansible: Ansible
 
-## [Installation](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-with-pip)
+## [Installation][1]
 
 ```shell
-$ python -m pip install --user ansible
+$ pipx install --include-deps ansible
 ```
 
 ## [standard-version](https://github.com/conventional-changelog/standard-version)
@@ -12,3 +16,5 @@ $ python -m pip install --user ansible
 # Install
 $ sudo npm i -g standard-version
 ```
+
+[1]: <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html>
