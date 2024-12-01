@@ -99,9 +99,31 @@ usermod -a -G adm,cdrom,lpadmin,sudo,sambashare,dip,plugdev nicholas
 
 `export CDPATH=foo`
 
+## [Apt Cacher NG][7]
+
+### Server
+
+```
+# /etc/apt-cacher-ng/acng.conf
+PassThroughPattern: .*
+CacheDir: /mnt/storage/apt-cacher-ng
+```
+
+```
+systemctl restart apt-cacher-ng
+```
+
+### Client
+
+```shell
+nano /etc/apt/apt.conf.d/00aptproxy
+Acquire::http::Proxy "http://your-server-ip:3142";
+```
+
 [1]: <https://fedingo.com/how-to-remove-snap-in-ubuntu/>
 [2]: <https://stackoverflow.com/questions/73034540>
 [3]: <https://veducate.co.uk/ubuntu-apt-update-fails/>
 [4]: <https://askubuntu.com/a/1421221/344358>
 [5]: <https://askubuntu.com/a/1381087>
-[6] <https://superuser.com/a/571778>
+[6]: <https://superuser.com/a/571778>
+[7]: <https://www.atlantic.net/vps-hosting/how-to-set-up-apt-caching-server-using-apt-cacher-ng-on-ubuntu/>
