@@ -116,8 +116,7 @@ systemctl restart apt-cacher-ng
 ### Client
 
 ```shell
-nano /etc/apt/apt.conf.d/00aptproxy
-Acquire::http::Proxy "http://your-server-ip:3142";
+echo "Acquire::http::Proxy \"http://aptcache.nicholaswilde.io:3142\";"| sudo tee /etc/apt/apt.conf.d/00aptproxy
 ```
 
 [1]: <https://fedingo.com/how-to-remove-snap-in-ubuntu/>
