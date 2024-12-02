@@ -1,4 +1,4 @@
-# Micro
+# :simple-microeditor: Micro
 
 ## Install
 
@@ -36,6 +36,7 @@ set filetype yaml
 - <https://github.com/zyedidia/micro/blob/master/runtime/help/options.md>
 - <https://github.com/zyedidia/micro/blob/master/runtime/help/commands.md>
 - <https://github.com/zyedidia/micro/blob/master/runtime/help/keybindings.md>
+- [Micro Key Bindings](https://gist.github.com/rochacbruno/9e4f4c471e849276f11562272db446b0)
 
 [1]: https://github.com/wakatime/micro-wakatime
 [2]: https://github.com/zyedidia/micro/issues/2080
