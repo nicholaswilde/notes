@@ -19,6 +19,7 @@ vcgencmd otp_dump | grep 17
 ```shell
 sudo raspi-config
 sudo rpi-update
+sudo raspi-config --expand-rootfs
 ```
 
 ## [Generate User Before Boot][2]
