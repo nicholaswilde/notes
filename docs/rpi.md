@@ -3,6 +3,12 @@
 ## [Raspberry Pi 4 boot from usb][1]
 
 ```shell
+sudo raspi-config
+Advanced Options -> Boot Order -> B2 NVMe/USB
+sudo reboot
+```
+
+```shell
 # to get vendorId and deviceId
 $ dmesg
 $ sudo nano /boot/cmdline.txt
