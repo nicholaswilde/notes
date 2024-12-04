@@ -22,6 +22,22 @@ sudo rpi-update
 sudo raspi-config --expand-rootfs
 ```
 
+## [Trusted Key Problem][3]
+
+```shell
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+8 packages can be upgraded. Run 'apt list --upgradable' to see them.
+W: https://packages.microsoft.com/repos/edge/dists/stable/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+W: https://download.sublimetext.com/apt/stable/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+```
+
+```shell
+cd /etc/apt
+sudo cp trusted.gpg trusted.gpg.d
+```
+
 ## [Generate User Before Boot][2]
 
 ```shell
@@ -91,3 +107,4 @@ sudo dphys-swapfile swapon
 
 [1]: <https://www.makeuseof.com/how-to-boot-raspberry-pi-ssd-permanent-storage/>
 [2]: <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>
+[3]: <https://askubuntu.com/a/1408456>
