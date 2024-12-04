@@ -8,6 +8,8 @@ $ dmesg
 $ sudo nano /boot/cmdline.txt
 usb-storage.quirks=152d:1561:u console=serial0,115200 console=tty1 root=PARTUUID=fcf4cb94-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait
 $ echo program_usb_boot_mode=1 | sudo tee -a /boot/config.txt
+# Check
+$ mount | egrep "/([[:space:]]|boot)"
 ```
 
 ```shell
