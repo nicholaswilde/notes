@@ -21,4 +21,7 @@ sudo apt install ca-certificates curl gnupg lsb-release ntp htop zip unzip gnupg
 )
 ```
 
+## [Raspberry Pi 4][2]
+
 [1]: <https://community-scripts.github.io/ProxmoxVE/>
+[2]: <https://github.com/jiangcuo/Proxmox-Port/wiki/Install-Proxmox-VE-on-Debian-bookworm>
