@@ -4,13 +4,13 @@ tags:
 ---
 # :simple-ansible: Ansible
 
-## [Installation][1]
+## :hammer_pick: [Installation][1]
 
 ```shell
 $ sudo apt install -y pipx && pipx install --include-deps ansible
 ```
 
-## [standard-version](https://github.com/conventional-changelog/standard-version)
+## :octicons-versions-24: [standard-version](https://github.com/conventional-changelog/standard-version)
 
 ```shell
 # Install
