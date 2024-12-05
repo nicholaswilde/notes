@@ -1,6 +1,6 @@
 # :simple-raspberrypi: RPi
 
-## [Raspberry Pi 4 boot from usb][1]
+## :material-usb-flash-drive: [Raspberry Pi 4 boot from usb][1]
 
 ```shell
 sudo raspi-config
@@ -30,7 +30,7 @@ sudo rpi-update
 sudo raspi-config --expand-rootfs
 ```
 
-## [Trusted Key Problem][3]
+## :key: [Trusted Key Problem][3]
 
 ```shell
 Reading package lists... Done
@@ -46,7 +46,7 @@ cd /etc/apt
 sudo cp trusted.gpg trusted.gpg.d
 ```
 
-## [Generate User Before Boot][2]
+## :fontawesome-solid-user-plus: [Generate User Before Boot][2]
 
 ```shell
 echo 'mypassword' | openssl passwd -6 -stdin | sudo tee -a /boot/userconf.txt
@@ -69,11 +69,11 @@ $ rbenv install 2.3.1
 $ rbenv global 2.3.1
 ```
 
-## Server Images 64bit
+## :cd: Server Images 64bit
 
 - [https://downloads.raspberrypi.org/raspios_arm64/images/](https://downloads.raspberrypi.org/raspios_arm64/images/)
 
-## Convert to server
+## :material-server: Convert to server
 
 ```bash
 (
@@ -84,7 +84,7 @@ $ rbenv global 2.3.1
 )
 ```
 
-## [Swap](https://nebl.io/neblio-university/enabling-increasing-raspberry-pi-swap/)
+## :material-file-swap: [Swap](https://nebl.io/neblio-university/enabling-increasing-raspberry-pi-swap/)
 
 Temporarily Stop Swap
 
@@ -111,7 +111,7 @@ Start Swap
 sudo dphys-swapfile swapon
 ```
 
-## Proxmox
+## :simple-proxmox: Proxmox
 
 - See [Proxmox][4].
 

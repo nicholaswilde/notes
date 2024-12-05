@@ -1,6 +1,6 @@
 # :simple-proxmox: Proxmox
 
-## [Proxmox VE Helper-Scripts][1]
+## :material-script-text: [Proxmox VE Helper-Scripts][1]
 
 ```shell
 (
@@ -21,7 +21,25 @@ sudo apt install ca-certificates curl gnupg lsb-release ntp htop zip unzip gnupg
 )
 ```
 
-## [Raspberry Pi 4][2]
+## :simple-raspberrypi: [Raspberry Pi 4][2]
+
+### :simple-tldraw: TL;DR
+
+```shell
+(
+  sudo su root  && \
+  passwd  && \
+  echo "<ip address> <hostname>" | tee -a /etc/hosts  && \
+  hostname --ip-address  && \
+  echo 'deb [arch=arm64] https://mirrors.apqa.cn/proxmox/debian/pve bookworm port'>/etc/apt/sources.list.d/pveport.list && \
+  curl -L https://mirrors.apqa.cn/proxmox/debian/pveport.gpg -o /etc/apt/trusted.gpg.d/pveport.gpg && \
+  apt update && \
+  apt full-upgrade && \
+  apt install ifupdown2 && \
+  apt install proxmox-ve postfix open-iscsi && \
+  sudo sed -i 's/^#?\s*PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+}
+```
 
 Install [Raspberry Pi OS][3].
 
@@ -109,6 +127,10 @@ Configure packages which require user input on installation according to your ne
 If you don't know what to enter here, choose local only and leave the system name as is.
 
 Reenable ssh.
+
+```shell
+sudo sed -i 's/^#?\s*PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+```
 
 ```shell
 # /etc/ssh/sshd_config
