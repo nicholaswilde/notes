@@ -23,7 +23,7 @@ sudo apt install ca-certificates curl gnupg lsb-release ntp htop zip unzip gnupg
 
 ## [Raspberry Pi 4][2]
 
-Install Raspberry Pi OS.
+Install [Raspberry Pi OS][3].
 
 Switch to root user. Default password is blank for Raspberry Pi OS.
 
@@ -37,7 +37,7 @@ Set root password so that you can log into Proxmox web GUI.
 passwd
 ```
 
-Add an `/etc/hosts` entry for your IP address
+Add an `/etc/hosts` entry for your IP address.
 
 Please make sure that your machine's hostname is resolvable via `/etc/hosts`, i.e. you need an entry in `/etc/hosts` which assigns an address to its hostname.
 
@@ -108,7 +108,8 @@ Configure packages which require user input on installation according to your ne
 
 If you don't know what to enter here, choose local only and leave the system name as is.
 
-Finally, you can connect to the admin web interface (https://youripaddress:8006).
+Finally, you can connect to the admin web interface (`https://youripaddress:8006`).
 
 [1]: <https://community-scripts.github.io/ProxmoxVE/>
 [2]: <https://github.com/jiangcuo/Proxmox-Port/wiki/Install-Proxmox-VE-on-Debian-bookworm>
+[3]: <https://www.raspberrypi.com/software/operating-systems/>
