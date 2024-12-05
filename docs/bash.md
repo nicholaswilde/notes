@@ -19,7 +19,7 @@ readonly SCRIPT_NAME
 readonly ROOT_DIR
 ```
 
-## Files
+## :simple-files: Files
 
 Delete all files matching a pattern in sub folders
 
