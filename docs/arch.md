@@ -1,3 +1,7 @@
+---
+tags:
+  - linux
+---
 # Arch
 
 ## As Root
