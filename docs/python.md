@@ -1,4 +1,4 @@
-# Python
+# :simple-python: Python
 
 ## Update All Installed Packages
 
