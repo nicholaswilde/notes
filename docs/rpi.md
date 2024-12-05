@@ -111,8 +111,13 @@ Start Swap
 sudo dphys-swapfile swapon
 ```
 
+## Proxmox
+
+- See [Proxmox][4].
+
 ## References
 
 [1]: <https://www.makeuseof.com/how-to-boot-raspberry-pi-ssd-permanent-storage/>
 [2]: <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>
 [3]: <https://askubuntu.com/a/1408456>
+[4]: <https://nicholaswilde.io/notes/proxmox/#raspberry-pi-4>
