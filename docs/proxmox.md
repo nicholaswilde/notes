@@ -139,6 +139,13 @@ PermitRootLogin yes
 
 Finally, you can connect to the admin web interface (`https://youripaddress:8006`).
 
+### :page_facing_up: Kernel Page Size
+
+```shell
+# /boot/firmware/config.txt
+kernel=kernel8.img # to end of line
+```
+
 [1]: <https://community-scripts.github.io/ProxmoxVE/>
 [2]: <https://github.com/jiangcuo/Proxmox-Port/wiki/Install-Proxmox-VE-on-Debian-bookworm>
 [3]: <https://www.raspberrypi.com/software/operating-systems/>
