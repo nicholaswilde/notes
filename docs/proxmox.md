@@ -141,9 +141,20 @@ Finally, you can connect to the admin web interface (`https://youripaddress:8006
 
 ### :page_facing_up: Kernel Page Size
 
+You should use the Kernel with 4K pagesize
+
 ```shell
 # /boot/firmware/config.txt
 kernel=kernel8.img # to end of line
+```
+
+### :material-memory: CT Notes
+
+Is the container summary memory usage and swap usage always shows 0?
+
+```shell
+# /boot/firmware/cmdline.txt
+cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
 ```
 
 [1]: <https://community-scripts.github.io/ProxmoxVE/>
