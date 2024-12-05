@@ -108,6 +108,13 @@ Configure packages which require user input on installation according to your ne
 
 If you don't know what to enter here, choose local only and leave the system name as is.
 
+Reenable ssh.
+
+```shell
+# /etc/ssh/sshd_config
+PermitRootLogin yes
+```
+
 Finally, you can connect to the admin web interface (`https://youripaddress:8006`).
 
 [1]: <https://community-scripts.github.io/ProxmoxVE/>
