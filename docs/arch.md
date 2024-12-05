@@ -4,9 +4,9 @@ tags:
 ---
 # :material-arch: Arch
 
-## As Root
+## :muscle: As Root
 
-### pacman
+### :material-pac-man: pacman
 
 ```shell
 su
@@ -18,7 +18,7 @@ pacman -Syu
 pacman -S --needed archlinux-keyring sudo util-linux systemd-swap ntp raspberrypi-firmware base-devel nfs-utils wget python git go go-tools python-pip rpcbind docker screen github-cli lastpass-cli python-pygments ca-certificates ansible pkgfile
 ```
 
-### Timezone
+### :clock1: Timezone
 
 ```shell
 rm /etc/localtime
