@@ -1,4 +1,8 @@
-# Bash
+---
+tags:
+  - linux
+---
+# :material-console: Bash
 
 ```bash
 #!/bin/bash
