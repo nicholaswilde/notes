@@ -23,7 +23,7 @@ sudo apt install ca-certificates curl gnupg lsb-release ntp htop zip unzip gnupg
 
 ## :simple-raspberrypi: [Raspberry Pi 4][2]
 
-### :simple-tldraw: TL;DR
+### :clipboard: TL;DR
 
 ```shell
 (
