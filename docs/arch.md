@@ -2,7 +2,7 @@
 tags:
   - linux
 ---
-# Arch
+# :material-arch: Arch
 
 ## As Root
 
