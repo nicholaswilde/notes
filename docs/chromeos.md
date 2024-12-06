@@ -1,3 +1,7 @@
+---
+tags:
+  - os
+---
 # :fontawesome-brands-chrome: Chrome OS
 
 ## [Pin Secure Shell Profile][1]
@@ -12,7 +16,7 @@ To pin the actual profile window:
 4. Check `Open as new window` and click `OK`.
 5. Pin the newly created shortcut window.
 
-## [Brother HL-2270DW Printer][2]
+## :printer: [Brother HL-2270DW Printer][2]
 
 ```
 Address: <IP>:9100
@@ -20,7 +24,7 @@ Protocol: AppSocket(TCP/IP)
 Queue: ipp/print
 ```
 
-## Clipboard
+## :clipboard: Clipboard
 
 ```shell
 (
