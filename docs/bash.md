@@ -59,7 +59,7 @@ bzip2 -c file.txt | wc -c
 tar -cf - file.txt | wc -c
 ```
 
-### Validate JSON
+### :material-code-json: Validate JSON
 
 ```shell
 cat foo.json | jq empty
