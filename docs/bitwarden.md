@@ -1,4 +1,8 @@
-# [Bitwarden](https://bitwarden.com/help/article/cli/)
+---
+tags:
+  - app
+---
+# :simple-bitwarden: [Bitwarden](https://bitwarden.com/help/article/cli/)
 
 ```shell
 brew install bitwarden-cli
