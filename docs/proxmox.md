@@ -69,14 +69,14 @@ Note: This also means removing the address 127.0.1.1 that might be present as de
 For instance, if your IP address is 192.168.15.77, and your hostname prox4m1, then your /etc/hosts file could look like:
 
 ```
+# /etc/hosts
 127.0.0.1       localhost.localdomain localhost
-192.168.15.77   prox4m1.proxmox.com prox4m1
 
-# The following lines are desirable for IPv6 capable hosts
+::1             localhost ip6-localhost ip6-loopback
+ff02::1         ip6-allnodes
+ff02::2         ip6-allrouters
 
-::1     localhost ip6-localhost ip6-loopback
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
+192.168.1.192   pve02.nicholaswilde.io pve02
 ```
 
 You can test if your setup is ok using the hostname command:
