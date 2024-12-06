@@ -1,4 +1,4 @@
-# Deprecation
+# :no_entry: Deprecation
 
 How to deprecate repositories or repo components.
 
