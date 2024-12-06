@@ -1,4 +1,4 @@
-# Docker
+# :simple-docker: Docker
 
 ## Installation
 
