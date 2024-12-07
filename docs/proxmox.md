@@ -157,6 +157,29 @@ Is the container summary memory usage and swap usage always shows 0?
 cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
 ```
 
+## Network
+
+### Missing vmbr0
+
+Create vmbr0 network interface in GUI
+
+```
+<node> -> Network -> Create
+Name: vmbr0
+IPv4: 192.168.1.192/24
+Gateweay: 192.168.1.1 
+Bridge Ports: eth0
+```
+
+Where `eth0` is the current existing network interface
+
+## [N: Repository 'http://deb.debian.org/debian buster InRelease' changed its 'Version' value from '' to '10.0' Error][4]
+
+``` shell
+apt-get --allow-releaseinfo-change update"
+```
+
 [1]: <https://community-scripts.github.io/ProxmoxVE/>
 [2]: <https://github.com/jiangcuo/Proxmox-Port/wiki/Install-Proxmox-VE-on-Debian-bookworm>
 [3]: <https://www.raspberrypi.com/software/operating-systems/>
+[4]: <https://www.reddit.com/r/debian/comments/ca3se6/for_people_who_gets_this_error_inrelease_changed/>
