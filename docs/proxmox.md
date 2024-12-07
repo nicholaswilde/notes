@@ -176,7 +176,7 @@ Where `eth0` is the current existing network interface
 ## [N: Repository 'http://deb.debian.org/debian buster InRelease' changed its 'Version' value from '' to '10.0' Error][4]
 
 ``` shell
-apt-get --allow-releaseinfo-change update"
+apt-get --allow-releaseinfo-change update
 ```
 
 [1]: <https://community-scripts.github.io/ProxmoxVE/>
