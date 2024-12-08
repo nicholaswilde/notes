@@ -29,6 +29,7 @@ nav:
   - GPG: gpg.md
   - Helm: helm.md
   - Home Assistant: home-assistant.md
+  - Homelab: homelab.md
   - Images: images.md
   - Kind: kind.md
   - Kubernetes: kubernetes.md

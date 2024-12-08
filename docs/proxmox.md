@@ -1,3 +1,8 @@
+---
+tags:
+  - homelab
+  - linux
+---
 # :simple-proxmox: Proxmox
 
 ## :material-script-text: [Proxmox VE Helper-Scripts][1]
@@ -89,9 +94,9 @@ hostname --ip-address
 192.168.15.77 # should return your IP address here
 ```
 
-### Install Proxmox VE
+### :floppy_disk: Install Proxmox VE
 
-##### Add the Proxmox VE repository:
+##### :octicons-repo-24: Add the Proxmox VE repository:
 
 ```shell
 echo 'deb [arch=arm64] https://mirrors.apqa.cn/proxmox/debian/pve bookworm port'>/etc/apt/sources.list.d/pveport.list
@@ -157,7 +162,7 @@ Is the container summary memory usage and swap usage always shows 0?
 cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
 ```
 
-## Network
+## :material-network: Network
 
 ### Missing vmbr0
 
