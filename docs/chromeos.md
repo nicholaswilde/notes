@@ -4,7 +4,7 @@ tags:
 ---
 # :fontawesome-brands-chrome: Chrome OS
 
-## :material-console: [Pin Secure Shell Profile][1]
+## :material-console: [Pin Secure Shell Profile][3]
 
 When running a profile and directly pinning the window to the taskbar, the Secure Shell options window will show instead of the profile window.
 
@@ -36,3 +36,4 @@ Queue: ipp/print
 
 [1]: <https://adamtheautomator.com/ssh-chrome-extension/#Connecting_to_a_Remote_Host_using_the_Search_Bar>
 [2]: <https://www.reddit.com/r/chromeos/comments/7n3jc1/setting_up_brother_hl2270dw_printer_on_chromebook/>
+[3]: <https://chromium.googlesource.com/apps/libapps/+/HEAD/nassh/docs/FAQ.md#can-i-create-bookmarks-to-specific-sites>
