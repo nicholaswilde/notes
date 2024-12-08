@@ -2,6 +2,7 @@
 tags:
   - homelab
   - linux
+  - proxmox
 ---
 # :simple-proxmox: Proxmox
 

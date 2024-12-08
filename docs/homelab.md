@@ -2,6 +2,7 @@
 tags:
   - homelab
   - linux
+  - proxmox
 ---
 # :house_with_garden: Homelab :test_tube:
 
@@ -34,5 +35,8 @@ org_name = ORGANIZATION
 
 ## :link: References
 
+- [InfluxDB][3]
+
 [1]: <https://stackoverflow.com/a/36014284>
 [2]: <https://community-scripts.github.io/ProxmoxVE/scripts?id=grafana>
+[3]: <https://www.derekseaman.com/2023/04/home-assistant-installing-influxdb-lxc.html>
