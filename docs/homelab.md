@@ -71,6 +71,8 @@ scrape_configs:
     static_configs:
       - targets:
         - yourserverip:9100
+        labels:
+          instance: 'pve01'
     metrics_path: /metrics
     scrape_interval: 60s
 ```
