@@ -96,7 +96,7 @@ Modify the size of the swap
 
 ```shell
 sudo nano /etc/dphys-swapfile
-CONF_SWAPSIZE=1024
+CONF_SWAPSIZE=2048
 ```
 
 Initialize Swap File
