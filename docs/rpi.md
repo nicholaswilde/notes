@@ -115,7 +115,30 @@ sudo dphys-swapfile swapon
 
 - See [Proxmox][4].
 
+## [Watchdog Timer][5]
+
+```ini
+ls -al /dev/watchdog*
+crw------- 1 root root  10, 130 Nov  3  2016 /dev/watchdog
+crw------- 1 root root 252,   0 Nov  3  2016 /dev/watchdog0
+```
+
+```ini
+#/etc/systemd/system.conf
+RuntimeWatchdogSec=10
+ShutdownWatchdogSec=10min
+```
+
+```shell
+dmesg | grep -i watchdog
+[    0.763148] bcm2835-wdt 3f100000.watchdog: Broadcom BCM2835 watchdog timer
+[    1.997557] systemd[1]: Hardware watchdog 'Broadcom BCM2835 Watchdog timer', version 0
+[    2.000728] systemd[1]: Set hardware watchdog to 10s.
+```
+
 ## References
+
+[5]: <https://raspberrypi.stackexchange.com/questions/99584/rpi-freezes-every-now-and-then-how-to-fix-it-with-a-watchdog>
 
 [1]: <https://www.makeuseof.com/how-to-boot-raspberry-pi-ssd-permanent-storage/>
 [2]: <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>
