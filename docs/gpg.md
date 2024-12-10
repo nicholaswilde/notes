@@ -1,12 +1,16 @@
-# GPG
+---
+tags:
+  - linux
+---
+# :key: GPG
 
-## Generate Key
+## :material-key-plus: Generate Key
 
 ```shell
 gpg --full-generate-key
 ```
 
-## Import
+## :material-import: Import
 
 ```shell
 lpass show gpg --attach=8017296795546256342-55097 -q | gpg --import
@@ -38,7 +42,7 @@ Your decision? 5
 gpg> save
 ```
 
-## Sign Others' Keys
+## :pen_fountain: Sign Others' Keys
 
 ```shell
 wget http://example.com/pgp-public-key -O- | gpg --import
@@ -46,7 +50,7 @@ gpg --list-keys
 gpg --sign-key theirs@email.com
 ```
 
-## List
+## :fontawesome-solid-list: List
 
 ```shell
 # Secret keys
