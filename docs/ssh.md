@@ -1,4 +1,8 @@
-# SSH
+---
+tags:
+  - linux
+---
+# :material-ssh: SSH
 
 ```shell
 sudo apt install ssh-import-id
@@ -12,7 +16,7 @@ chmod 0700 ~/.ssh
 ssh-import-id-gh nicholaswilde
 ```
 
-## Authentication
+## :key: Authentication
 
 ```bash
 # /etc/ssh/sshd_config
@@ -22,7 +26,7 @@ PubkeyAuthentication yes
 ...
 ```
 
-## [Verify that Keys Match][1]
+## :material-check-bold: [Verify that Keys Match][1]
 
 Use the following command, to test both files. The output of the command will show the 'signature' of both files. When
 the 'signature' matches, they show the public key and private key are both valid and match.
