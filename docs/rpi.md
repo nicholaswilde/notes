@@ -115,7 +115,7 @@ sudo dphys-swapfile swapon
 
 - See [Proxmox][4].
 
-## [Watchdog Timer][5]
+## :material-dog: [Watchdog Timer][5]
 
 ```ini
 ls -al /dev/watchdog*
@@ -124,7 +124,7 @@ crw------- 1 root root 252,   0 Nov  3  2016 /dev/watchdog0
 ```
 
 ```ini
-#/etc/systemd/system.conf
+# /etc/systemd/system.conf
 RuntimeWatchdogSec=10
 ShutdownWatchdogSec=10min
 ```
