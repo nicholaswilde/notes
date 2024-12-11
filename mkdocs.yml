@@ -22,6 +22,7 @@ nav:
   - Chrome OS: chromeos.md
   - Deprecation: deprecation.md
   - Docker: docker.md
+  - ESPHome: esphome.md
   - Flux: flux.md
   - Git: git.md
   - Github Actions: github-actions.md
