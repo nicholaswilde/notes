@@ -33,7 +33,7 @@ enabled = true
 org_name = ORGANIZATION
 ```
 
-## Prometheus
+## :simple-prometheus: Prometheus
 
 ### :floppy_disk: Install
 

@@ -1,13 +1,28 @@
 ---
 version: '3'
 
+vars:
+  PORT: 8000
+  IMAGE: squidfunk/mkdocs-material
+
 tasks:
   build:
     desc: Build documentation using Docker and mkdocs-material
     cmds:
       - >-
         docker run --rm -it -v ${PWD}:/docs --platform linux/amd64
-        squidfunk/mkdocs-material build -f ./mkdocs.yml
+        {{ .IMAGE }} build -f ./mkdocs.yml
+
+  update:
+    desc: Update docker container
+    cmds:
+      - >-
+        docker pull {{ .IMAGE }}
+
+  up:
+    desc: Start server
+    cmds:
+      - task: serve
 
   serve:
     desc: >-
@@ -16,12 +31,10 @@ tasks:
     cmds:
       - >-
         docker run --rm -it -p {{ .PORT }}:{{ .PORT}} -v ${PWD}:/docs
-        --platform linux/amd64 squidfunk/mkdocs-material serve
+        --platform linux/amd64 {{ .IMAGE }} serve
         --dev-addr 0.0.0.0:{{ .PORT }} -f ./mkdocs.yml
     deps:
       - build
-    vars:
-      PORT: 8000
 
   linkcheck:
     desc: Run markdown-link-check
