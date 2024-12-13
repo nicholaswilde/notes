@@ -32,7 +32,7 @@ origin  git@github.com:USERNAME/REPOSITORY.git (push)
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 ```
 
-### [Syncing a Fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+### :material-source-branch-sync: [Syncing a Fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
 
 ```shell
 # Configuring a remote for a fork if it doesn't already exist
