@@ -21,9 +21,9 @@ tags:
 )
 ```
 
-## Usage
+## :material-hammer-wrench: Usage
 
-### Switching Remote URLs
+### :octicons-arrow-switch-24: Switching Remote URLs
 
 ```shell
 git remote -v
