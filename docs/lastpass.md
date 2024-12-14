@@ -6,6 +6,13 @@
 brew install lastpass-cli
 ```
 
+## Login
+
+```shell
+mkdir -p ~/.local/share/lpas
+lpass login <email>
+```
+
 ## Show Attachment
 
 ```shell
