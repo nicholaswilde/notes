@@ -10,6 +10,16 @@ The majority of my notes are for Debian based distros.
 
 Also, take a look at my [dotfiles repo][5].
 
+## TL;DR
+
+- gpg build-essential
+- lpass
+- brew
+- ssh
+- gpg
+- gh
+- docker
+
 ## :frame_with_picture: Background
 
 When setting up a project or system, such as a git repoistory or GNU/Linux or Windows computer, I need to reference solutions to problems that I
