@@ -82,6 +82,13 @@ brew leaves > my_brew.txt
 xargs brew install < my_brew.txt
 ```
 
+### [Chrome OS][2]
+
+```shell
+export CI=1
+sudo chmod -R nicholas:nicholas /home/linuxbrew
+```
+
 ## [gh](https://github.com/cli/cli)
 
 ```shell
@@ -169,3 +176,5 @@ pip install mkdocs-material mkdocs-minify-plugin
 ```
 
 [1]: <https://ubuntu.com/server/docs/how-to-serve-the-network-time-protocol-with-chrony>
+[2]: <https://github.com/Homebrew/install/issues/369>
+[2]
