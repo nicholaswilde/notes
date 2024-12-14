@@ -26,6 +26,11 @@ PubkeyAuthentication yes
 ...
 ```
 
+```shell
+# Restart ssh
+sudo systemctl restart sshd
+```
+
 ## :material-check-bold: [Verify that Keys Match][1]
 
 Use the following command, to test both files. The output of the command will show the 'signature' of both files. When
