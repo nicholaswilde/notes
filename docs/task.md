@@ -1,4 +1,8 @@
-# [Task](https://taskfile.dev/#/)
+---
+tags:
+  - linux
+---
+# :simple-task: [Task](https://taskfile.dev/#/)
 
 ## Installation
 
