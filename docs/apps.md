@@ -73,7 +73,13 @@ sudo apt install unzip build-essential
 ## [brew](https://brew.sh/)
 
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
+  echo >> /home/nicholas/.bashrc && \
+  echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/nicholas/.bashrc && \
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && \
+  brew install gcc
+)
 ```
 
 ```bash
