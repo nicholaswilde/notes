@@ -12,9 +12,9 @@ Also, take a look at my [dotfiles repo][5].
 
 ## TL;DR
 
-- gpg build-essential
-- lpass
+- git gpg build-essential
 - brew
+- lpass
 - ssh
 - gpg
 - gh
