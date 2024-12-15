@@ -78,8 +78,8 @@ gpg --output revoke.asc --gen-revoke you@example.com
 ## Export
 
 ```shell
-gpg --export-secret-keys --armor my@email.com > /path/to/secret-key-backup.asc
-gpg --export --armor my@email.com > /path/to/public-key-backup.asc
+gpg --export-secret-keys --armor $EMAIL > /path/to/secret-key-backup.asc
+gpg --export --armor $EMAIL > /path/to/public-key-backup.asc
 ```
 
 ## Keygrip to match `*.key` filenames in `~/.gnupg/private-keys-v1.d` directory
