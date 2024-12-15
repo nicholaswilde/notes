@@ -18,6 +18,13 @@ ssh-import-id-gh nicholaswilde
 
 ## :key: Authentication
 
+```shell
+(
+  sudo sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config && \
+  echo "RSAAuthentication yes" | sudo tee -a /etc/ssh/sshd_config
+)
+```
+
 ```bash
 # /etc/ssh/sshd_config
 ...
