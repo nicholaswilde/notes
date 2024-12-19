@@ -39,13 +39,13 @@ background nor organizing the notes and so it may be a little difficult to inter
 
 ---
 
-## ​:balance_scale:​&nbsp;​ License
+## :balance_scale:​&nbsp;​ License
 
 ​[​Apache License 2.0](../LICENSE)
 
 ---
 
-## ​:pencil:​&nbsp;​ Author
+## :pencil:​&nbsp;​ Author
 
 ​This project was started in 2021 by [​Nicholas Wilde​][4].
 
