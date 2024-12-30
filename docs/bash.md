@@ -19,6 +19,12 @@ readonly SCRIPT_NAME
 readonly ROOT_DIR
 ```
 
+## :key: Generate Password
+
+```shell
+echo $(htpasswd -nB user) | sed -e s/\\$/\\$\\$/g
+```
+
 ## :simple-files: Files
 
 Delete all files matching a pattern in sub folders
