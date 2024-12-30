@@ -21,8 +21,13 @@ readonly ROOT_DIR
 
 ## :key: Generate Password
 
-```shell
+```shell title="Install"
+sudo apt install apache2-utils
+```
+
+```shell title="Generate"
 echo $(htpasswd -nB user) | sed -e s/\\$/\\$\\$/g
+# user:passwordhash
 ```
 
 ## :simple-files: Files
