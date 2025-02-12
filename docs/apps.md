@@ -125,14 +125,6 @@ echo "set tabsize 2" >> ~/.nanorc
 echo "set tabstospaces" >> ~/.nanorc
 ```
 
-## [Chromebook](https://chromium.googlesource.com/apps/libapps/+/hterm-1.80/nassh/doc/FAQ.md#How-do-I-copy-text-from-the-terminal)
-
-```shell
-curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/hterm-notify.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/notify && sudo chmod +x /usr/bin/notify
-curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/hterm-show-file.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/show-file && sudo chmod +x /usr/bin/show-file
-curl "https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/copy && sudo chmod +x /usr/bin/copy
-```
-
 ## [semver](https://github.com/fsaintjacques/semver-tool)
 
 ```shell
