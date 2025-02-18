@@ -50,6 +50,7 @@ nav:
   - Specifications: specifications.md
   - SSH: ssh.md
   - Task: task.md
+  - tmux: tmux.md
   - Ubuntu: ubuntu.md
   - Windows 11: w11.md
   - yq: yq.md
