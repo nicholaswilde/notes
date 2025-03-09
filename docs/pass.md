@@ -44,6 +44,14 @@ sudo apt-get update
 sudo apt-get install pass-extension-import
 ```
 
+## Encrypt Files
+
+```shell
+pass insert -m sensitive/secret_answers < secret_answers.txt
+# Or
+cat secret_answers.txt | pass insert -m sensitive/secret_answers
+```
+
 ## References
 
 - <https://wiki.archlinux.org/index.php/Pass>
