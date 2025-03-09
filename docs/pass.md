@@ -46,4 +46,5 @@ sudo apt-get install pass-extension-import
 
 ## References
 
-* https://wiki.archlinux.org/index.php/Pass
+- <https://wiki.archlinux.org/index.php/Pass>
+- <https://vitalyparnas.com/guides/pass/#files>
