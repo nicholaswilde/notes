@@ -10,7 +10,7 @@
 
 ## [Allow Notify in tmux][1]
 
-```quote ""
+!!! quote ""
 
     ```shell
     set -g allow-passthrough on
