@@ -21,8 +21,8 @@
 Install tpm.
 
 ```
-mkdir -p ~/.tmux/plugins/tpm/
-git clone https://github.com/tpm/tpm.git ~/.tmux/plugins/tpm/tpm
+mkdir -p ~/.tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 Ctrl + b
 Shift + I
 ```
