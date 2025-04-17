@@ -16,6 +16,17 @@
     set -g allow-passthrough on
     ```
 
+## TPM
+
+Install tpm.
+
+```
+mkdir -p ~/.tmux/plugins/tpm/
+git clone https://github.com/tpm/tpm.git ~/.tmux/plugins/tpm/tpm
+Ctrl + b
+Shift + I
+```
+
 ## :link: References
 
 - <https://tmuxcheatsheet.com/>
