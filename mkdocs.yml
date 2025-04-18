@@ -16,6 +16,7 @@ nav:
   - Home: index.md
   - Ansible: ansible.md
   - Apps: apps.md
+  - Apt: apt.md
   - Arch: arch.md
   - Bash: bash.md
   - Bitwarden: bitwarden.md
