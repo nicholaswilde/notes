@@ -15,7 +15,7 @@ tags:
   git config --global user.email "ncwilde43@gmail.com"
   git config --global user.name "nιcнolaѕ wιlde"
   git config --global init.defaultBranch main
-  git config --global user.signingkey C278D7760E0B27F192659595F08AD0AD08B7D7A3
+  git config --global user.signingkey 78E2E084522FB8A14C0D9AED800C8DB8B299A622
   git config --global commit.gpgsign true
   git config --global pull.rebase false
 )
