@@ -34,6 +34,20 @@ Queue: ipp/print
 )
 ```
 
+## Stop Penguin Terminal
+
+Open Crosh
+
+```shell
+Ctrl + Alt + T
+```
+
+Stop Penguin terminal
+
+```shell
+vmc stop termina
+```
+
 [1]: <https://adamtheautomator.com/ssh-chrome-extension/#Connecting_to_a_Remote_Host_using_the_Search_Bar>
 [2]: <https://www.reddit.com/r/chromeos/comments/7n3jc1/setting_up_brother_hl2270dw_printer_on_chromebook/>
 [3]: <https://chromium.googlesource.com/apps/libapps/+/HEAD/nassh/docs/FAQ.md#can-i-create-bookmarks-to-specific-sites>
