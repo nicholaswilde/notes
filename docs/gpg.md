@@ -114,6 +114,13 @@ gpg --refresh-keys --keyserver keyserver.ubuntu.com
 gpg --pinentry-mode loopback --import <file>.asc
 ```
 
+## Validity Unknown
+
+```
+gpg --check-trustdb
+gpg --update-trustdb
+```
+
 ## References
 
 - <https://ruimarinho.gitbooks.io/yubikey-handbook/content/openpgp/troubleshooting/gpg-failed-to-sign-the-data.html>
