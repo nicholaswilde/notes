@@ -108,6 +108,12 @@ gpg-connect-agent reloadagent /bye
 gpg --refresh-keys --keyserver keyserver.ubuntu.com
 ```
 
+## Pinentry Mode
+
+```shell
+gpg --pinentry-mode loopback --import <file>.asc
+```
+
 ## References
 
 - <https://ruimarinho.gitbooks.io/yubikey-handbook/content/openpgp/troubleshooting/gpg-failed-to-sign-the-data.html>
