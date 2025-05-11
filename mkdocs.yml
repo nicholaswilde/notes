@@ -42,6 +42,7 @@ nav:
   - Misc: misc.md
   - Multipass: multipass.md
   - NFS: nfs.md
+  - NixOS: nixos.md
   - NPM: npm.md
   - Proxmox: proxmox.md
   - Python: python.md
