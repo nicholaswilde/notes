@@ -48,6 +48,32 @@ Stop Penguin terminal
 vmc stop termina
 ```
 
+```shell
+vmc start termina
+```
+
+## Add Remote
+
+```shell
+lxc remote add canonical https://images.lxd.canonical.com --protocol simplestreams --auth-type tls
+```
+
+Start NixOS
+
+```shell
+lxc launch canonical:nixos/24.05 nixos
+```
+
+From `crosh`
+
+```shell
+vmc container termina nixos
+```
+
+## :link: References
+
+- <https://www.youtube.com/watch?v=sIU5qOyBO-Q>
+
 [1]: <https://adamtheautomator.com/ssh-chrome-extension/#Connecting_to_a_Remote_Host_using_the_Search_Bar>
 [2]: <https://www.reddit.com/r/chromeos/comments/7n3jc1/setting_up_brother_hl2270dw_printer_on_chromebook/>
 [3]: <https://chromium.googlesource.com/apps/libapps/+/HEAD/nassh/docs/FAQ.md#can-i-create-bookmarks-to-specific-sites>
