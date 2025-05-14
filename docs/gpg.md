@@ -116,9 +116,15 @@ gpg --pinentry-mode loopback --import <file>.asc
 
 ## Validity Unknown
 
-```
+```shell
 gpg --check-trustdb
 gpg --update-trustdb
+```
+
+## Show Subkey Fingerprints
+
+```shell
+gpg -K --with-subkey-fingerprints
 ```
 
 ## References
