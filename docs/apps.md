@@ -101,19 +101,6 @@ sudo chmod -R nicholas:nicholas /home/linuxbrew
 brew install gh
 ```
 
-## [mc](https://github.com/minio/mc)
-
-```shell
-brew install minio/stable/mc
-```
-
-## [Snyk](https://snyk.io/)
-
-```shell
-sudo npm install -g snyk
-snyk auth
-```
-
 ## [nanorc](https://github.com/scopatz/nanorc)
 
 ```shell
