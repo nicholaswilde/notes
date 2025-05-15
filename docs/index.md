@@ -10,7 +10,7 @@ The majority of my notes are for Debian based distros.
 
 Also, take a look at my [dotfiles repo][5].
 
-## TL;DR
+## :pushpin: TL;DR
 
 - git gpg build-essential
 - brew
