@@ -31,8 +31,11 @@ Since I am device agnostic and could be working off of a Windows system, GNU/Lin
 notes be in the cloud. Hosting my notes on GitHub and publishing them to an [`mkdocs-material`][2] site allows me to access them from
 anywhere as well as share my notes with the world in hopes that they help someone else.
 
-The notes are broken up by a topic per page but sometimes can be found in other areas of site. I don't spend a whole lot of time giving
-background nor organizing the notes and so it may be a little difficult to interpret my chicken scratch.
+
+!!! warning
+
+    The notes are broken up by a topic per page but sometimes can be found in other areas of site. I don't spend a whole lot of time giving
+    background nor organizing the notes and so it may be a little difficult to interpret my chicken scratch.
 
 ## :link: References
 
