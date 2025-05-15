@@ -12,23 +12,24 @@
 ```
 
 !!! abstract "/etc/chrony/chrony.conf"
-```apacheconf
-confdir /etc/chrony/conf.d
-pool 2.debian.pool.ntp.org iburst
-sourcedir /run/chrony-dhcp
-sourcedir /etc/chrony/sources.d
-keyfile /etc/chrony/chrony.keys
-driftfile /var/lib/chrony/chrony.drift
-ntsdumpdir /var/lib/chrony
-logdir /var/log/chrony
-maxupdateskew 100.0
-rtcsync
-makestep 1 3
-leapsectz right/UTC
-allow 192.168.1.0/24
-authselectmode ignore
-manual
-```
+
+    ```apacheconf
+    confdir /etc/chrony/conf.d
+    pool 2.debian.pool.ntp.org iburst
+    sourcedir /run/chrony-dhcp
+    sourcedir /etc/chrony/sources.d
+    keyfile /etc/chrony/chrony.keys
+    driftfile /var/lib/chrony/chrony.drift
+    ntsdumpdir /var/lib/chrony
+    logdir /var/log/chrony
+    maxupdateskew 100.0
+    rtcsync
+    makestep 1 3
+    leapsectz right/UTC
+    allow 192.168.1.0/24
+    authselectmode ignore
+    manual
+    ```
 
 ### Client
 
