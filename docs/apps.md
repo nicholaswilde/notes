@@ -5,12 +5,14 @@
 ### Server
 
 ```shell
-sudo apt install chrony
-sudo service chrony restart
+(
+  sudo apt install chrony
+  sudo service chrony restart
+)
 ```
 
+!!! abstract "/etc/chrony/chrony.conf"
 ```apacheconf
-# /etc/chrony/chrony.conf
 confdir /etc/chrony/conf.d
 pool 2.debian.pool.ntp.org iburst
 sourcedir /run/chrony-dhcp
@@ -31,16 +33,18 @@ manual
 ### Client
 
 ```shell
-sudo apt install chrony
-sudo service chrony restart
-# Check that server is running
-sudo chronyc sources -v -a
-sudo chronyc clients
-sudo chronyc ntpdata <Server IP>
-# Check that port 123 is running
-nc -zvu <Server IP> 123
-chronyc activity
-chronyc tracking
+(
+  sudo apt install chrony
+  sudo service chrony restart
+  # Check that server is running
+  sudo chronyc sources -v -a
+  sudo chronyc clients
+  sudo chronyc ntpdata <Server IP>
+  # Check that port 123 is running
+  nc -zvu <Server IP> 123
+  chronyc activity
+  chronyc tracking
+)
 ```
 
 ```apacheconf
