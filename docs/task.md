@@ -7,7 +7,7 @@ tags:
 ## Installation
 
 ```shell
-brew install go-task/tap/go-task
+brew install go-task
 ```
 
 ```shell
