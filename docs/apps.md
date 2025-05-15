@@ -2,7 +2,7 @@
 
 ## [Chrony][1]
 
-### Server
+### :desktop_computer: Server
 
 ```shell
 (
@@ -31,7 +31,7 @@
     manual
     ```
 
-### Client
+### :computer: Client
 
 ```shell
 (
