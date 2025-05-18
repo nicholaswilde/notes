@@ -75,3 +75,5 @@ nano /etc/nixos/configuration.nix
 - <https://mtlynch.io/notes/nixos-proxmox/>
 - <https://hydra.nixos.org/project/nixos>
 - <https://search.nixos.org/>
+- <https://hydra.nixos.org/job/nixos/release-24.11/nixos.lxdContainerImage.aarch64-linux>
+- <https://hydra.nixos.org/job/nixos/release-24.11/nixos.lxdContainerImage.x86_64-linux>
