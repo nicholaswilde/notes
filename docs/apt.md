@@ -1,4 +1,4 @@
-# :container: Apt
+# :package: Apt
 
 ## The following signatures were invalid: BADSIG 54404762BBB6E853
 
