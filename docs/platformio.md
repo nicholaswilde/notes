@@ -87,6 +87,10 @@ curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installe
     build_src_filter = +<msc_external_flash_sdcard/>
     ```
 
+## :pencil: Usage
+
+WIP
+
 ## :link: References
 
 [1]: <https://docs.platformio.org/core/installation/methods/installer-script.html>
