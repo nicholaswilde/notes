@@ -89,7 +89,33 @@ curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installe
 
 ## :pencil: Usage
 
-WIP
+```shell title="Build"
+pio run
+```
+
+```shell title="Clean build files"
+pio run --target clean
+```
+
+```shell title="Upload the firmware"
+pio run --target upload
+```
+
+```shell title="Monitor the serial output"
+pio device monitor
+```
+
+```shell title="List connected serial devices"
+pio device list
+```
+
+```shell title="Update project dependencies"
+pio pkg update
+```
+
+```shell title="Build with verbose output"
+pio run --verbose
+```
 
 ## :link: References
 
