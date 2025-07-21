@@ -1,6 +1,6 @@
 # :simple-platformio: PlatformIO
 
-## :hammer_and_wrench: Installation
+## :hammer_and_wrench: [Installation][1]
 
 ```shell
 curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py | python3
@@ -20,6 +20,9 @@ curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installe
 !!! abstract "paltformio.ini"
 
     ```ini
+    
     ```
 
 ## :link: References
+
+[1]: <https://docs.platformio.org/core/installation/methods/installer-script.html>
