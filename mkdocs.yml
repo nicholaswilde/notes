@@ -44,6 +44,7 @@ nav:
   - NFS: nfs.md
   - NixOS: nixos.md
   - NPM: npm.md
+  - PlatformIO: platformio.md
   - Proxmox: proxmox.md
   - Python: python.md
   - Regex: regex.md
