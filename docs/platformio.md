@@ -1,4 +1,4 @@
-# PlatformIO
+# :simple-platformio: PlatformIO
 
 ## :hammer_and_wrench: Installation
 
