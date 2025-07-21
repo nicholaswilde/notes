@@ -17,3 +17,12 @@
   ln -s ~/.platformio/penv/bin/piodebuggdb ~/.local/bin/piodebuggdb &&
 )
 ```
+
+## :gear: Config
+
+!!! abstract "paltformio.ini"
+
+    ```ini
+    ```
+
+## :link: References
