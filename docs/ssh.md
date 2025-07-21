@@ -6,15 +6,13 @@ tags:
 
 ```shell
 (
-  sudo apt install ssh-import-id &&
   [ -d ~/.ssh ] || mkdir ~/.ssh &&
-  curl https://github.com/nicholaswilde.keys -o ~/.ssh/id_rsa.pub &&
-  chmod 644 ~/.ssh/id_rsa.pub &&
-  lpass show ssh --attach=att-4322045537695550419-20689 -q > ~/.ssh/id_rsa &&
-  chmod 600 ~/.ssh/id_rsa &&
-  cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys &&
-  chmod 0700 ~/.ssh &&
-  ssh-import-id-gh nicholaswilde
+  curl https://github.com/nicholaswilde.keys -o ~/.ssh/authorized_keys &&
+  lpass show ssh --attach=att-4322045537695550419-20689 -q > ~/.ssh/id_ed25519 &&
+  ssh-keygen -y -f ~/.ssh/id_ed25519 > ~/.ssh/id_ed25519.pub
+  chmod 644 ~/.ssh/id_ed25519.pub &&
+  chmod 600 ~/.ssh/id_ed25519 &&
+  chmod 0700 ~/.ssh
 )
 ```
 
