@@ -1,4 +1,4 @@
-# npm
+# :simple-npm: npm
 
 ## :hammer_and_wrench: Installation
 
