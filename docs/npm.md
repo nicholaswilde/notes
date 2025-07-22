@@ -7,7 +7,7 @@ sudo apt install build-essential libssl-dev curl git-core
 ```
 
 ```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/$(curl -s "https://api.github.com/repos/nvm-sh/nvm/releases/latest" | grep '"tag_name":' | cut -d'"' -f4)/install.sh | bash
 ```
 
 ```shell
