@@ -25,3 +25,15 @@ nvm install node
 sudo npm install -g npm-check-updates
 ncu -u
 ```
+
+## [Update Node][1]
+
+```shell title="set latest Version as default with this command"
+nvm alias default node
+```
+
+```shell title="now you can update npm with this command"
+npm install -g npm
+```
+
+[1]: <https://stackoverflow.com/a/76934903/1061279>
