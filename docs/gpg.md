@@ -127,6 +127,18 @@ gpg --update-trustdb
 gpg -K --with-subkey-fingerprints
 ```
 
+## Unlock Key
+
+To manually force a passphrase prompt and "unlock" the key, you can run a simple GPG command that requires it, such as:
+
+```shell
+gpg -s
+```
+
+This command initiates a signature process on standard input. It will prompt you to type some text and then ask for your passphrase to sign it. Once you've entered the passphrase, you can press Ctrl+D twice to exit the command. Your key will then be unlocked and cached by gpg-agent.
+
+Type something.
+
 ## References
 
 - <https://ruimarinho.gitbooks.io/yubikey-handbook/content/openpgp/troubleshooting/gpg-failed-to-sign-the-data.html>
