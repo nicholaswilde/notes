@@ -84,7 +84,7 @@ $ rbenv global 2.3.1
 )
 ```
 
-## :material-file-swap: [Swap](https://nebl.io/neblio-university/enabling-increasing-raspberry-pi-swap/)
+## :material-file-swap: [Swap](https://pimylifeup.com/raspberry-pi-swap-file/)
 
 Temporarily Stop Swap
 
@@ -141,6 +141,6 @@ dmesg | grep -i watchdog
 [5]: <https://raspberrypi.stackexchange.com/questions/99584/rpi-freezes-every-now-and-then-how-to-fix-it-with-a-watchdog>
 
 [1]: <https://www.makeuseof.com/how-to-boot-raspberry-pi-ssd-permanent-storage/>
-[2]: <https://www.raspberrypi.com/news/raspberry-pi-bullseye-update-april-2022/>
+[2]: <https://www.raspberrypi.com/news/>
 [3]: <https://askubuntu.com/a/1408456>
 [4]: <https://nicholaswilde.io/notes/proxmox/#raspberry-pi-4>

@@ -111,7 +111,7 @@ screen -XS <session-id> quit
 
 ## References
 
-* https://www.computerhope.com/unix/shred.htm#examples
+* https://www.geeksforgeeks.org/shred-command-in-linux-with-examples/
 
 [1]: https://askubuntu.com/a/823630/344358
 [2]: https://askubuntu.com/a/855919

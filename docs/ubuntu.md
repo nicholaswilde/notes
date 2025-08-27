@@ -4,7 +4,7 @@ tags:
 ---
 # :fontawesome-brands-ubuntu: Ubuntu
 
-## [Change Hostname 20.04](https://linuxize.com/post/how-to-change-hostname-on-ubuntu-20-04/)
+## [1]: <https://ubuntu.com/server/docs/network-configuration>
 
 ```shell
 sudo hostnamectl set-hostname <hostname>

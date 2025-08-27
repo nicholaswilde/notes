@@ -6,7 +6,8 @@ tags:
 
 ## :material-console: [Pin Secure Shell Profile][3]
 
-When running a profile and directly pinning the window to the taskbar, the Secure Shell options window will show instead of the profile window.
+When running a profile and directly pinning the window to the taskbar, the Secure Shell options window
+will show instead of the profile window.
 
 To pin the actual profile window:
 
@@ -18,7 +19,7 @@ To pin the actual profile window:
 
 ## :printer: [Brother HL-2270DW Printer][2]
 
-```
+```ini
 Address: <IP>:9100
 Protocol: AppSocket(TCP/IP)
 Queue: ipp/print

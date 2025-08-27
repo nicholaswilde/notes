@@ -187,5 +187,5 @@ apt-get --allow-releaseinfo-change update
 
 [1]: <https://community-scripts.github.io/ProxmoxVE/>
 [2]: <https://github.com/jiangcuo/Proxmox-Port/wiki/Install-Proxmox-VE-on-Debian-bookworm>
-[3]: <https://www.raspberrypi.com/software/operating-systems/>
+[3]: <https://www.raspberrypi.com/software/>
 [4]: <https://www.reddit.com/r/debian/comments/ca3se6/for_people_who_gets_this_error_inrelease_changed/>

@@ -30,7 +30,7 @@ gpg/card> name
 
 ## References
 
-- <https://ruimarinho.gitbooks.io/yubikey-handbook/content/>
+
 - <https://github.com/drduh/YubiKey-Guide/blob/master/README.md>
 
 [1]: https://docs.yubico.com/software/yubikey/tools/ykman/Install_ykman.html

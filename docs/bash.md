@@ -343,7 +343,7 @@ testvercomp ${GIT_VER} ${MIN_VER} '>'
 cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1
 ```
 
-### [Function Library](https://bash.cyberciti.biz/guide/Shell_functions_library)
+
 
 ```shell
 #!/bin/bash
@@ -686,7 +686,7 @@ esac
 * [commandlinefu](https://www.commandlinefu.com/)
 * [Password Special Characters](https://owasp.org/www-community/password-special-characters)
 
-[2]: <https://www.cyberciti.biz/faq/how-to-restart-systemd-without-rebooting-linux-when-critical-libraries-installed/>
+
 [3]: <https://stackoverflow.com/a/15394738/1061279>
 [4]: <https://stackoverflow.com/a/45802423/1061279>
 [5]: <https://linuxcommand.org/lc3_adv_tput.php>

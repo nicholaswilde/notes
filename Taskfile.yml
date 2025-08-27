@@ -3,14 +3,14 @@ version: '3'
 
 vars:
   PORT: 8000
-  IMAGE: squidfunk/mkdocs-material
+  IMAGE: nicholaswilde/mkdocs-material
 
 tasks:
   build:
     desc: Build documentation using Docker and mkdocs-material
     cmds:
       - >-
-        docker run --rm -it -v ${PWD}:/docs --platform linux/amd64
+        docker run --rm -v ${PWD}:/docs --platform linux/amd64
         {{ .IMAGE }} build -f ./mkdocs.yml
 
   update:
@@ -30,7 +30,7 @@ tasks:
       Docker and mkdocs-material
     cmds:
       - >-
-        docker run --rm -it -p {{ .PORT }}:{{ .PORT}} -v ${PWD}:/docs
+        docker run --rm -p {{ .PORT }}:{{ .PORT}} -v ${PWD}:/docs
         --platform linux/amd64 {{ .IMAGE }} serve
         --dev-addr 0.0.0.0:{{ .PORT }} -f ./mkdocs.yml
     deps:
@@ -54,7 +54,7 @@ tasks:
     desc: Run markdownlint-cli
     cmds:
       - >-
-        docker run --rm -it -v ${PWD}:/markdown:ro
+        docker run --rm -v ${PWD}:/markdown:ro
         06kellyjac/markdownlint-cli .
     ignore_error: true
 
@@ -62,7 +62,7 @@ tasks:
     desc: Run yamllint
     cmds:
       - >-
-        docker run --rm -it -v ${PWD}:${PWD} -w ${PWD}
+        docker run --rm -v ${PWD}:${PWD} -w ${PWD}
         programmerassistant/yamllint yamllint .
     ignore_error: true
 

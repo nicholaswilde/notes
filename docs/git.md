@@ -97,8 +97,8 @@ git log
 ### URLs
 
 * Commit: https://github.com/python/cpython/archive/31af650.tar.gz
-* Latest: https://github.com/USER/PROJECT/releases/latest/download/package.zip
-* Release: https://github.com/$(IMAGE_NAME)/$(IMAGE_NAME)/releases/download/v${VERSION}/Leantime-v${VERSION}.tar.gz
+
+
 * Release Source: https://github.com/nicholaswilde/helm-charts/archive/wikijs-0.1.6.tar.gz
 
 ### [gh](https://github.com/cli/cli)
@@ -245,6 +245,6 @@ git commit --amend --no-edit
 
 [1]: <https://stackoverflow.com/a/5195913>
 [2]: <https://stackoverflow.com/a/761116>
-[3]: <https://devconnected.com/how-to-compare-two-git-branches/>
+[3]: <https://www.atlassian.com/git/tutorials/comparing-workflows/git-diff>
 [4]: <https://stackoverflow.com/a/3745250/1061279>
 [5]: <https://stackoverflow.com/a/40503483>

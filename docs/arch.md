@@ -41,6 +41,7 @@ root ALL=(ALL) ALL
 %sudo   ALL=(ALL) ALL
 ```
 
+
 ### Hostname
 ```shell
 echo "arch" | tee /etc/hostname
@@ -48,21 +49,25 @@ echo "arch" | tee /etc/hostname
 127.0.0.1 localhost.localdomain localhost arch
 ```
 
+
 ### Swap
 ```shell
 echo "swapfc_enabled=1" | tee /etc/systemd/swap.conf
 ```
 
+
 ### Locale
 ```shell
-$ locale -a
+locale -a
 ```
+
 ```shell
 # /etc/locale.gen
 ...
 en_US.UTF-8 UTF-8
 ..
 ```
+
 ```shell
 sudo locale-gen
 ```
@@ -72,12 +77,14 @@ useradd -m -G wheel -s /bin/bash pi
 passwd pi
 ```
 
+
 ### rpi-update
 ```shell
 sudo wget https://raw.github.com/Hexxeh/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
 export PATH=$PATH:/opt/vc/bin/
 sudo rpi-update
 ```
+
 
 ## As pi
 

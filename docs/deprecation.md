@@ -12,7 +12,7 @@ Add link to what to use instead.
 
 Chart example.
 
-```
+```markdown
 This chart has been depcrecated. Please use the [k8s@home version](https://artifacthub.io/packages/helm/k8s-at-home/wikijs) instead.
 ```
 

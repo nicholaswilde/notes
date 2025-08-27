@@ -119,4 +119,4 @@ pio run --verbose
 
 ## :link: References
 
-[1]: <https://docs.platformio.org/core/installation/methods/installer-script.html>
+[1]: <https://platformio.org/install>
