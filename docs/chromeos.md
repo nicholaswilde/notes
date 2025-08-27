@@ -35,6 +35,55 @@ Queue: ipp/print
 )
 ```
 
+### [`notify` tmux fix](https://github.com/tmux/tmux/issues/2136#issuecomment-605307331)
+
+```bash
+# Send a DCS sequence through tmux.
+# Usage: <sequence>
+tmux_dcs() {
+  printf '\033Pt\033%s\033\\' "$1" > $( tmux display-message -p "#{client_tty}" )
+}
+
+```
+
+### `copy` tmux fix
+
+Comment out `tmux` case. Normal `printf` yworks for some reason.
+
+```bash
+...
+# Send an escape sequence to hterm.
+# Usage: <sequence>
+print_seq() {
+  local seq="$1"
+
+  case ${TERM-} in
+  screen*)
+    # Since tmux defaults to setting TERM=screen (ugh), we need to detect
+    # it here specially.
+    if [ -n "${TMUX-}" ]; then
+      echo "${seq}"
+      tmux_dcs "${seq}"
+    else
+      screen_dcs "${seq}"
+    fi
+    ;;
+  # tmux*)
+  #   printf '%s' "${seq}"
+  #   tmux_dcs "${seq}"
+  #   ;;
+  *)
+    printf '%s' "${seq}"
+    ;;
+  esac
+}
+...
+```
+
+```bash title="~/.config/tmux/tmux.conf"
+set -g set-clipboard on          # use system clipboard
+```
+
 ## Stop Penguin Terminal
 
 Open Crosh
