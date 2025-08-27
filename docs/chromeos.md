@@ -60,6 +60,8 @@ tmux_dcs() {
 
 ### `copy` tmux fix
 
+See my [gist](https://gist.github.com/nicholaswilde/28f1d91df80ab3723ed7697460349ac8) for the modified versions.
+
 Comment out `tmux` case. Normal `printf` yworks for some reason.
 
 ```bash
