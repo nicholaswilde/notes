@@ -27,13 +27,25 @@ Queue: ipp/print
 
 ## :clipboard: Clipboard
 
-```shell
-(
-  curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/hterm-notify.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/notify && sudo chmod +x /usr/bin/notify
-  curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/hterm-show-file.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/show-file && sudo chmod +x /usr/bin/show-file
-  curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/osc52.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/copy && sudo chmod +x /usr/bin/copy
-)
-```
+=== "Mods Gist"
+
+    ```shell
+    (
+      curl "https://gist.githubusercontent.com/nicholaswilde/28f1d91df80ab3723ed7697460349ac8/raw/280fa16599e64745cc7f4e71df265ae1aafbf331/term-notify.sh" | base64 --decode | sudo tee /usr/local/bin/notify && sudo chmod +x /usr/local/bin/notify
+      curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/hterm-show-file.sh?format=TEXT"| base64 --decode | sudo tee /usr/local/bin/show-file && sudo chmod +x /usr/local/bin/show-file
+      curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/osc52.sh?format=TEXT"| base64 --decode | sudo tee /usr/local/bin/copy && sudo chmod +x /usr/local/bin/copy
+    )
+    ```
+
+=== "Originals"
+
+    ```shell
+    (
+      curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/hterm-notify.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/notify && sudo chmod +x /usr/bin/notify
+      curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/hterm-show-file.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/show-file && sudo chmod +x /usr/bin/show-file
+      curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/osc52.sh?format=TEXT"| base64 --decode | sudo tee /usr/bin/copy && sudo chmod +x /usr/bin/copy
+    )
+    ```
 
 ### [`notify` tmux fix](https://github.com/tmux/tmux/issues/2136#issuecomment-605307331)
 
