@@ -74,14 +74,12 @@ print_seq() {
     # Since tmux defaults to setting TERM=screen (ugh), we need to detect
     # it here specially.
     if [ -n "${TMUX-}" ]; then
-      echo "${seq}"
       tmux_dcs "${seq}"
     else
       screen_dcs "${seq}"
     fi
     ;;
   # tmux*)
-  #   printf '%s' "${seq}"
   #   tmux_dcs "${seq}"
   #   ;;
   *)
