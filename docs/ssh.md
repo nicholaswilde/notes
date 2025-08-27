@@ -4,17 +4,33 @@ tags:
 ---
 # :material-ssh: SSH
 
-```shell
-(
-  [ -d ~/.ssh ] || mkdir ~/.ssh &&
-  curl https://github.com/nicholaswilde.keys -o ~/.ssh/authorized_keys &&
-  lpass show ssh --attach=att-4322045537695550419-20689 -q > ~/.ssh/id_ed25519 &&
-  chmod 600 ~/.ssh/id_ed25519 &&
-  ssh-keygen -y -f ~/.ssh/id_ed25519 > ~/.ssh/id_ed25519.pub &&
-  chmod 644 ~/.ssh/id_ed25519.pub &&
-  chmod 0700 ~/.ssh
-)
-```
+=== "id_ed25519.txt"
+
+    ```shell
+    (
+      [ -d ~/.ssh ] || mkdir ~/.ssh &&
+      curl https://github.com/nicholaswilde.keys -o ~/.ssh/authorized_keys &&
+      cp id_ed25519.txt  ~/.ssh/id_ed25519 &&
+      chmod 600 ~/.ssh/id_ed25519 &&
+      ssh-keygen -y -f ~/.ssh/id_ed25519 > ~/.ssh/id_ed25519.pub &&
+      chmod 644 ~/.ssh/id_ed25519.pub &&
+      chmod 0700 ~/.ssh
+    )
+    ```
+
+=== "lpass"
+
+    ```shell
+    (
+      [ -d ~/.ssh ] || mkdir ~/.ssh &&
+      curl https://github.com/nicholaswilde.keys -o ~/.ssh/authorized_keys &&
+      lpass show ssh --attach=att-4322045537695550419-20689 -q > ~/.ssh/id_ed25519 &&
+      chmod 600 ~/.ssh/id_ed25519 &&
+      ssh-keygen -y -f ~/.ssh/id_ed25519 > ~/.ssh/id_ed25519.pub &&
+      chmod 644 ~/.ssh/id_ed25519.pub &&
+      chmod 0700 ~/.ssh
+    )
+    ```
 
 ## :key: Authentication
 
