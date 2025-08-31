@@ -21,6 +21,7 @@ nav:
   - Bash: bash.md
   - Bitwarden: bitwarden.md
   - Chrome OS: chromeos.md
+  - Codex: codex.md
   - Deprecation: deprecation.md
   - Docker: docker.md
   - ESPHome: esphome.md
