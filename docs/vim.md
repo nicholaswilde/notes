@@ -2,6 +2,89 @@
 
 My cheatsheet for Vim
 
+## Logic
+
+- `A|a` - Append / Around
+
+    - `a`ppend text after the cursor
+    - `A`ppend text after the line
+    
+- `B|b` - Back / Beginning
+
+    - move `b`ackwards one word
+    - move `B`ackwards "big" word
+
+- `C|c` - Change
+
+    - `c`hange in <motion>
+    - `C`hange from here
+    
+- `D|d` - Delete
+
+    - `d`elete code enclosed in <X>
+    - `D`elete from here | `DD` delete line
+
+- `E|e` - End
+
+    - `e`nd of a word
+    - `E`nd of a "big" word | `E`nd of line2
+
+- `F|f` - Find
+
+    - `f`ind a character
+    - `F`ind backwards
+
+- `G|g` - Find
+
+    - `g`o to || `gg g`o to end of document
+    - `G`o to | `GG G`o to beginning
+
+- `I|i` - Insert
+
+    - `i`nsert text before cursor
+    - `I`nsert text before line
+
+- `m` - Mark
+
+    - `m`ark position to register
+
+- `N|n` - Next
+
+    - `n`ext result forward
+    - `N`ext result backward
+
+- `O|o` - Open Line
+
+    - `o`pen line bef`o`re
+    - `O`pen line ab`O`ve
+
+- `P|p` - Past / Paragraph
+
+    - `p`aste after cursor | <motion> in `p`aragraph
+    - `P`aste before cursor
+
+- `q` - Re'q'ord Ma'q'ros
+
+    - re`q`ord a macro to <register>
+
+- `R|e` - Replace | Redo
+
+    - `r`eplace under the cursor
+    - `R`eplace until stopped
+    - `R`edo (CTRL+R)
+
+- `S|s` - Switch
+
+    - `s`witch character (and keep on)
+    - `S`witch line
+
+- `T|t` - To
+
+    -  (do something) `t`o character
+    - `T`o character (backwards)
+
+- `U|u` - 
+
 ## Moving Inside a File
 
 You can move the cursor within a file by single characters, words, tokens, or lines.
@@ -189,3 +272,4 @@ Once you have selected the desired text in visual mode, you can use one of the v
 ## References
 
 - <https://phoenixnap.com/kb/vim-commands-cheat-sheet>
+- <https://youtu.be/RZ4p-saaQkc?si=Lx1eJVe8P5eTpkNi>
