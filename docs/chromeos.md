@@ -4,6 +4,36 @@ tags:
 ---
 # :fontawesome-brands-chrome: Chrome OS
 
+## [SSH Nerd Fonts][4]
+
+Change the font in the SSH terminal to render emoji correctly for [LazyVim](https://www.lazyvim.org/).
+
+```bash title="Penguin"
+chrome-untrusted://terminal/html/nassh_preferences_editor.html
+```
+
+```bash title="Secure Shell extension"
+chrome-extension://iodihamcpbpeioajjeobimgagajmlibd/html/nassh_preferences_editor.html
+```
+
+```css title="Custom CSS (inline text)"
+@font-face {
+    font-family: "Caskaydia Cove NFM";
+    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/v3.1.1/patched-fonts/CascadiaCode/Regular/CaskaydiaCoveNerdFontMono-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+x-row {
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: normal;
+}
+```
+
+```bash title="Text font family"
+'Caskaydia Cove NFM', 'Fira Code', 'Noto Sans Mono'
+```
+
 ## :material-console: [Pin Secure Shell Profile][3]
 
 When running a profile and directly pinning the window to the taskbar, the Secure Shell options window
@@ -139,3 +169,4 @@ vmc container termina nixos
 [1]: <https://adamtheautomator.com/ssh-chrome-extension/#Connecting_to_a_Remote_Host_using_the_Search_Bar>
 [2]: <https://www.reddit.com/r/chromeos/comments/7n3jc1/setting_up_brother_hl2270dw_printer_on_chromebook/>
 [3]: <https://chromium.googlesource.com/apps/libapps/+/HEAD/nassh/docs/FAQ.md#can-i-create-bookmarks-to-specific-sites>
+[4]: <https://ricma.co/posts/tech/tutorials/chrome-os-nerd-fonts/>
