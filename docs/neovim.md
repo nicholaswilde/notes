@@ -1,6 +1,33 @@
-# Vim
+# Neovim
 
-My cheatsheet for Vim
+My cheatsheet for neovim
+
+## Installation
+
+!!! code ""
+
+    ```bash
+    sudo apt install neovim
+    ```
+
+### [Lazyvim](https://www.lazyvim.org/installation)
+
+!!! code "Make a backup of your current Neovim files"
+
+    ```bash
+    # required
+    (
+      mv ~/.config/nvim{,.bak}
+
+      # optional but recommended
+      mv ~/.local/share/nvim{,.bak}
+      mv ~/.local/state/nvim{,.bak}
+      mv ~/.cache/nvim{,.bak}
+      git clone https://github.com/LazyVim/starter ~/.config/nvim
+      rm -rf ~/.config/nvim/.git
+      nvim
+    )
+    ```
 
 ## Logic
 

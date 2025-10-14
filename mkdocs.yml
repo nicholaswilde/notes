@@ -42,6 +42,7 @@ nav:
   - Micro: micro.md
   - Misc: misc.md
   - Multipass: multipass.md
+  - Neovim: neovim.md
   - NFS: nfs.md
   - NixOS: nixos.md
   - NPM: npm.md
@@ -57,7 +58,6 @@ nav:
   - Task: task.md
   - tmux: tmux.md
   - Ubuntu: ubuntu.md
-  - Vim: vim.md
   - Windows 11: w11.md
   - yq: yq.md
   - Yubikey: yubikey.md
