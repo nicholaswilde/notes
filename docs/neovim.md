@@ -29,6 +29,10 @@ My cheatsheet for neovim
     )
     ```
 
+!!! tip
+
+    It is recommended to run `:LazyHealth` after installation. This will load all plugins and check if everything is working correctly.
+
 ## Logic
 
 - `A|a` - Append / Around
