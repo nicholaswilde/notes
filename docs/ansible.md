@@ -22,4 +22,11 @@ tags:
 sudo npm i -g standard-version
 ```
 
+## `jmespath` Missing
+
+```shell
+pipx install ansible-core jmespath
+pipx inject ansible-core jmespath
+```
+
 [1]: <https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html>
