@@ -27,7 +27,8 @@ nav:
   - ESPHome: esphome.md
   - Flux: flux.md
   - Git: git.md
-  - Github Actions: github-actions.md
+  - GitHub: github.md
+  - GitHub Actions: github-actions.md
   - Go: go.md
   - GPG: gpg.md
   - Helm: helm.md
