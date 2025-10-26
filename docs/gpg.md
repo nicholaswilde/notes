@@ -46,7 +46,7 @@ gpg> save
 
 ```shell
 wget http://example.com/pgp-public-key -O- | gpg --import
-gpg --list-keys
+gpg -k
 gpg --sign-key theirs@email.com
 ```
 
@@ -54,9 +54,9 @@ gpg --sign-key theirs@email.com
 
 ```shell
 # Secret keys
-gpg --list-secret-keys --keyid-format LONG
+gpg -K --keyid-format LONG
 # All keys
-gpg --list-keys --keyid-format LONG
+gpg -k --keyid-format LONG
 ```
 
 ## Submit to Keyserver
@@ -85,14 +85,14 @@ gpg --export --armor $EMAIL > /path/to/public-key-backup.asc
 ## Keygrip to match `*.key` filenames in `~/.gnupg/private-keys-v1.d` directory
 
 ```shell
-gpg --list-secret-keys --with-keygrip
-gpg --list-keys --with-keygrip
+gpg -K --with-keygrip
+gpg -k --with-keygrip
 ```
 
 ## Get Key ID
 
 ```shell
-key=$(gpg --list-keys "noreply@email.com" | sed -n '/^\s/s/\s*//p') && echo "0x"${key:(-8)}
+key=$(gpg -k --with-colons "noreply@email.com" | awk -F: '/^pub:/ { print $5 }') && echo "0x"${key:(-8)}
 # 0x08B7D7A3
 ```
 
