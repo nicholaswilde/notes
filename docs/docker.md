@@ -156,6 +156,45 @@ sudo nano /etc/docker/daemon.json
 }
 ```
 
+## [Downgrade because of security concerns with Proxmox LXC](https://forum.proxmox.com/threads/docker-inside-lxc-net-ipv4-ip_unprivileged_port_start-error.175437/)
+
+```shell
+docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: open sysctl net.ipv4.ip_unprivileged_port_start file: reopen fd 8: permission denied: unknown
+```
+
+**List Available Versions**: Use apt-cache madison to see all available versions of a package in your configured repositories.
+
+```shell
+apt-cache madison containerd.io
+```
+
+**Install the Specific Version**: Once you have the version string, use apt install with the package name followed by an equals sign (=) and the version string.
+
+```shell
+(
+  sudo apt update
+  sudo apt install containerd.io=1.7.28-1~debian.12~bookworm
+)
+```
+
+**Set the Hold**: Use apt-mark hold to pin the package. This will prevent apt upgrade or apt dist-upgrade from changing it.
+
+```shell
+sudo apt-mark hold containerd.io
+```
+
+**How to Remove the Hold**: When you are ready to upgrade the package again, you must "unhold" it first.
+
+```shell
+sudo apt-mark unhold containerd.io
+```
+
+**How to Check Which Packages Are on Hold**: To see a list of all packages you have manually held:
+
+```shell
+apt-mark showhold
+```
+
 ## References
 
 * [docker-template wiki](https://github.com/nicholaswilde/docker-template/wiki/)
