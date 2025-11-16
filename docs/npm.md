@@ -31,4 +31,10 @@ nvm alias default node
 npm install -g npm
 ```
 
+## Correct app version not running fix
+
+```
+hash -r
+```
+
 [1]: <https://stackoverflow.com/a/76934903/1061279>
