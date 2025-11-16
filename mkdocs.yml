@@ -59,9 +59,11 @@ nav:
   - Task: task.md
   - tmux: tmux.md
   - Ubuntu: ubuntu.md
+  - uv: uv.md
   - Windows 11: w11.md
   - yq: yq.md
   - Yubikey: yubikey.md
+  - Zensical: zensical.md
   - Archive:
       - Bitwarden: bitwarden.md
       - Chezmoi: chezmoi.md
