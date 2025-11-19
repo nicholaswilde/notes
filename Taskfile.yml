@@ -3,21 +3,12 @@ version: '3'
 
 vars:
   PORT: 8000
-  IMAGE: nicholaswilde/mkdocs-material
 
 tasks:
   build:
-    desc: Build documentation using Docker and mkdocs-material
+    desc: Build documentation using zensical
     cmds:
-      - >-
-        docker run --rm -v ${PWD}:/docs --platform linux/amd64
-        {{ .IMAGE }} build -f ./mkdocs.yml
-
-  update:
-    desc: Update docker container
-    cmds:
-      - >-
-        docker pull {{ .IMAGE }}
+      - uv run zensical build
 
   up:
     desc: Start server
@@ -27,12 +18,10 @@ tasks:
   serve:
     desc: >-
       Start development server on http://0.0.0.0:{{ .PORT }} using
-      Docker and mkdocs-material
+      zensical
     cmds:
       - >-
-        docker run --rm -p {{ .PORT }}:{{ .PORT}} -v ${PWD}:/docs
-        --platform linux/amd64 {{ .IMAGE }} serve
-        --dev-addr 0.0.0.0:{{ .PORT }} -f ./mkdocs.yml
+        uv run zensical serve --dev-addr 0.0.0.0:{{ .PORT }}
     deps:
       - build
 
@@ -61,9 +50,7 @@ tasks:
   yamllint:
     desc: Run yamllint
     cmds:
-      - >-
-        docker run --rm -v ${PWD}:${PWD} -w ${PWD}
-        programmerassistant/yamllint yamllint .
+      - uv run yamllint .
     ignore_error: true
 
   default:
