@@ -61,9 +61,9 @@ Queue: ipp/print
 
     ```shell
     (
-      curl "https://gist.githubusercontent.com/nicholaswilde/28f1d91df80ab3723ed7697460349ac8/raw/280fa16599e64745cc7f4e71df265ae1aafbf331/term-notify.sh" | tee /usr/local/bin/notify && sudo chmod +x /usr/local/bin/notify
-      curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/hterm-show-file.sh?format=TEXT" | base64 --decode | tee /usr/local/bin/show-file && sudo chmod +x /usr/local/bin/show-file
-      curl "https://gist.githubusercontent.com/nicholaswilde/28f1d91df80ab3723ed7697460349ac8/raw/280fa16599e64745cc7f4e71df265ae1aafbf331/osc52.sh" | tee /usr/local/bin/copy && sudo chmod +x /usr/local/bin/copy
+      curl "https://gist.githubusercontent.com/nicholaswilde/28f1d91df80ab3723ed7697460349ac8/raw/280fa16599e64745cc7f4e71df265ae1aafbf331/term-notify.sh" | tee /usr/local/bin/notify && chmod +x /usr/local/bin/notify
+      curl "https://chromium.googlesource.com/apps/libapps/+/HEAD/hterm/etc/hterm-show-file.sh?format=TEXT" | base64 --decode | tee /usr/local/bin/show-file && chmod +x /usr/local/bin/show-file
+      curl "https://gist.githubusercontent.com/nicholaswilde/28f1d91df80ab3723ed7697460349ac8/raw/280fa16599e64745cc7f4e71df265ae1aafbf331/osc52.sh" | tee /usr/local/bin/copy && chmod +x /usr/local/bin/copy
     )
     ```
 
