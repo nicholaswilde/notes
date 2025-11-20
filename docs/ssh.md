@@ -9,8 +9,8 @@ tags:
     ```shell
     (
       [ -d ~/.ssh ] || mkdir ~/.ssh &&
-      curl https://github.com/nicholaswilde.keys -o ~/.ssh/authorized_keys &&
-      cp id_ed25519.txt  ~/.ssh/id_ed25519 &&
+      curl https://github.com/nicholaswilde.keys | tee -a ~/.ssh/authorized_keys &&
+      cp id_ed25519.txt ~/.ssh/id_ed25519 &&
       chmod 600 ~/.ssh/id_ed25519 &&
       ssh-keygen -y -f ~/.ssh/id_ed25519 > ~/.ssh/id_ed25519.pub &&
       chmod 644 ~/.ssh/id_ed25519.pub &&

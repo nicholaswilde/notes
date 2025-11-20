@@ -1,40 +1,29 @@
 ---
-name: ci
-on:  # yamllint disable-line rule:truthy
+name: Documentation
+on:
   push:
-    paths:
-      - 'docs/**'
-      - 'zensical.toml'
     branches:
+      - master
       - main
-  workflow_dispatch:
-
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
-  build:
-    name: Deploy docs
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
-
-      - name: Setup python
-        uses: actions/setup-python@v5
+      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-
-      - name: Install uv
-        run: curl -LsSf https://astral.sh/uv/install.sh | sh
-
-      - name: Install dependencies
-        run: uv sync --system
-
-      - name: Build docs
-        run: uv run zensical build
-
-      - name: Deploy docs
-        uses: peaceiris/actions-gh-pages@v4
+          python-version: 3.x
+      - run: pip install zensical
+      - run: zensical build --clean 
+      - uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          path: site
+      - uses: actions/deploy-pages@v4
