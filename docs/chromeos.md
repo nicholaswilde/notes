@@ -4,6 +4,14 @@ tags:
 ---
 # :fontawesome-brands-chrome: Chrome OS
 
+## :key: Set Penguin Crostini Password
+
+Needed to install `brew`.
+
+```shell
+sudo passwd $USER
+```
+
 ## [SSH Nerd Fonts][4]
 
 Change the font in the SSH terminal to render emoji correctly for [LazyVim](https://www.lazyvim.org/).
