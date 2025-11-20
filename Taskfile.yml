@@ -5,6 +5,20 @@ vars:
   PORT: 8000
 
 tasks:
+  docs:deps:
+    desc: Install Zensical
+    cmds:
+      - uv pip install zensical
+
+  docs:check:
+    desc: Check Zensical version
+    cmds:
+      - uv pip show zensical
+  docs:update:
+    desc: Update Zensical
+    cmds:
+      - uv pip install --upgrade zensical
+
   build:
     desc: Build documentation using zensical
     cmds:
