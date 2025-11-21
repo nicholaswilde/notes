@@ -98,7 +98,6 @@ git log
 
 * Commit: https://github.com/python/cpython/archive/31af650.tar.gz
 
-
 * Release Source: https://github.com/nicholaswilde/helm-charts/archive/wikijs-0.1.6.tar.gz
 
 ### [gh](https://github.com/cli/cli)
@@ -233,6 +232,20 @@ git diff branch1...branch2
 ```
 git add the_left_out_file
 git commit --amend --no-edit
+```
+
+## Use a Specific SSH Key
+
+### One Time Use
+
+```
+git -c "core.sshCommand=ssh -i ~/.ssh/id_ed25519" clone git@github.com:nicholaswilde/dotfiles.git
+```
+
+### Global Config
+
+```
+git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519"
 ```
 
 ## References
