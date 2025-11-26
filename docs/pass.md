@@ -52,6 +52,19 @@ pass insert -m sensitive/secret_answers < secret_answers.txt
 cat secret_answers.txt | pass insert -m sensitive/secret_answers
 ```
 
+## Update encryption key
+
+```shell
+pass init <new-gpg-key-id>
+```
+
+## Check Git Origin
+
+```shell
+pass git remote -v
+```
+
+
 ## References
 
 - <https://wiki.archlinux.org/index.php/Pass>

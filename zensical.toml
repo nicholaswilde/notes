@@ -42,6 +42,7 @@ nav = [
   { NFS = "nfs.md" },
   { NixOS = "nixos.md" },
   { NPM = "npm.md" },
+  { pass = "pass.md" },
   { PlatformIO = "platformio.md" },
   { Proxmox = "proxmox.md" },
   { Python = "python.md" },
@@ -61,8 +62,7 @@ nav = [
   { Zensical = "zensical.md" },
   { Archive = [
     { Bitwarden = "bitwarden.md" },
-    { Chezmoi = "chezmoi.md" },
-    { pass = "pass.md" },
+    { Chezmoi = "chezmoi.md" }
   ]}
 ]
 
