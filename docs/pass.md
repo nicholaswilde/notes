@@ -37,12 +37,22 @@ git clone git@github.com:nicholaswilde/pass.git ~/.password-store
 
 ## [pass-import](https://github.com/roddhjav/pass-import)
 
-```shell
-wget -qO - https://pkg.pujol.io/debian/gpgkey | sudo apt-key add -
-echo 'deb [arch=amd64] https://pkg.pujol.io/debian/repo all main' | sudo tee /etc/apt/sources.list.d/pkg.pujol.io.list
-sudo apt-get update
-sudo apt-get install pass-extension-import
-```
+=== "sudo"
+
+    ```shell
+    curl -fsSL https://pkg.pujol.io/debian/gpgkey | sudo tee /etc/apt/keyrings/pass-extension-import.gpg
+    echo 'deb [arch=amd64] https://pkg.pujol.io/debian/repo all main' | sudo tee /etc/apt/sources.list.d/pkg.pujol.io.list
+    sudo apt update
+    sudo apt install pass-extension-import -y
+    ```
+=== "root"
+
+    ```shell
+    curl -fsSL https://pkg.pujol.io/debian/gpgkey | tee /etc/apt/keyrings/pass-extension-import.gpg
+    echo 'deb [arch=amd64] https://pkg.pujol.io/debian/repo all main' | tee /etc/apt/sources.list.d/pkg.pujol.io.list
+    apt update
+    apt install pass-extension-import -y
+    ```
 
 ## Encrypt Files
 
