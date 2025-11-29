@@ -52,6 +52,7 @@ nav = [
   { Signal = "signal.md" },
   { Specifications = "specifications.md" },
   { SSH = "ssh.md" },
+  { systemctl = "systemctl.md" },
   { Task = "task.md" },
   { tmux = "tmux.md" },
   { Ubuntu = "ubuntu.md" },
